@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="cc3k_clion"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/tony/Projects/github/cc3k_clion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/tony/Projects/github/cc3k_clion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/tony/Projects/github/cc3k_clion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cc3k_clion">
+				<Option output="/home/tony/Projects/github/cc3k_clion/cmake-build-debug/cc3k_clion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tony/Projects/github/cc3k_clion/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 cc3k_clion"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cc3k_clion/fast">
+				<Option output="/home/tony/Projects/github/cc3k_clion/cmake-build-debug/cc3k_clion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tony/Projects/github/cc3k_clion/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 cc3k_clion/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tony/Projects/github/cc3k_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/Makefile">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/NPCs/dragon.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/NPCs/dragon.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/NPCs/dwarf.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/NPCs/dwarf.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/NPCs/elf.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/NPCs/elf.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/NPCs/enemy_character.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/NPCs/enemy_character.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/NPCs/halfling.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/NPCs/halfling.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/NPCs/human.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/NPCs/human.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/NPCs/merchant.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/NPCs/merchant.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/NPCs/orcs.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/NPCs/orcs.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/PCs/drow.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/PCs/drow.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/PCs/goblin.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/PCs/goblin.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/PCs/player_character.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/PCs/player_character.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/PCs/shade.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/PCs/shade.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/PCs/troll.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/PCs/troll.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/PCs/vampire.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/PCs/vampire.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/character.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/character.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/enum.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/enum.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/grid.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/grid.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/main.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_clion/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

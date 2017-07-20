@@ -1,0 +1,16 @@
+              HP        ATK       DEF
+PC:
+shade:       125        25        25
+drow:        150        25        15          All potions *1.5
+vampire:      50        25        25          +5 HP every successful attack & no max HP
+troll:       120        25        15          +5 HP every turn
+goblin:      110        15        20          +5 gold every slay
+
+NPC:
+human:       140        20        20          slayer +4 gold
+dwarf:       100        20        30          vampire -5 HP when attacks
+elf:         140        30        10          get 2 attacks except to drow
+orcs:        180        30        25          damage *1.5 to goblins
+merchant:     30        70         5          hostile when attacked
+dragon:      150        20        20          always guards gold
+halfling:    100        15        20          PC 50% chance of missing attack
