@@ -1,7 +1,6 @@
 TODO:
--Need to cout info in almost every function
--Call grid.removeEnemy when an enemy is slained
 -Observer pattern: implement notify for subclasses
 -Subject subscription list syncs grid enemy vector
 -getChar() for all enemy subclasses
--every dragon has a dragonhoard ptr
+
+-check isDead() in notifyOvservers
