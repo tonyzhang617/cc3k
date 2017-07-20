@@ -25,7 +25,6 @@ public:
   bool isDead();
   std::pair<int, int> getPosition();
   void addGold(int n);
-  void printStatus();
   virtual void makeMove(Direction dir) = 0;
   virtual char getChar() = 0;
   virtual void attack(Character *c) = 0;

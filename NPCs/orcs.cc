@@ -12,6 +12,8 @@ void Orcs::attack(Character *c) {
   bool success = rand() % 2;
   if (success) {
     c->attackedBy(this);
+  } else {
+    grid->addAction("Orcs attacked you but missed. ");
   }
 }
 

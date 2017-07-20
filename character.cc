@@ -22,11 +22,6 @@ void Character::addGold(int n) {
   if (n > 0) gold += n;
 }
 
-void Character::printStatus() {
-  string s = "HP: " + to_string(hp) + "ATK: " + to_string(atk) + "DEF: " + to_string(def) + "\n";
-  grid->addAction(s);
-}
-
 void Character::attackedBy(Character *c) {
   int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
   modifyHP(-damage);

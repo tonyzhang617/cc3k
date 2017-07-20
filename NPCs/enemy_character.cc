@@ -24,7 +24,11 @@ void EnemyCharacter::makeMove(Direction dir) {
 
 void EnemyCharacter::attack(Character *c) {
   bool success = rand() % 2;
-  if (success) c->attackedBy(this);
+  if (success) {
+    c->attackedBy(this);
+  } else {
+    grid->addAction("An enemy attacked you but missed. ")
+  }
 }
 
 void EnemyCharacter::attackedBy(Character *c) {

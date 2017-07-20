@@ -16,6 +16,8 @@ char PlayerCharacter::getChar() {
 void PlayerCharacter::attack(Character *c) {
   c->attackedBy(this);
   trollMove();
+  string s = "Enemy has " + to_string(c->getHp()) + " HP left. ";
+  grid->addAction(s);
 }
 
 void PlayerCharacter::consumePotion(Item *p) {
