@@ -3,9 +3,10 @@
 #include "enemy_character.h"
 #include "../character.h"
 #include "../PCs/vampire.h"
+#include "../grid.h"
 
 class Merchant : public EnemyCharacter {
-  bool isHostile = false;
+  static bool isHostile;
   const int legacy = 4;
 public:
   Merchant(int x, int y, Grid *grid);

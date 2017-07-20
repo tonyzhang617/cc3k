@@ -35,6 +35,7 @@ CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o: ../PCs/player_character.h
 CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o: ../PCs/vampire.h
 CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o: ../character.h
 CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o: ../enum.h
+CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o: ../grid.h
 
 CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o: ../NPCs/enemy_character.h
 CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o: ../NPCs/human.cc
@@ -49,21 +50,27 @@ CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o: ../PCs/player_character.h
 CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o: ../PCs/vampire.h
 CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o: ../character.h
 CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o: ../enum.h
+CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o: ../grid.h
 
 CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o: ../NPCs/enemy_character.h
 CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o: ../NPCs/orcs.cc
 CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o: ../NPCs/orcs.h
+CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o: ../PCs/player_character.h
 CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o: ../character.h
 CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o: ../enum.h
+CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o: ../grid.h
 
+CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o: ../NPCs/elf.h
 CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o: ../NPCs/enemy_character.h
 CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o: ../PCs/drow.cc
 CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o: ../PCs/drow.h
 CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o: ../PCs/player_character.h
 CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o: ../character.h
 CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o: ../enum.h
+CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o: ../grid.h
 
 CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o: ../NPCs/enemy_character.h
+CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o: ../NPCs/orcs.h
 CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o: ../PCs/goblin.cc
 CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o: ../PCs/goblin.h
 CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o: ../PCs/player_character.h

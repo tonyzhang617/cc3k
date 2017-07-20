@@ -1,4 +1,5 @@
 #include "orcs.h"
+#include "../grid.h"
 using namespace std;
 
 Orcs::Orcs(int x, int y, Grid *grid): EnemyCharacter(x, y, grid) {

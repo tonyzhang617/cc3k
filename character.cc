@@ -50,23 +50,24 @@ void Character::attackedBy(Vampire *c) {
   int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
   modifyHP(-damage);
   c->modifyHP(5);
-  grid->addAction("You attacked successfully.");
+  grid->addAction("You attacked successfully. ");
 }
 
 void Character::attackedBy(Orcs *c) {
   int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
   modifyHP(-damage);
-  grid->addAction("Orcs attacked you.");
+  grid->addAction("Orcs attacked you. ");
 }
 
 void Character::slay(Character *c) {
   c->slainBy(this);
 }
 
-void EnemyCharacter::slainBy(Character *c) {
+void Character::slainBy(Character *c) {
   int legacy = 1 + rand() % 2;
   c->addGold(legacy);
-  grid->addAction("You slayed an enemy.");
+  // grid->removeEnemy(this);
+  grid->addAction("You slayed an enemy. ");
 }
 
 int Character::getHp() const {
@@ -77,4 +78,9 @@ int Character::getAtk() const {
 }
 int Character::getDef() const {
   return def;
+}
+
+void Character::modifyHP(int n) {
+  hp += n;
+  hp = max(0, hp);
 }

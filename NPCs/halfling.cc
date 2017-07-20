@@ -1,4 +1,5 @@
 #include "halfling.h"
+#include "../grid.h"
 using namespace std;
 
 Halfling::Halfling(int x, int y, Grid *grid): EnemyCharacter(x, y, grid) {
@@ -10,22 +11,28 @@ Halfling::Halfling(int x, int y, Grid *grid): EnemyCharacter(x, y, grid) {
 void Halfling::attackedBy(Character *c) {
   bool success = rand() % 2;
   if (success) {
-    double damage = ceil((100 / (100 + def))*(c->getAtk()));
+    int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
     modifyHP(-damage);
+    grid->addAction("You attacked Halfling. ");
+  } else {
+    grid->addAction("You attacked Halfling but missed. ");
   }
   if (isDead()) {
-    slainBy(c);
+    c->slay(this);
   }
 }
 
 void Halfling::attackedBy(Vampire *c) {
   bool success = rand() % 2;
   if (success) {
-    double damage = ceil((100 / (100 + def))*(c->getAtk()));
+    int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
     modifyHP(-damage);
     c->modifyHP(5);
+    grid->addAction("You attacked Halfling. ");
+  } else {
+    grid->addAction("You attacked Halfling but missed. ");
   }
   if (isDead()) {
-    slainBy(c);
+    c->slay(this);
   }
 }

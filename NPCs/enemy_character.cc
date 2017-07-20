@@ -14,8 +14,8 @@ void EnemyCharacter::makeMove(Direction dir) {
 
       CellType ct = grid->getCellTypeAt(destx, desty);
       if (ct == CellType::FLOOR) {
-          this->x = destx;
-          this->y = desty;
+          x = destx;
+          y = desty;
           break;
       }
     }
@@ -28,10 +28,11 @@ void EnemyCharacter::attack(Character *c) {
 }
 
 void EnemyCharacter::attackedBy(Character *c) {
-  double damage = ceil((100 / (100 + def))*(c->getAtk()));
+  int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
   modifyHP(-damage);
+  grid->addAction("You attacked an enemy. ");
   if (isDead()) {
-    slainBy(c);
+    c->slay(this);
   }
 }
 

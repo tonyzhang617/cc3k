@@ -15,16 +15,31 @@ char PlayerCharacter::getChar() {
 
 void PlayerCharacter::attack(Character *c) {
   c->attackedBy(this);
+  trollMove();
 }
 
 void PlayerCharacter::consumePotion(Item *p) {
   // p->consumedBy(this);
-  // TODO
+  // trollMove();
 }
 
 void PlayerCharacter::resetAtkDef() {
   atk = defaultAtk;
   def = defaultDef;
+}
+
+void PlayerCharacter::modifyHP(int n) {
+  hp += n;
+  hp = max(0, hp);
+  hp = min(defaultHP, hp);
+}
+
+void PlayerCharacter::modifyAtk(int n) {
+  atk += max(0, atk+n);
+}
+
+void PlayerCharacter::modifyDef(int n) {
+  def += max(0, atk+n);
 }
 
 void PlayerCharacter::makeMove(Direction dir) {
@@ -40,11 +55,11 @@ void PlayerCharacter::makeMove(Direction dir) {
     case CellType::FLOOR:
       x = destx;
       y = desty;
-      cout << "Character moved." << endl;
+      cout << "Character moved. " << endl;
       trollMove();
       break;
     default:
-      cout << "Invalid move." << endl;
+      cout << "Invalid move. " << endl;
   }
 }
 

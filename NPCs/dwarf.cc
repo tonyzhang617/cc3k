@@ -8,9 +8,10 @@ Dwarf::Dwarf(int x, int y, Grid *grid): EnemyCharacter(x, y, grid) {
 }
 
 void Dwarf::attackedBy(Vampire *c) {
-  double damage = ceil((100 / (100 + def))*(c->getAtk()));
+  int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
   modifyHP(-damage);
+  c->modifyHP(-5);
   if(isDead()) {
-    this->slainBy(static_cast<Character*>(c));
+    c->slay(this);
   }
 }

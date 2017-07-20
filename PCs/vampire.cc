@@ -8,10 +8,6 @@ void Vampire::modifyHP(int n) {
   hp = max(0, hp);
 }
 
-void Vampire::modifyAtk(int n) {
-  atk = max(0, atk+n);
-}
-
-void Vampire::modifyDef(int n) {
-  def = max(0, def+n);
+void Vampire::attack(Character *c) {
+  c->attackedBy(this);
 }

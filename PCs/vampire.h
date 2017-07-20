@@ -6,9 +6,7 @@ class Vampire : public PlayerCharacter {
 public:
   Vampire(int x, int y, Grid *grid);
   void modifyHP(int n) override;
-  void modifyAtk(int n) override;
-  void modifyDef(int n) override;
-  // void resetAtkDef() override;
+  void attack(Character *c) override;
 };
 
 #endif

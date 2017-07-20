@@ -1,7 +1,9 @@
 #include "merchant.h"
 using namespace std;
 
-Merchant::Merchant(int x, int y, Grid *grid): EnemyCharacter(30, 70, grid) {
+bool Merchant::isHostile = false;
+
+Merchant::Merchant(int x, int y, Grid *grid): EnemyCharacter(x, y, grid) {
   hp = 30;
   atk = 70;
   def = 5;
@@ -13,14 +15,22 @@ void Merchant::slainBy(Character *c) {
 }
 
 void Merchant::attackedBy(Character *c) {
-  double damage = ceil((100 / (100 + def))*(c->getAtk()));
+  int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
   modifyHP(-damage);
+  grid->addAction("You attacked Merchant. ");
   isHostile = true;
+  if (isDead()) {
+    c->slay(this);
+  }
 }
 
 void Merchant::attackedBy(Vampire *c) {
-  double damage = ceil((100 / (100 + def))*(c->getAtk()));
+  int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
   modifyHP(-damage);
+  grid->addAction("You attacked Merchant. ");
   c->modifyHP(5);
   isHostile = true;
+  if (isDead()) {
+    c->slay(this);
+  }
 }

@@ -13,9 +13,10 @@ public:
   char getChar() final;
   void makeMove(Direction dir) final;
   virtual void consumePotion(Item *p);
-  virtual void modifyAtk(int n);
-  virtual void modifyDef(int n);
-  virtual void resetAtkDef();
+  void resetAtkDef();
+  void modifyHP(int n) override;
+  void modifyAtk(int n);
+  void modifyDef(int n);
   void attack(Character *c) override;
   // virtual ~PlayerCharacter() = 0 {}
 };

@@ -8,24 +8,8 @@ void Goblin::slay(Character *c) {
   addGold(5);
 }
 
-void Goblin::modifyHP(int n) {
-  hp += n;
-  hp = max(0, hp);
-  hp = min(defaultHP, hp);
+void Goblin::attackedBy(Orcs *c) {
+  int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
+  damage *= 1.5;
+  modifyHP(-damage);
 }
-
-void Goblin::modifyAtk(int n) {
-  atk = max(0, atk+n);
-}
-
-void Goblin::modifyDef(int n) {
-  def = max(0, def+n);
-}
-
-// TODO
-
-//void Goblin::attackedBy(Orcs *c) {
-//  double damage = ceil((100 / (100 + def))*(c->get));
-//  damage *= 1.5;
-//  modifyHP(-damage);
-//}
