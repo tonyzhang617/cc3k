@@ -6,6 +6,7 @@ class Elf : public EnemyCharacter {
 public:
   Elf(int x, int y, Grid *grid);
   void attack(Character *c) override;
+  char getChar() override;
 };
 
 #endif

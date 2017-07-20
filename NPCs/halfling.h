@@ -9,6 +9,7 @@ public:
   Halfling(int x, int y, Grid *grid);
   void attackedBy(Character *c) override;
   void attackedBy(Vampire *c) override;
+  char getChar() override;
 };
 
 #endif

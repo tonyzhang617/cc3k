@@ -14,8 +14,8 @@ void Drow::attackedBy(Elf *c) {
   if (success) {
     int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
     modifyHP(-damage);
-    grid->addAction("Drow attacked you. ");
+    grid->addAction("Elf attacked you. ");
   } else {
-    grid->addAction("Drow attacked you but missed. ");
+    grid->addAction("Elf attacked you but missed. ");
   }
 }

@@ -6,3 +6,7 @@ Dragon::Dragon(int x, int y, Grid *grid): EnemyCharacter(x, y, grid) {
   atk = 20;
   def = 20;
 }
+
+char Dragon::getChar() {
+  return 'D';
+}

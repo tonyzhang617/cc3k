@@ -14,3 +14,7 @@ void Orcs::attack(Character *c) {
     c->attackedBy(this);
   }
 }
+
+char Orcs::getChar() {
+  return 'O';
+}

@@ -10,3 +10,7 @@ Elf::Elf(int x, int y, Grid *grid): EnemyCharacter(x, y, grid) {
 void Elf::attack(Character *c) {
   c->attackedBy(this);
 }
+
+char Elf::getChar() {
+  return 'E';
+}

@@ -13,6 +13,7 @@ public:
   void slainBy(Character *c) override;
   void attackedBy(Character *c) override;
   void attackedBy(Vampire *c) override;
+  char getChar() override;
 };
 
 #endif

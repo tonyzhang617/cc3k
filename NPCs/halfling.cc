@@ -36,3 +36,7 @@ void Halfling::attackedBy(Vampire *c) {
     c->slay(this);
   }
 }
+
+char Halfling::getChar() {
+  return 'L';
+}

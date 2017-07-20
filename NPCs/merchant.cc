@@ -1,4 +1,5 @@
 #include "merchant.h"
+#include "../grid.h"
 using namespace std;
 
 bool Merchant::isHostile = false;
@@ -12,6 +13,7 @@ Merchant::Merchant(int x, int y, Grid *grid): EnemyCharacter(x, y, grid) {
 void Merchant::slainBy(Character *c) {
   c->addGold(legacy);
   isHostile = true;
+  grid->addAction("You slayed Merchant. ")
 }
 
 void Merchant::attackedBy(Character *c) {
@@ -33,4 +35,8 @@ void Merchant::attackedBy(Vampire *c) {
   if (isDead()) {
     c->slay(this);
   }
+}
+
+char Merchant::getChar() {
+  return 'M';
 }

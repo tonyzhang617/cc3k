@@ -7,6 +7,7 @@ class Human : public EnemyCharacter {
 public:
   Human(int x, int y, Grid *grid);
   void slainBy(Character *c) override;
+  char getChar() override;
 };
 
 #endif

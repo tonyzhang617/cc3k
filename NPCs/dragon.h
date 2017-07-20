@@ -5,6 +5,7 @@
 class Dragon : public EnemyCharacter {
 public:
   Dragon(int x, int y, Grid *grid);
+  char getChar() override;
 };
 
 #endif
