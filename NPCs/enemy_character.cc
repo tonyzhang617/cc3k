@@ -35,11 +35,6 @@ void EnemyCharacter::attackedBy(Character *c) {
   }
 }
 
-void EnemyCharacter::slainBy(Character *c) {
-  int legacy = 1 + rand() % 2;
-  c->addGold(legacy);
-}
-
 void EnemyCharacter::modifyHP(int n) {
   if (n < 0) {
     hp = max(0, hp+n);

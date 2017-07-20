@@ -28,7 +28,7 @@ void Character::printStatus() {
 }
 
 void Character::attackedBy(Character *c) {
-  double damage = ceil((100 / (100 + def))*(c->atk));
+  int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
   modifyHP(-damage);
   grid->addAction("An attack happened. ");
 }
@@ -37,7 +37,7 @@ void Character::attackedBy(Elf *c) {
   for (int i = 0; i < 2; i++) {
     bool success = rand() % 2;
     if (success) {
-      double damage = ceil((100 / (100 + def))*(c->atk));
+      int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
       modifyHP(-damage);
       grid->addAction("Elf attacked you. ");
     } else {
@@ -47,17 +47,28 @@ void Character::attackedBy(Elf *c) {
 }
 
 void Character::attackedBy(Vampire *c) {
-  double damage = ceil((100 / (100 + def))*(c->atk));
+  int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
   modifyHP(-damage);
   c->modifyHP(5);
   grid->addAction("You attacked successfully.");
 }
 
 void Character::attackedBy(Orcs *c) {
-  double damage = ceil((100 / (100 + def))*(c->atk));
+  int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
   modifyHP(-damage);
   grid->addAction("Orcs attacked you.");
 }
+
+void Character::slay(Character *c) {
+  c->slainBy(this);
+}
+
+void EnemyCharacter::slainBy(Character *c) {
+  int legacy = 1 + rand() % 2;
+  c->addGold(legacy);
+  grid->addAction("You slayed an enemy.");
+}
+
 int Character::getHp() const {
   return hp;
 }

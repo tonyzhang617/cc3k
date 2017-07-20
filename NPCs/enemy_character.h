@@ -8,7 +8,6 @@ public:
   void makeMove(Direction dir = Direction::RANDOM) final;
   void attack(Character *c) override;
   void attackedBy(Character *c) override;
-  void slainBy(Character *c) override;
   void modifyHP(int n) override;
   char getChar() override;
   // ~EnenmyCharacter() = 0 {}

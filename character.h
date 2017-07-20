@@ -33,13 +33,13 @@ public:
   virtual void attackedBy(Elf *c);
   virtual void attackedBy(Vampire *c);
   virtual void attackedBy(Orcs *c);
-  // virtual void slay(Character *c);
+  virtual void slay(Character *c);
   virtual void slainBy(Character *c);
   virtual void modifyHP(int n);
 
-  virtual int getHp() const;
-  virtual int getAtk() const;
-  virtual int getDef() const;
+  int getHp() const;
+  int getAtk() const;
+  int getDef() const;
   // virtual ~Character() = 0;
 };
 

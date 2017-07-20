@@ -2,8 +2,6 @@ TODO:
 -Need to cout info in almost every function
 -Call grid.removeEnemy when an enemy is slained
 -Observer pattern: implement notify for subclasses
-
-
-
-NOTE:
--Instead of Atk&Def reset and keep HP and spawn in a random cell, just make HP static and construct a new PC?
+-Subject subscription list syncs grid enemy vector
+-getChar() for all enemy subclasses
+-every dragon has a dragonhoard ptr

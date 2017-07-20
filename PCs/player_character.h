@@ -5,7 +5,7 @@
 
 class Item;
 class PlayerCharacter : public Character {
-  virtual void trollMove(); // for trolls' superpower, called inside makeMove
+  virtual void trollMove(); // for trolls' superpower, called in makeMove
 protected:
   const int defaultHP, defaultAtk, defaultDef;
 public:
@@ -17,7 +17,6 @@ public:
   virtual void modifyDef(int n);
   virtual void resetAtkDef();
   void attack(Character *c) override;
-  virtual void slay(Character *c);
   // virtual ~PlayerCharacter() = 0 {}
 };
 
