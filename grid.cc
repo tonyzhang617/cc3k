@@ -7,15 +7,15 @@
 #include "PCs/shade.h"
 using namespace std;
 
-Grid::Grid(string floorFile): floor{vector<vector<char>>(25)} {
+Grid::Grid(string floorFile): floor{vector<string>(25)} {
   // read in floor hahaha...
   ifstream ifs{floorFile};
   string line;
 
-  char c;
-  for (int i = 0; i < 25; ++i) {
-    for (int j = 0; j < 79 && ifs.get(c); ++j) {
-      floor[i].push_back(c);
+  if (ifs.good()) {
+    char c;
+    for (int i = 0; i < 25 && getline(ifs, line); ++i) {
+      floor[i] = string(line);
     }
   }
 
@@ -31,12 +31,28 @@ CellType Grid::getCellTypeAt(const int x, const int y) const {
 }
 
 void Grid::print() {
-  for (auto it = floor.begin(); it != floor.end(); ++it) {
-    for (int i = 0; i < it->size(); ++i) {
-      cout << it->at(i);
+  char flr[25][79];
+  for (int i = 0; i < floor.size(); ++i) {
+    fill(flr[i], flr[i] + 79, ' ');
+    for (int j = 0; j < floor[i].size(); ++j) {
+      flr[i][j] = floor[i][j];
+    }
+  }
+  auto pos = player->getPosition();
+  flr[pos.second][pos.first] = player->getChar();
+  for (int i = 0; i < enemies.size(); ++i) {
+    pos = enemies[i]->getPosition();
+    flr[pos.second][pos.first] = enemies[i]->getChar();
+  }
+  // TODO: add in items and stair
+
+  for (int i = 0; i < 25; ++i) {
+    for (int j = 0; j < 79; ++j) {
+      cout << flr[i][j];
     }
     cout << endl;
   }
+
   cout << caption << endl << endl;
   caption = "";
 }

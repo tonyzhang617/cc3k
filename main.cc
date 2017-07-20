@@ -13,7 +13,7 @@ int main() {
     if (cmd == "no" || cmd == "so" || cmd == "ea" || cmd == "we" ||
         cmd == "ne" || cmd == "nw" || cmd == "se" || cmd == "sw") {
       Direction dir = getDirFromString(cmd);
-      g.playerAttack(dir);
+      g.playerMove(dir);
     } else if (cmd == "u") {
       cin >> cmd;
       Direction dir = getDirFromString(cmd);

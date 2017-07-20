@@ -12,7 +12,7 @@ class Grid {
   std::vector<EnemyCharacter*> enemies;
   // TODO: add the item vector!!
   PlayerCharacter *player;
-  std::vector<std::vector<char>> floor;
+  std::vector<std::string> floor;
   std::string caption;
 public:
   Grid(std::string floorFile);
