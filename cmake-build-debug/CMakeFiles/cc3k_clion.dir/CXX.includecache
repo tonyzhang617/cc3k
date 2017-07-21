@@ -47,6 +47,8 @@ enemy_character.h
 /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.h
 ../character.h
 /home/tony/Projects/github/cc3k_v2/character.h
+string
+-
 
 /home/tony/Projects/github/cc3k_v2/NPCs/halfling.cc
 halfling.h
@@ -129,6 +131,8 @@ player_character.h
 /home/tony/Projects/github/cc3k_v2/grid.h
 
 /home/tony/Projects/github/cc3k_v2/PCs/player_character.h
+string
+-
 ../character.h
 /home/tony/Projects/github/cc3k_v2/character.h
 ../NPCs/enemy_character.h
@@ -153,6 +157,8 @@ player_character.h
 /home/tony/Projects/github/cc3k_v2/PCs/vampire.cc
 vampire.h
 /home/tony/Projects/github/cc3k_v2/PCs/vampire.h
+../grid.h
+/home/tony/Projects/github/cc3k_v2/grid.h
 
 /home/tony/Projects/github/cc3k_v2/PCs/vampire.h
 player_character.h

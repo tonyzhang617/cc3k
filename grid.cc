@@ -66,13 +66,28 @@ void Grid::print() {
 }
 
 void Grid::playerAttack(Direction dir) {
+  bool isSuccessful = false;
   pair<int, int> pos = player->getPosition();
   findDestination(pos.first, pos.second, dir);
   for (int i = 0; i < enemies.size(); ++i) {
     if (enemies[i]->getPosition() == pos) {
-      player->attack(enemies[i]);
+      isSuccessful = true;
+      if (player->attack(enemies[i])) {
+        addAction("You attacked a " + enemies[i]->getRace() + ". ");
+        if (enemies[i]->isDead()) {
+          addAction("You slayed a " + enemies[i]->getRace() + ". ");
+          // TODO: remove dead body
+        } else {
+          addAction("Enemy has HP " + to_string(enemies[i]->getHp()) + ". ");
+        }
+      } else {
+        addAction("Your attack missed. ");
+      }
       break;
     }
+  }
+  if (!isSuccessful) {
+    addAction("Your attack was not aiming at an enemy. ");
   }
   player->notifyObservers();
 }

@@ -11,8 +11,8 @@ class Merchant : public EnemyCharacter {
 public:
   Merchant(int x, int y, Grid *grid);
   void slainBy(Character *c) override;
-  void attackedBy(Character *c) override;
-  void attackedBy(Vampire *c) override;
+  bool attackedBy(Character *c) override;
+  bool attackedBy(Vampire *c) override;
   char getChar() override;
   void notify(Subject *whoNotified) override;
 };

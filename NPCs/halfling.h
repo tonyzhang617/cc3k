@@ -7,8 +7,8 @@
 class Halfling : public EnemyCharacter {
 public:
   Halfling(int x, int y, Grid *grid);
-  void attackedBy(Character *c) override;
-  void attackedBy(Vampire *c) override;
+  bool attackedBy(Character *c) override;
+  bool attackedBy(Vampire *c) override;
   char getChar() override;
 };
 

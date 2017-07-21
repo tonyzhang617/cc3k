@@ -8,12 +8,14 @@ Orcs::Orcs(int x, int y, Grid *grid): EnemyCharacter(x, y, grid) {
   def = 25;
 }
 
-void Orcs::attack(Character *c) {
+bool Orcs::attack(Character *c) {
   bool success = rand() % 2;
   if (success) {
     c->attackedBy(this);
+    return true;
   } else {
-    grid->addAction("Orcs attacked you but missed. ");
+    // grid->addAction("Orcs attacked you but missed. ");
+    return false;
   }
 }
 

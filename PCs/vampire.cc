@@ -9,8 +9,9 @@ void Vampire::modifyHP(int n) {
   hp = max(0, hp);
 }
 
-void Vampire::attack(Character *c) {
+bool Vampire::attack(Character *c) {
   c->attackedBy(this);
-  string s = "Enemy has " + to_string(c->getHp()) + " HP left. ";
-  grid->addAction(s);
+//  string s = "Enemy has " + to_string(c->getHp()) + " HP left. ";
+//  grid->addAction(s);
+  return true;
 }

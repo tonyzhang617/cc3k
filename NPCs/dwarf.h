@@ -6,7 +6,7 @@
 class Dwarf : public EnemyCharacter {
 public:
   Dwarf(int x, int y, Grid *grid);
-  void attackedBy(Vampire *c) override;
+  bool attackedBy(Vampire *c) override;
   char getChar() override;
 };
 

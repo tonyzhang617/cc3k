@@ -10,7 +10,7 @@ Human::Human(int x, int y, Grid *grid): EnemyCharacter(x, y, grid) {
 
 void Human::slainBy(Character *c) {
   c->addGold(legacy);
-  grid->addAction("You slayed Human. ");
+  // grid->addAction("You slayed Human. ");
 }
 
 char Human::getChar() {

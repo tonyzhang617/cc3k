@@ -9,13 +9,15 @@ void Drow::consumePotion(Item *p) {
   // p->consumedBy(this);
 }
 
-void Drow::attackedBy(Elf *c) {
+bool Drow::attackedBy(Elf *c) {
   bool success = rand() % 2;
   if (success) {
     int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
     modifyHP(-damage);
-    grid->addAction("Elf attacked you. ");
+    // grid->addAction("Elf attacked you. ");
+    return true;
   } else {
-    grid->addAction("Elf attacked you but missed. ");
+    // grid->addAction("Elf attacked you but missed. ");
+    return false;
   }
 }

@@ -5,7 +5,7 @@
 class Orcs : public EnemyCharacter {
 public:
   Orcs(int x, int y, Grid *grid);
-  void attack(Character *c) override;
+  bool attack(Character *c) override;
   char getChar() override; 
 };
 
