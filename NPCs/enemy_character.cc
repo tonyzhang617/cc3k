@@ -56,7 +56,7 @@ void EnemyCharacter::notify(Subject *whoNotified) {
     int subx = whoNotified->getPosition().first;
     int suby = whoNotified->getPosition().second;
     if (abs(subx - x) <= 1 && abs(suby - y) <= 1 && !(subx == x && suby == y)) {
-      attack(whoNotified);
+      grid->enemyAttack(this);
     } else {
       makeMove();
     }
