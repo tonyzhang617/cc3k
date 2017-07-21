@@ -5,8 +5,12 @@ CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o
  /home/tony/Projects/github/cc3k_v2/NPCs/dragon.cc
  /home/tony/Projects/github/cc3k_v2/NPCs/dragon.h
  /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.h
+ /home/tony/Projects/github/cc3k_v2/PCs/player_character.h
  /home/tony/Projects/github/cc3k_v2/character.h
  /home/tony/Projects/github/cc3k_v2/enum.h
+ /home/tony/Projects/github/cc3k_v2/grid.h
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.h
 CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.o
  /home/tony/Projects/github/cc3k_v2/NPCs/dwarf.cc
  /home/tony/Projects/github/cc3k_v2/NPCs/dwarf.h
@@ -16,12 +20,16 @@ CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.o
  /home/tony/Projects/github/cc3k_v2/character.h
  /home/tony/Projects/github/cc3k_v2/enum.h
  /home/tony/Projects/github/cc3k_v2/grid.h
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.h
 CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.o
  /home/tony/Projects/github/cc3k_v2/NPCs/elf.cc
  /home/tony/Projects/github/cc3k_v2/NPCs/elf.h
  /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.h
  /home/tony/Projects/github/cc3k_v2/character.h
  /home/tony/Projects/github/cc3k_v2/enum.h
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.h
 CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.o
  /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.cc
  /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.h
@@ -29,6 +37,8 @@ CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.o
  /home/tony/Projects/github/cc3k_v2/character.h
  /home/tony/Projects/github/cc3k_v2/enum.h
  /home/tony/Projects/github/cc3k_v2/grid.h
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.h
 CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o
  /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.h
  /home/tony/Projects/github/cc3k_v2/NPCs/halfling.cc
@@ -38,6 +48,8 @@ CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o
  /home/tony/Projects/github/cc3k_v2/character.h
  /home/tony/Projects/github/cc3k_v2/enum.h
  /home/tony/Projects/github/cc3k_v2/grid.h
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.h
 CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o
  /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.h
  /home/tony/Projects/github/cc3k_v2/NPCs/human.cc
@@ -46,6 +58,8 @@ CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o
  /home/tony/Projects/github/cc3k_v2/character.h
  /home/tony/Projects/github/cc3k_v2/enum.h
  /home/tony/Projects/github/cc3k_v2/grid.h
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.h
 CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o
  /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.h
  /home/tony/Projects/github/cc3k_v2/NPCs/merchant.cc
@@ -55,6 +69,8 @@ CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o
  /home/tony/Projects/github/cc3k_v2/character.h
  /home/tony/Projects/github/cc3k_v2/enum.h
  /home/tony/Projects/github/cc3k_v2/grid.h
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.h
 CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o
  /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.h
  /home/tony/Projects/github/cc3k_v2/NPCs/orcs.cc
@@ -63,6 +79,8 @@ CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o
  /home/tony/Projects/github/cc3k_v2/character.h
  /home/tony/Projects/github/cc3k_v2/enum.h
  /home/tony/Projects/github/cc3k_v2/grid.h
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.h
 CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o
  /home/tony/Projects/github/cc3k_v2/NPCs/elf.h
  /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.h
@@ -72,6 +90,8 @@ CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o
  /home/tony/Projects/github/cc3k_v2/character.h
  /home/tony/Projects/github/cc3k_v2/enum.h
  /home/tony/Projects/github/cc3k_v2/grid.h
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.h
 CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o
  /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.h
  /home/tony/Projects/github/cc3k_v2/NPCs/orcs.h
@@ -81,6 +101,8 @@ CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o
  /home/tony/Projects/github/cc3k_v2/character.h
  /home/tony/Projects/github/cc3k_v2/enum.h
  /home/tony/Projects/github/cc3k_v2/grid.h
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.h
 CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o
  /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.h
  /home/tony/Projects/github/cc3k_v2/PCs/player_character.cc
@@ -88,6 +110,8 @@ CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o
  /home/tony/Projects/github/cc3k_v2/character.h
  /home/tony/Projects/github/cc3k_v2/enum.h
  /home/tony/Projects/github/cc3k_v2/grid.h
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.h
 CMakeFiles/cc3k_clion.dir/PCs/shade.cc.o
  /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.h
  /home/tony/Projects/github/cc3k_v2/PCs/player_character.h
@@ -95,6 +119,8 @@ CMakeFiles/cc3k_clion.dir/PCs/shade.cc.o
  /home/tony/Projects/github/cc3k_v2/PCs/shade.h
  /home/tony/Projects/github/cc3k_v2/character.h
  /home/tony/Projects/github/cc3k_v2/enum.h
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.h
 CMakeFiles/cc3k_clion.dir/PCs/troll.cc.o
  /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.h
  /home/tony/Projects/github/cc3k_v2/PCs/player_character.h
@@ -102,6 +128,8 @@ CMakeFiles/cc3k_clion.dir/PCs/troll.cc.o
  /home/tony/Projects/github/cc3k_v2/PCs/troll.h
  /home/tony/Projects/github/cc3k_v2/character.h
  /home/tony/Projects/github/cc3k_v2/enum.h
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.h
 CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o
  /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.h
  /home/tony/Projects/github/cc3k_v2/PCs/player_character.h
@@ -109,6 +137,8 @@ CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o
  /home/tony/Projects/github/cc3k_v2/PCs/vampire.h
  /home/tony/Projects/github/cc3k_v2/character.h
  /home/tony/Projects/github/cc3k_v2/enum.h
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.h
 CMakeFiles/cc3k_clion.dir/character.cc.o
  /home/tony/Projects/github/cc3k_v2/NPCs/dwarf.h
  /home/tony/Projects/github/cc3k_v2/NPCs/elf.h
@@ -122,6 +152,8 @@ CMakeFiles/cc3k_clion.dir/character.cc.o
  /home/tony/Projects/github/cc3k_v2/character.h
  /home/tony/Projects/github/cc3k_v2/enum.h
  /home/tony/Projects/github/cc3k_v2/grid.h
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.h
 CMakeFiles/cc3k_clion.dir/enum.cc.o
  /home/tony/Projects/github/cc3k_v2/enum.cc
  /home/tony/Projects/github/cc3k_v2/enum.h
@@ -136,6 +168,11 @@ CMakeFiles/cc3k_clion.dir/grid.cc.o
  /home/tony/Projects/github/cc3k_v2/enum.h
  /home/tony/Projects/github/cc3k_v2/grid.cc
  /home/tony/Projects/github/cc3k_v2/grid.h
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.h
+CMakeFiles/cc3k_clion.dir/item.cc.o
+ /home/tony/Projects/github/cc3k_v2/item.cc
+ /home/tony/Projects/github/cc3k_v2/item.h
 CMakeFiles/cc3k_clion.dir/main.cc.o
  /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.h
  /home/tony/Projects/github/cc3k_v2/PCs/player_character.h
@@ -143,3 +180,12 @@ CMakeFiles/cc3k_clion.dir/main.cc.o
  /home/tony/Projects/github/cc3k_v2/enum.h
  /home/tony/Projects/github/cc3k_v2/grid.h
  /home/tony/Projects/github/cc3k_v2/main.cc
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.h
+CMakeFiles/cc3k_clion.dir/observer.cc.o
+ /home/tony/Projects/github/cc3k_v2/observer.cc
+ /home/tony/Projects/github/cc3k_v2/observer.h
+CMakeFiles/cc3k_clion.dir/subject.cc.o
+ /home/tony/Projects/github/cc3k_v2/observer.h
+ /home/tony/Projects/github/cc3k_v2/subject.cc
+ /home/tony/Projects/github/cc3k_v2/subject.h

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/cc3k_clion.dir/item.cc.o"
+  "CMakeFiles/cc3k_clion.dir/subject.cc.o"
   "CMakeFiles/cc3k_clion.dir/character.cc.o"
   "CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o"
   "CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o"
@@ -17,6 +19,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cc3k_clion.dir/PCs/troll.cc.o"
   "CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o"
   "CMakeFiles/cc3k_clion.dir/enum.cc.o"
+  "CMakeFiles/cc3k_clion.dir/observer.cc.o"
   "cc3k_clion.pdb"
   "cc3k_clion"
 )

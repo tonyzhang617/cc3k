@@ -2,10 +2,10 @@
 #define PLAYERCHARACTER_H
 #include "../character.h"
 #include "../NPCs/enemy_character.h"
-#include "subject.h"
+// #include "subject.h"
 
 class Item;
-class PlayerCharacter : public Character, public Subject {
+class PlayerCharacter : public Character {
   virtual void trollMove(); // for trolls' superpower, called in makeMove
 protected:
   const int defaultHP, defaultAtk, defaultDef;

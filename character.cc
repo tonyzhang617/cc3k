@@ -79,3 +79,16 @@ void Character::modifyHP(int n) {
   hp += n;
   hp = max(0, hp);
 }
+
+void Character::notify(Subject *whoNotified) {
+  cout << "Character notify called. " << endl;
+  if (!isDead()) {
+    int subx = whoNotified->getPosition().first;
+    int suby = whoNotified->getPosition().second;
+    if (abs(subx - x) <= 1 && abs(suby - y) <= 1 && !(subx == x && suby == y)) {
+      grid->enemyAttack(this);
+    } else {
+      makeMove(RANDOM);
+    }
+  }
+}

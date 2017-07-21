@@ -4,6 +4,10 @@ project(cc3k_clion)
 set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCE_FILES
+        item.cc
+        item.h
+        subject.cc
+        subject.h
         character.cc
         character.h
         NPCs/dragon.cc
@@ -38,6 +42,6 @@ set(SOURCE_FILES
         PCs/troll.cc
         PCs/troll.h
         PCs/vampire.cc
-        PCs/vampire.h enum.cc)
+        PCs/vampire.h enum.cc observer.cc)
 
 add_executable(cc3k_clion ${SOURCE_FILES})

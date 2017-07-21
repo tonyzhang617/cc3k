@@ -1,0 +1,14 @@
+#include "restore_health.h"
+#include "../PCs/player_character.h"
+#include "../PCs/drow.h"
+using namespace std;
+
+RestoreHealth::RestoreHealth(int x, int y): Potion{x, y} {}
+
+void RestoreHealth::consumedBy(PlayerCharacter * pc) {
+  pc->modifyHP(10);
+}
+
+void RestoreHealth::consumedBy(Drow *drow) {
+  drow->modifyHP(10*1.5);
+}

@@ -5,6 +5,8 @@
 #include "NPCs/human.h"
 #include "NPCs/dwarf.h"
 #include "PCs/shade.h"
+#include "subject.h"
+#include "observer.h"
 using namespace std;
 
 Grid::Grid(string floorFile): floor{vector<string>(25)} {
@@ -23,6 +25,10 @@ Grid::Grid(string floorFile): floor{vector<string>(25)} {
   player = new Shade(5, 5, this);
   enemies.push_back(new Human(5, 6, this));
   enemies.push_back(new Dwarf(6, 5, this));
+
+  for (auto e : enemies) {
+    player->attach(e);
+  }
 }
 
 CellType Grid::getCellTypeAt(const int x, const int y) const {
@@ -68,22 +74,19 @@ void Grid::playerAttack(Direction dir) {
       break;
     }
   }
-//  for (auto it = enemies.begin(); it != enemies.end(); ++it) {
-//    if (it->getPosition() == pos) {
-//      player->attack(it);
-//      break;
-//    }
-//  }
+  player->notifyObservers();
 }
 
 void Grid::playerConsumePotion(Direction dir) {
   pair<int, int> pos = player->getPosition();
   findDestination(pos.first, pos.second, dir);
+  player->notifyObservers();
   // TODO
 }
 
 void Grid::playerMove(Direction dir) {
   player->makeMove(dir);
+  player->notifyObservers();
   // TODO: check if the player stepped on gold
 }
 
@@ -123,4 +126,9 @@ void Grid::findDestination(int &destx, int &desty, Direction dir) const {
       destx--;
       break;
   }
+}
+
+void Grid::enemyAttack(Character *enemy) {
+  enemy->attack(player);
+  cout << "enemy attacked player" << endl;
 }

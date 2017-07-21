@@ -21,7 +21,10 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/tony/Projects/github/cc3k_v2/character.cc" "/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles/cc3k_clion.dir/character.cc.o"
   "/home/tony/Projects/github/cc3k_v2/enum.cc" "/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles/cc3k_clion.dir/enum.cc.o"
   "/home/tony/Projects/github/cc3k_v2/grid.cc" "/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles/cc3k_clion.dir/grid.cc.o"
+  "/home/tony/Projects/github/cc3k_v2/item.cc" "/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles/cc3k_clion.dir/item.cc.o"
   "/home/tony/Projects/github/cc3k_v2/main.cc" "/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles/cc3k_clion.dir/main.cc.o"
+  "/home/tony/Projects/github/cc3k_v2/observer.cc" "/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles/cc3k_clion.dir/observer.cc.o"
+  "/home/tony/Projects/github/cc3k_v2/subject.cc" "/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles/cc3k_clion.dir/subject.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -21,6 +21,9 @@ public:
   void playerAttack(Direction dir);
   void playerConsumePotion(Direction dir);
   void playerMove(Direction dir);
+
+  void enemyAttack(Character *enemy);
+
   void addAction(std::string action);
   // void playerConsumeGold();
   void findDestination(int &destx, int &desty, Direction dir) const;

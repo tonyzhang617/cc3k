@@ -1,6 +1,6 @@
 #include "enemy_character.h"
 #include "../grid.h"
-#include "../PCs/subject.h"
+#include "../subject.h"
 using namespace std;
 
 EnemyCharacter::EnemyCharacter(int x, int y, Grid *g): Character(x, y, g) {}
@@ -28,7 +28,7 @@ void EnemyCharacter::attack(Character *c) {
   if (success) {
     c->attackedBy(this);
   } else {
-    grid->addAction("An enemy attacked you but missed. ")
+    grid->addAction("An enemy attacked you but missed. ");
   }
 }
 
@@ -49,16 +49,4 @@ void EnemyCharacter::modifyHP(int n) {
 
 char EnemyCharacter::getChar() {
   return '&';
-}
-
-void EnemyCharacter::notify(Subject *whoNotified) {
-  if (!isDead()) {
-    int subx = whoNotified->getPosition().first;
-    int suby = whoNotified->getPosition().second;
-    if (abs(subx - x) <= 1 && abs(suby - y) <= 1 && !(subx == x && suby == y)) {
-      grid->enemyAttack(this);
-    } else {
-      makeMove();
-    }
-  }
 }

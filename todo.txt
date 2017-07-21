@@ -1,8 +1,7 @@
 TODO:
--Subject subscription list syncs grid enemy vector
--which class inherits from observer and which from subject?
--call fn on Subject instead of PC would cause parameter type error
--how to notify dragon? Option 1: add dragonhoard(gold) to observer lst  Option 2: dragon keeps a ptr to its gold
--implemented temporary merchant notify
-
--check isDead() in notifyObservers
+-Subject subscription list syncs grid enemy vector after factory is done creating
+-notify dragon: dragon keeps a ptr to its gold
+-item has a pointer to grid to display message?
+-initialize dragon ptr in gold:
+--spawn dragon first and random a position near it and call dragonhoard ctor?
+-drow magnifies potion effect. 5*1.5 is not a int.

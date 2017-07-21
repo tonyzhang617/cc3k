@@ -1,9 +1,11 @@
 #ifndef SUBJECT_H
 #define SUBJECT_H
 
+#include <vector>
+
 class Observer;
 class Subject {
-  vector<Observer*> observers;
+  std::vector<Observer*> observers;
 public:
   void notifyObservers();
   void attach(Observer *o);

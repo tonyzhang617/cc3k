@@ -189,7 +189,25 @@
 		<Unit filename="/home/tony/Projects/github/cc3k_v2/grid.h">
 			<Option target="cc3k_clion"/>
 		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_v2/item.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_v2/item.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
 		<Unit filename="/home/tony/Projects/github/cc3k_v2/main.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_v2/observer.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_v2/observer.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_v2/subject.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_v2/subject.h">
 			<Option target="cc3k_clion"/>
 		</Unit>
 		<Unit filename="/home/tony/Projects/github/cc3k_v2/CMakeLists.txt">

@@ -582,6 +582,33 @@ grid.cc.s:
 	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/grid.cc.s
 .PHONY : grid.cc.s
 
+item.o: item.cc.o
+
+.PHONY : item.o
+
+# target to build an object file
+item.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/item.cc.o
+.PHONY : item.cc.o
+
+item.i: item.cc.i
+
+.PHONY : item.i
+
+# target to preprocess a source file
+item.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/item.cc.i
+.PHONY : item.cc.i
+
+item.s: item.cc.s
+
+.PHONY : item.s
+
+# target to generate assembly for a file
+item.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/item.cc.s
+.PHONY : item.cc.s
+
 main.o: main.cc.o
 
 .PHONY : main.o
@@ -608,6 +635,60 @@ main.s: main.cc.s
 main.cc.s:
 	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/main.cc.s
 .PHONY : main.cc.s
+
+observer.o: observer.cc.o
+
+.PHONY : observer.o
+
+# target to build an object file
+observer.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/observer.cc.o
+.PHONY : observer.cc.o
+
+observer.i: observer.cc.i
+
+.PHONY : observer.i
+
+# target to preprocess a source file
+observer.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/observer.cc.i
+.PHONY : observer.cc.i
+
+observer.s: observer.cc.s
+
+.PHONY : observer.s
+
+# target to generate assembly for a file
+observer.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/observer.cc.s
+.PHONY : observer.cc.s
+
+subject.o: subject.cc.o
+
+.PHONY : subject.o
+
+# target to build an object file
+subject.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/subject.cc.o
+.PHONY : subject.cc.o
+
+subject.i: subject.cc.i
+
+.PHONY : subject.i
+
+# target to preprocess a source file
+subject.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/subject.cc.i
+.PHONY : subject.cc.i
+
+subject.s: subject.cc.s
+
+.PHONY : subject.s
+
+# target to generate assembly for a file
+subject.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/subject.cc.s
+.PHONY : subject.cc.s
 
 # Help Target
 help:
@@ -669,9 +750,18 @@ help:
 	@echo "... grid.o"
 	@echo "... grid.i"
 	@echo "... grid.s"
+	@echo "... item.o"
+	@echo "... item.i"
+	@echo "... item.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... observer.o"
+	@echo "... observer.i"
+	@echo "... observer.s"
+	@echo "... subject.o"
+	@echo "... subject.i"
+	@echo "... subject.s"
 .PHONY : help
 
 

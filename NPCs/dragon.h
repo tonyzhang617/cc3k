@@ -1,6 +1,7 @@
 #ifndef DRAGON_H
 #define DRAGON_H
 #include "enemy_character.h"
+#include "../grid.h"
 
 class Dragon : public EnemyCharacter {
 public:
