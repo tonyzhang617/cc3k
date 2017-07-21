@@ -1,3 +1,0 @@
-/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles/edit_cache.dir
-/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles/cc3k_clion.dir
