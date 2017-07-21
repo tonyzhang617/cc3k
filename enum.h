@@ -11,5 +11,6 @@ enum PotionType {BOOST_ATTACK, BOOST_DEFENSE, POISON_HEALTH, RESTORE_HEALTH, WOU
 enum GoldType {DRAGON_HOARD, MERCHANT_HOARD, NORMAL_HOARD, SMALL_HOARD};
 
 Direction getDirFromString(std::string s);
+EntityType getEntityFromString(std::string s);
 
 #endif

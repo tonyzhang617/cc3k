@@ -11,7 +11,7 @@ protected:
   Grid *grid;
   Factory(Grid *grid);
 public:
-  void createEntity(EntityType type);
+  void createEntity(EntityType type = EntityType::RANDOM);
 };
 
 #endif

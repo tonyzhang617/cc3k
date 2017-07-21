@@ -19,6 +19,7 @@ class Grid {
   std::vector<std::string> floor;
   std::string caption;
   std::pair<int, int> stair;
+  int level = 1;
 public:
   const int WIDTH = 79, HEIGHT = 25;
   Grid(std::string floorFile);
@@ -38,6 +39,8 @@ public:
   void addNewPotion(Potion *p);
   void addNewGold(Gold *g);
   void setStair(int x, int y);
+  void initializePlayerCharacter(std::string race = "");
+  void initializeFloor();
 };
 
 #endif

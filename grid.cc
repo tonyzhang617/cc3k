@@ -1,30 +1,31 @@
 #include <fstream>
 #include <iostream>
-#include <string>
 #include "grid.h"
 #include "NPCs/human.h"
 #include "NPCs/dwarf.h"
 #include "PCs/shade.h"
-#include "subject.h"
-#include "observer.h"
+#include "factory/pc_factory.h"
+#include "factory/enemy_factory.h"
+#include "factory/gold_factory.h"
+#include "factory/potion_factory.h"
+#include "factory/stair_factory.h"
 using namespace std;
 
-Grid::Grid(string floorFile): floor{vector<string>(25)} {
+Grid::Grid(string floorFile): floor{vector<string>(HEIGHT)} {
   // read in floor file
   ifstream ifs{floorFile};
   string line;
 
   if (ifs.good()) {
     char c;
-    for (int i = 0; i < 25 && getline(ifs, line); ++i) {
+    for (int i = 0; i < HEIGHT && getline(ifs, line); ++i) {
       floor[i] = string(line);
     }
   }
 
   // initializing all fields
-  //player = new Shade(5, 5, this);
-  enemies.push_back(new Human(5, 6, this));
-  enemies.push_back(new Dwarf(6, 5, this));
+//  enemies.push_back(new Human(5, 6, this));
+//  enemies.push_back(new Dwarf(6, 5, this));
 
   for (auto e : enemies) {
     player->attach(e);
@@ -37,9 +38,9 @@ CellType Grid::getCellTypeAt(const int x, const int y) const {
 }
 
 void Grid::print() {
-  char flr[25][79];
+  char flr[HEIGHT][WIDTH];
   for (int i = 0; i < floor.size(); ++i) {
-    fill(flr[i], flr[i] + 79, ' ');
+    fill(flr[i], flr[i] + WIDTH, ' ');
     for (int j = 0; j < floor[i].size(); ++j) {
       flr[i][j] = floor[i][j];
     }
@@ -54,8 +55,8 @@ void Grid::print() {
   }
   // TODO: add in items and stair
 
-  for (int i = 0; i < 25; ++i) {
-    for (int j = 0; j < 79; ++j) {
+  for (int i = 0; i < HEIGHT; ++i) {
+    for (int j = 0; j < WIDTH; ++j) {
       cout << flr[i][j];
     }
     cout << endl;
@@ -167,4 +168,39 @@ void Grid::addNewGold(Gold *g) {
 
 void Grid::setStair(int x, int y) {
   stair = make_pair(x, y);
+}
+
+void Grid::initializePlayerCharacter(string race) {
+  PCFactory makePC{this};
+  makePC.createEntity(getEntityFromString(race));
+}
+
+void Grid::initializeFloor() {
+  if (level != 1) {
+    //TODO
+    //delete old info
+  }
+
+  //TODO
+  //reset player and spawn
+
+  StairFactory makeStair{this};
+  makeStair.createEntity();
+
+  PotionFactory makePotion{this};
+  for (int i = 0; i < 10; i++) {
+    makePotion.createEntity();
+  }
+
+  GoldFactory makeGold{this};
+  for (int i = 0; i < 10; i++) {
+    makeGold.createEntity();
+  }
+
+  EnemyFactory makeEnemy{this};
+  for (int i = 0; i < 20; i++) {
+    makeEnemy.createEntity();
+  }
+
+  //TODO
 }

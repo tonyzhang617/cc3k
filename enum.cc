@@ -25,3 +25,20 @@ Direction getDirFromString(std::string s) {
 
   return Direction::RANDOM;
 }
+
+
+EntityType getEntityFromString(std::string s) {
+  if (s == "drow") {
+    return EntityType::DROW;
+  } else if (s == "goblin") {
+    return EntityType::GOBLIN;
+  } else if (s == "shade") {
+    return EntityType::SHADE;
+  } else if (s == "troll") {
+    return EntityType::TROLL;
+  } else if (s == "vampire") {
+    return EntityType::VAMPIRE;
+  }
+
+  return EntityType::SHADE;
+}
