@@ -13,7 +13,7 @@ Merchant::Merchant(int x, int y, Grid *grid): EnemyCharacter(x, y, grid) {
 void Merchant::slainBy(Character *c) {
   c->addGold(legacy);
   isHostile = true;
-  grid->addAction("You slayed Merchant. ")
+  grid->addAction("You slayed Merchant. ");
 }
 
 void Merchant::attackedBy(Character *c) {
@@ -39,4 +39,16 @@ void Merchant::attackedBy(Vampire *c) {
 
 char Merchant::getChar() {
   return 'M';
+}
+
+void Merchant::notify(Subject *whoNotified) {
+  if (!isDead()) {
+    int subx = whoNotified->getPosition().first;
+    int suby = whoNotified->getPosition().second;
+    if (abs(subx - x) <= 1 && abs(suby - y) <= 1 && !(subx == x && suby == y) && isHostile) {
+      attack(whoNotified);
+    } else {
+      makeMove();
+    }
+  }
 }

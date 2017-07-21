@@ -18,6 +18,6 @@ void Dwarf::attackedBy(Vampire *c) {
   }
 }
 
-void Dwarf::getChar() {
+char Dwarf::getChar() {
   return 'W';
 }

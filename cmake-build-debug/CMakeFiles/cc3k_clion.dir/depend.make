@@ -14,6 +14,7 @@ CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.o: ../PCs/player_character.h
 CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.o: ../PCs/vampire.h
 CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.o: ../character.h
 CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.o: ../enum.h
+CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.o: ../grid.h
 
 CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.o: ../NPCs/elf.cc
 CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.o: ../NPCs/elf.h
@@ -40,8 +41,10 @@ CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o: ../grid.h
 CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o: ../NPCs/enemy_character.h
 CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o: ../NPCs/human.cc
 CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o: ../NPCs/human.h
+CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o: ../PCs/player_character.h
 CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o: ../character.h
 CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o: ../enum.h
+CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o: ../grid.h
 
 CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o: ../NPCs/enemy_character.h
 CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o: ../NPCs/merchant.cc
@@ -76,6 +79,7 @@ CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o: ../PCs/goblin.h
 CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o: ../PCs/player_character.h
 CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o: ../character.h
 CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o: ../enum.h
+CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o: ../grid.h
 
 CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o: ../NPCs/enemy_character.h
 CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o: ../PCs/player_character.cc

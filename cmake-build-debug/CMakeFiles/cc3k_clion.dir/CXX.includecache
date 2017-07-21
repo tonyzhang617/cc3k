@@ -17,6 +17,8 @@ enemy_character.h
 /home/tony/Projects/github/cc3k_v2/NPCs/dwarf.cc
 dwarf.h
 /home/tony/Projects/github/cc3k_v2/NPCs/dwarf.h
+../grid.h
+/home/tony/Projects/github/cc3k_v2/grid.h
 
 /home/tony/Projects/github/cc3k_v2/NPCs/dwarf.h
 enemy_character.h
@@ -59,6 +61,8 @@ enemy_character.h
 /home/tony/Projects/github/cc3k_v2/NPCs/human.cc
 human.h
 /home/tony/Projects/github/cc3k_v2/NPCs/human.h
+../grid.h
+/home/tony/Projects/github/cc3k_v2/grid.h
 
 /home/tony/Projects/github/cc3k_v2/NPCs/human.h
 enemy_character.h
@@ -67,6 +71,8 @@ enemy_character.h
 /home/tony/Projects/github/cc3k_v2/NPCs/merchant.cc
 merchant.h
 /home/tony/Projects/github/cc3k_v2/NPCs/merchant.h
+../grid.h
+/home/tony/Projects/github/cc3k_v2/grid.h
 
 /home/tony/Projects/github/cc3k_v2/NPCs/merchant.h
 enemy_character.h
@@ -103,6 +109,8 @@ player_character.h
 /home/tony/Projects/github/cc3k_v2/PCs/goblin.cc
 goblin.h
 /home/tony/Projects/github/cc3k_v2/PCs/goblin.h
+../grid.h
+/home/tony/Projects/github/cc3k_v2/grid.h
 
 /home/tony/Projects/github/cc3k_v2/PCs/goblin.h
 player_character.h

@@ -1,4 +1,5 @@
 #include "subject.h"
+#include "../NPCs/observer.h"
 using namespace std;
 
 void Subject::notifyObservers() {

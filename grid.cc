@@ -41,8 +41,10 @@ void Grid::print() {
   auto pos = player->getPosition();
   flr[pos.second][pos.first] = player->getChar();
   for (int i = 0; i < enemies.size(); ++i) {
-    pos = enemies[i]->getPosition();
-    flr[pos.second][pos.first] = enemies[i]->getChar();
+    if (!enemies[i]->isDead()) {
+      pos = enemies[i]->getPosition();
+      flr[pos.second][pos.first] = enemies[i]->getChar();
+    }
   }
   // TODO: add in items and stair
 

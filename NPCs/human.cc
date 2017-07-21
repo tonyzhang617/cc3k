@@ -13,6 +13,6 @@ void Human::slainBy(Character *c) {
   grid->addAction("You slayed Human. ");
 }
 
-void Human::getChar() {
+char Human::getChar() {
   return 'H';
 }

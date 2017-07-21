@@ -14,6 +14,7 @@ public:
   void attackedBy(Character *c) override;
   void attackedBy(Vampire *c) override;
   char getChar() override;
+  void notify(Subject *whoNotified) override;
 };
 
 #endif
