@@ -3,7 +3,7 @@
 #include "../PCs/drow.h"
 using namespace std;
 
-PoisonHealth::PoisonHealth(int x, int y): Potion{x, y} {}
+PoisonHealth::PoisonHealth(int x, int y, Grid *grid): Potion{x, y, grid} {}
 
 void PoisonHealth::consumedBy(PlayerCharacter * pc) {
   pc->modifyHP(-10);

@@ -4,7 +4,7 @@
 
 class RestoreHealth: public Potion {
 public:
-  RestoreHealth::RestoreHealth(int x, int y);
+  RestoreHealth::RestoreHealth(int x, int y, Grid *grid);
   void consumedBy(PlayerCharacter * pc) override;
   void consumedBy(Drow * drow) override;
 };

@@ -3,7 +3,7 @@
 #include "../PCs/drow.h"
 using namespace std;
 
-WoundAttack::WoundAttack(int x, int y): Potion{x, y} {}
+WoundAttack::WoundAttack(int x, int y, Grid *grid): Potion{x, y, grid} {}
 
 void WoundAttack::consumedBy(PlayerCharacter * pc) {
   pc->modifyAtk(-5);

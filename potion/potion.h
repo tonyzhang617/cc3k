@@ -4,7 +4,7 @@
 
 class Potion: public Item {
 public:
-  Potion(int x, int y);
+  Potion(int x, int y, Grid *grid);
   char getChar() override;
 };
 

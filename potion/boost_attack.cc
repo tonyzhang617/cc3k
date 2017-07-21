@@ -3,7 +3,7 @@
 #include "../PCs/drow.h"
 using namespace std;
 
-BoostAttack::BoostAttack(int x, int y): Potion{x, y} {}
+BoostAttack::BoostAttack(int x, int y, Grid *grid): Potion{x, y, grid} {}
 
 void BoostAttack::consumedBy(PlayerCharacter * pc) {
   pc->modifyAtk(5);

@@ -3,7 +3,7 @@
 #include "../PCs/drow.h"
 using namespace std;
 
-BoostDefense::BoostDefense(int x, int y): Potion{x, y} {}
+BoostDefense::BoostDefense(int x, int y, Grid *grid): Potion{x, y, grid} {}
 
 void BoostDefense::consumedBy(PlayerCharacter * pc) {
   pc->modifyDef(5);

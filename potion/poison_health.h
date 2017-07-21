@@ -4,7 +4,7 @@
 
 class PoisonHealth: public Potion {
 public:
-  PoisonHealth::PoisonHealth(int x, int y);
+  PoisonHealth::PoisonHealth(int x, int y, Grid *grid);
   void consumedBy(PlayerCharacter * pc) override;
   void consumedBy(Drow * drow) override;
 };

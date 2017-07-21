@@ -4,7 +4,7 @@
 
 class BoostAttack: public Potion {
 public:
-  BoostAttack::BoostAttack(int x, int y);
+  BoostAttack::BoostAttack(int x, int y, Grid *grid);
   void consumedBy(PlayerCharacter * pc) override;
   void consumedBy(Drow * drow) override;
 };

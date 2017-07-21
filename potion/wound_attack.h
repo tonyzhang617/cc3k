@@ -4,7 +4,7 @@
 
 class WoundAttack: public Potion {
 public:
-  WoundAttack::WoundAttack(int x, int y);
+  WoundAttack::WoundAttack(int x, int y, Grid *grid);
   void consumedBy(PlayerCharacter * pc) override;
   void consumedBy(Drow * drow) override;
 };
