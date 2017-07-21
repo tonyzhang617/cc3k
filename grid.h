@@ -9,7 +9,7 @@
 #include "enum.h"
 
 class Grid {
-  std::vector<EnemyCharacter*> enemies;
+  std::vector<EnemyCharacter*> enemies, deadEnemies;
   // TODO: add the item vector!!
   PlayerCharacter *player;
   std::vector<std::string> floor;

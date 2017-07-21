@@ -10,7 +10,7 @@
 using namespace std;
 
 Grid::Grid(string floorFile): floor{vector<string>(25)} {
-  // read in floor hahaha...
+  // read in floor file
   ifstream ifs{floorFile};
   string line;
 
@@ -76,7 +76,9 @@ void Grid::playerAttack(Direction dir) {
         addAction("You attacked a " + enemies[i]->getRace() + ". ");
         if (enemies[i]->isDead()) {
           addAction("You slayed a " + enemies[i]->getRace() + ". ");
-          // TODO: remove dead body
+          // Remove dead body
+          deadEnemies.push_back(enemies[i]);
+          enemies.erase(enemies.begin()+i);
         } else {
           addAction("Enemy has HP " + to_string(enemies[i]->getHp()) + ". ");
         }
@@ -87,7 +89,7 @@ void Grid::playerAttack(Direction dir) {
     }
   }
   if (!isSuccessful) {
-    addAction("Your attack was not aiming at an enemy. ");
+    addAction("Your attack was not aimed at an enemy. ");
   }
   player->notifyObservers();
 }
@@ -145,5 +147,4 @@ void Grid::findDestination(int &destx, int &desty, Direction dir) const {
 
 void Grid::enemyAttack(Character *enemy) {
   enemy->attack(player);
-  cout << "enemy attacked player" << endl;
 }
