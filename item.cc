@@ -1,7 +1,7 @@
 #include "item.h"
 using namespace std;
 
-Item::Item(int x, int y): x{x}, y{y} {}
+Item::Item(int x, int y, Grid *grid): x{x}, y{y}, grid{grid} {}
 
 
 std::pair<int, int> Item::getPosition() {

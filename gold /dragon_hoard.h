@@ -6,7 +6,7 @@ class Dragon;
 class DragonHoard : public Gold{
   Dragon *dragon;
 public:
-  DragonHoard(int x, int y, Dragon *dragon);
+  DragonHoard(int x, int y, Grid *gridDragon *dragon);
   void consumedBy(PlayerCharacter * pc) override;
   void consumedBy(Drow * drow) override;
 };

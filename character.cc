@@ -86,7 +86,6 @@ void Character::modifyHP(int n) {
 }
 
 void Character::notify(Subject *whoNotified) {
-  cout << "Character notify called. " << endl;
   if (!isDead()) {
     int subx = whoNotified->getPosition().first;
     int suby = whoNotified->getPosition().second;

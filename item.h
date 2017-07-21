@@ -2,13 +2,15 @@
 #define ITEM_H
 #include <utility>
 
+class Grid;
 class PlayerCharacter;
 class Drow;
 class Item{
   int x;
   int y;
+  Grid *grid;
 public:
-  Item(int x, int y);
+  Item(int x, int y, Grid *grid);
   std::pair<int, int> getPosition();
   virtual char getChar() = 0;
   virtual void consumedBy(PlayerCharacter * pc) = 0;

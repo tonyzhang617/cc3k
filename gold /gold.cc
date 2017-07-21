@@ -3,7 +3,7 @@
 #include "../../PCs/drow.h"
 using namespace std;
 
-Gold::Gold(int x, int y, int value): Item{x, y}, value{value} {}
+Gold::Gold(int x, int y, Grid * grid, int value): Item{x, y, grid}, value{value} {}
 
 char Gold::getChar() {
   return 'G';

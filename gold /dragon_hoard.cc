@@ -3,7 +3,9 @@
 using namespace std;
 
 DragonHoard::DragonHoard(int x, int y, Dragon *dragon):
-    Gold{x, y, 6}, dragon{dragon} {}
+    Gold{x, y, 6}, dragon{dragon} {
+  dragon->setHoard(this);
+}
 
 void DragonHoard::consumedBy(PlayerCharacter * pc) {
   if (dragon->isDead()) {
