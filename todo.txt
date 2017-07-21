@@ -2,4 +2,3 @@ TODO:
 -Subject subscription list syncs grid enemy vector after factory is done creating
 -item display message?
 -drow magnifies potion effect. 5*1.5 is not a int.
--merchant drops hoard upon death
