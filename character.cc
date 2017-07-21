@@ -29,16 +29,16 @@ bool Character::attackedBy(Character *c) {
 }
 
 bool Character::attackedBy(Elf *c) {
+  bool result = false;
   for (int i = 0; i < 2; i++) {
     bool success = rand() % 2;
     if (success) {
       int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
       modifyHP(-damage);
-      return true;
-    } else {
-      return false;
+      result = true;
     }
   }
+  return result;
 }
 
 bool Character::attackedBy(Vampire *c) {

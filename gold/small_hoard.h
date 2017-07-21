@@ -4,6 +4,6 @@
 
 class SmallHoard : public Gold{
 public:
-  SmallHoard(int x, int y);
+  SmallHoard(int x, int y, Grid *grid);
 };
 #endif

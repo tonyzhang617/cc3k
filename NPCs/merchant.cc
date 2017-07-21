@@ -13,13 +13,11 @@ Merchant::Merchant(int x, int y, Grid *grid): EnemyCharacter(x, y, grid) {
 void Merchant::slainBy(Character *c) {
   c->addGold(legacy);
   isHostile = true;
-  // grid->addAction("You slayed Merchant. ");
 }
 
 bool Merchant::attackedBy(Character *c) {
   int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
   modifyHP(-damage);
-  // grid->addAction("You attacked Merchant. ");
   isHostile = true;
   if (isDead()) {
     c->slay(this);
@@ -30,7 +28,6 @@ bool Merchant::attackedBy(Character *c) {
 bool Merchant::attackedBy(Vampire *c) {
   int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
   modifyHP(-damage);
-  // grid->addAction("You attacked Merchant. ");
   c->modifyHP(5);
   isHostile = true;
   if (isDead()) {

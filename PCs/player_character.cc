@@ -23,13 +23,11 @@ bool PlayerCharacter::attack(Character *c) {
     return true;
   }
   return false;
-//  string s = "Enemy has " + to_string(c->getHp()) + " HP left. ";
-//  grid->addAction(s);
 }
 
 void PlayerCharacter::consumePotion(Item *p) {
-  // p->consumedBy(this);
-  // trollMove();
+  p->consumedBy(this);
+  trollMove();
 }
 
 void PlayerCharacter::resetAtkDef() {

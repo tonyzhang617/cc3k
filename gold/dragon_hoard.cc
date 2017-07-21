@@ -2,8 +2,8 @@
 #include "../NPCs/dragon.h"
 using namespace std;
 
-DragonHoard::DragonHoard(int x, int y, Dragon *dragon):
-    Gold{x, y, 6}, dragon{dragon} {
+DragonHoard::DragonHoard(int x, int y, Grid *grid, Dragon *dragon):
+    Gold{x, y, grid, 6}, dragon{dragon} {
   dragon->setHoard(this);
 }
 

@@ -13,6 +13,5 @@ bool Goblin::attackedBy(Orcs *c) {
   int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
   damage *= 1.5;
   modifyHP(-damage);
-  // grid->addAction("Orcs attacked you. ");
   return true;
 }

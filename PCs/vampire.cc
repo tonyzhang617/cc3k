@@ -10,8 +10,5 @@ void Vampire::modifyHP(int n) {
 }
 
 bool Vampire::attack(Character *c) {
-  c->attackedBy(this);
-//  string s = "Enemy has " + to_string(c->getHp()) + " HP left. ";
-//  grid->addAction(s);
-  return true;
+  return (c->attackedBy(this));
 }

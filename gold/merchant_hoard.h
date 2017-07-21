@@ -4,7 +4,7 @@
 
 class MerchantHoard : public Gold{
 public:
-  MerchantHoard(int x, int y);
+  MerchantHoard(int x, int y, Grid *grid);
 };
 
 #endif

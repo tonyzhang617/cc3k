@@ -29,7 +29,6 @@ bool EnemyCharacter::attack(Character *c) {
     c->attackedBy(this);
     return true;
   } else {
-    // grid->addAction("An enemy attacked you but missed. ");
     return false;
   }
 }
@@ -37,7 +36,6 @@ bool EnemyCharacter::attack(Character *c) {
 bool EnemyCharacter::attackedBy(Character *c) {
   int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
   modifyHP(-damage);
-  // grid->addAction("You attacked an enemy. ");
   if (isDead()) {
     c->slay(this);
   }

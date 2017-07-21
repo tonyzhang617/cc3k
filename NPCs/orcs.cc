@@ -14,7 +14,6 @@ bool Orcs::attack(Character *c) {
     c->attackedBy(this);
     return true;
   } else {
-    // grid->addAction("Orcs attacked you but missed. ");
     return false;
   }
 }

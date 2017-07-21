@@ -13,13 +13,11 @@ bool Halfling::attackedBy(Character *c) {
   if (success) {
     int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
     modifyHP(-damage);
-    // grid->addAction("You attacked Halfling. ");
     if (isDead()) {
       c->slay(this);
     }
     return true;
   } else {
-    // grid->addAction("You attacked Halfling but missed. ");
     return false;
   }
 }
@@ -30,14 +28,12 @@ bool Halfling::attackedBy(Vampire *c) {
     int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
     modifyHP(-damage);
     c->modifyHP(5);
-    // grid->addAction("You attacked Halfling. ");
     if (isDead()) {
       c->slay(this);
     }
     return true;
   } else {
     return false;
-    // grid->addAction("You attacked Halfling but missed. ");
   }
 }
 

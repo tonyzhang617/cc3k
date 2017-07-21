@@ -5,8 +5,7 @@ using namespace std;
 Drow::Drow(int x, int y, Grid *grid): PlayerCharacter(x, y, grid, 150, 25, 15) {}
 
 void Drow::consumePotion(Item *p) {
-  // TODO
-  // p->consumedBy(this);
+  p->consumedBy(this);
 }
 
 bool Drow::attackedBy(Elf *c) {
@@ -14,10 +13,8 @@ bool Drow::attackedBy(Elf *c) {
   if (success) {
     int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
     modifyHP(-damage);
-    // grid->addAction("Elf attacked you. ");
     return true;
   } else {
-    // grid->addAction("Elf attacked you but missed. ");
     return false;
   }
 }
