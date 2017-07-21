@@ -13,11 +13,18 @@ char PlayerCharacter::getChar() {
   return '@';
 }
 
-void PlayerCharacter::attack(Character *c) {
-  c->attackedBy(this);
-  trollMove();
-  string s = "Enemy has " + to_string(c->getHp()) + " HP left. ";
-  grid->addAction(s);
+string PlayerCharacter::getRace() {
+  return "player";
+}
+
+bool PlayerCharacter::attack(Character *c) {
+  if (c->attackedBy(this)) {
+    trollMove();
+    return true;
+  }
+  return false;
+//  string s = "Enemy has " + to_string(c->getHp()) + " HP left. ";
+//  grid->addAction(s);
 }
 
 void PlayerCharacter::consumePotion(Item *p) {

@@ -8,32 +8,36 @@ Halfling::Halfling(int x, int y, Grid *grid): EnemyCharacter(x, y, grid) {
   def = 20;
 }
 
-void Halfling::attackedBy(Character *c) {
+bool Halfling::attackedBy(Character *c) {
   bool success = rand() % 2;
   if (success) {
     int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
     modifyHP(-damage);
-    grid->addAction("You attacked Halfling. ");
+    // grid->addAction("You attacked Halfling. ");
+    if (isDead()) {
+      c->slay(this);
+    }
+    return true;
   } else {
-    grid->addAction("You attacked Halfling but missed. ");
-  }
-  if (isDead()) {
-    c->slay(this);
+    // grid->addAction("You attacked Halfling but missed. ");
+    return false;
   }
 }
 
-void Halfling::attackedBy(Vampire *c) {
+bool Halfling::attackedBy(Vampire *c) {
   bool success = rand() % 2;
   if (success) {
     int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
     modifyHP(-damage);
     c->modifyHP(5);
-    grid->addAction("You attacked Halfling. ");
+    // grid->addAction("You attacked Halfling. ");
+    if (isDead()) {
+      c->slay(this);
+    }
+    return true;
   } else {
-    grid->addAction("You attacked Halfling but missed. ");
-  }
-  if (isDead()) {
-    c->slay(this);
+    return false;
+    // grid->addAction("You attacked Halfling but missed. ");
   }
 }
 

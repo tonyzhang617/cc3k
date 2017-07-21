@@ -7,7 +7,7 @@ class Goblin : public PlayerCharacter {
 public:
   Goblin(int x, int y, Grid *grid);
   void slay(Character *c) override;
-  void attackedBy(Orcs *c) override;
+  bool attackedBy(Orcs *c) override;
 };
 
 #endif

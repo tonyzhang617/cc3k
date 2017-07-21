@@ -23,22 +23,25 @@ void EnemyCharacter::makeMove(Direction dir) {
   }
 }
 
-void EnemyCharacter::attack(Character *c) {
+bool EnemyCharacter::attack(Character *c) {
   bool success = rand() % 2;
   if (success) {
     c->attackedBy(this);
+    return true;
   } else {
-    grid->addAction("An enemy attacked you but missed. ");
+    // grid->addAction("An enemy attacked you but missed. ");
+    return false;
   }
 }
 
-void EnemyCharacter::attackedBy(Character *c) {
+bool EnemyCharacter::attackedBy(Character *c) {
   int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
   modifyHP(-damage);
-  grid->addAction("You attacked an enemy. ");
+  // grid->addAction("You attacked an enemy. ");
   if (isDead()) {
     c->slay(this);
   }
+  return true;
 }
 
 void EnemyCharacter::modifyHP(int n) {
@@ -49,4 +52,8 @@ void EnemyCharacter::modifyHP(int n) {
 
 char EnemyCharacter::getChar() {
   return '&';
+}
+
+string EnemyCharacter::getRace() {
+  return "enemy";
 }

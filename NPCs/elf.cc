@@ -7,8 +7,8 @@ Elf::Elf(int x, int y, Grid *grid): EnemyCharacter(x, y, grid) {
   def = 10;
 }
 
-void Elf::attack(Character *c) {
-  c->attackedBy(this);
+bool Elf::attack(Character *c) {
+  return c->attackedBy(this);
 }
 
 char Elf::getChar() {

@@ -29,11 +29,12 @@ public:
   void addGold(int n);
   virtual void makeMove(Direction dir) = 0;
   virtual char getChar() = 0;
-  virtual void attack(Character *c) = 0;
-  virtual void attackedBy(Character *c);
-  virtual void attackedBy(Elf *c);
-  virtual void attackedBy(Vampire *c);
-  virtual void attackedBy(Orcs *c);
+  virtual std::string getRace() = 0;
+  virtual bool attack(Character *c) = 0;
+  virtual bool attackedBy(Character *c);
+  virtual bool attackedBy(Elf *c);
+  virtual bool attackedBy(Vampire *c);
+  virtual bool attackedBy(Orcs *c);
   virtual void slay(Character *c);
   virtual void slainBy(Character *c);
   virtual void modifyHP(int n);

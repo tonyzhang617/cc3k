@@ -8,7 +8,7 @@ class Drow : public PlayerCharacter {
 public:
   Drow(int x, int y, Grid *grid);
   void consumePotion(Item *p) override;
-  void attackedBy(Elf *c) override;
+  bool attackedBy(Elf *c) override;
 };
 
 #endif

@@ -136,6 +136,7 @@ CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o: ../PCs/vampire.cc
 CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o: ../PCs/vampire.h
 CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o: ../character.h
 CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o: ../enum.h
+CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o: ../grid.h
 CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o: ../observer.h
 CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o: ../subject.h
 
