@@ -7,7 +7,10 @@ CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../NPCs/enemy_character.h
 CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../PCs/player_character.h
 CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../character.h
 CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../enum.h
+CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../gold/dragon_hoard.h
+CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../gold/gold.h
 CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../grid.h
+CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../item.h
 CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../observer.h
 CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../subject.h
 
@@ -158,6 +161,38 @@ CMakeFiles/cc3k_clion.dir/character.cc.o: ../subject.h
 CMakeFiles/cc3k_clion.dir/enum.cc.o: ../enum.cc
 CMakeFiles/cc3k_clion.dir/enum.cc.o: ../enum.h
 
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o: ../NPCs/dragon.h
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o: ../NPCs/enemy_character.h
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o: ../PCs/player_character.h
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o: ../character.h
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o: ../enum.h
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o: ../gold/dragon_hoard.cc
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o: ../gold/dragon_hoard.h
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o: ../gold/gold.h
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o: ../grid.h
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o: ../item.h
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o: ../observer.h
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o: ../subject.h
+
+CMakeFiles/cc3k_clion.dir/gold/gold.cc.o: ../gold/gold.cc
+CMakeFiles/cc3k_clion.dir/gold/gold.cc.o: ../gold/gold.h
+CMakeFiles/cc3k_clion.dir/gold/gold.cc.o: ../item.h
+
+CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o: ../gold/gold.h
+CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o: ../gold/merchant_hoard.cc
+CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o: ../gold/merchant_hoard.h
+CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o: ../item.h
+
+CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o: ../gold/gold.h
+CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o: ../gold/normal_hoard.cc
+CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o: ../gold/normal_hoard.h
+CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o: ../item.h
+
+CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o: ../gold/gold.h
+CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o: ../gold/small_hoard.cc
+CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o: ../gold/small_hoard.h
+CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o: ../item.h
+
 CMakeFiles/cc3k_clion.dir/grid.cc.o: ../NPCs/dwarf.h
 CMakeFiles/cc3k_clion.dir/grid.cc.o: ../NPCs/enemy_character.h
 CMakeFiles/cc3k_clion.dir/grid.cc.o: ../NPCs/human.h
@@ -185,6 +220,88 @@ CMakeFiles/cc3k_clion.dir/main.cc.o: ../subject.h
 
 CMakeFiles/cc3k_clion.dir/observer.cc.o: ../observer.cc
 CMakeFiles/cc3k_clion.dir/observer.cc.o: ../observer.h
+
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o: ../NPCs/elf.h
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o: ../NPCs/enemy_character.h
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o: ../PCs/drow.h
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o: ../PCs/player_character.h
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o: ../character.h
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o: ../enum.h
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o: ../item.h
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o: ../observer.h
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o: ../potion/boost_attack.cc
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o: ../potion/boost_attack.h
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o: ../potion/potion.h
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o: ../subject.h
+
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o: ../NPCs/elf.h
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o: ../NPCs/enemy_character.h
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o: ../PCs/drow.h
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o: ../PCs/player_character.h
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o: ../character.h
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o: ../enum.h
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o: ../item.h
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o: ../observer.h
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o: ../potion/boost_defense.cc
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o: ../potion/boost_defense.h
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o: ../potion/potion.h
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o: ../subject.h
+
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o: ../NPCs/elf.h
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o: ../NPCs/enemy_character.h
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o: ../PCs/drow.h
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o: ../PCs/player_character.h
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o: ../character.h
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o: ../enum.h
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o: ../item.h
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o: ../observer.h
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o: ../potion/poison_health.cc
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o: ../potion/poison_health.h
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o: ../potion/potion.h
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o: ../subject.h
+
+CMakeFiles/cc3k_clion.dir/potion/potion.cc.o: ../item.h
+CMakeFiles/cc3k_clion.dir/potion/potion.cc.o: ../potion/potion.cc
+CMakeFiles/cc3k_clion.dir/potion/potion.cc.o: ../potion/potion.h
+
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o: ../NPCs/elf.h
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o: ../NPCs/enemy_character.h
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o: ../PCs/drow.h
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o: ../PCs/player_character.h
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o: ../character.h
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o: ../enum.h
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o: ../item.h
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o: ../observer.h
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o: ../potion/potion.h
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o: ../potion/restore_health.cc
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o: ../potion/restore_health.h
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o: ../subject.h
+
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o: ../NPCs/elf.h
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o: ../NPCs/enemy_character.h
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o: ../PCs/drow.h
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o: ../PCs/player_character.h
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o: ../character.h
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o: ../enum.h
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o: ../item.h
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o: ../observer.h
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o: ../potion/potion.h
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o: ../potion/wound_attack.cc
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o: ../potion/wound_attack.h
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o: ../subject.h
+
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o: ../NPCs/elf.h
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o: ../NPCs/enemy_character.h
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o: ../PCs/drow.h
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o: ../PCs/player_character.h
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o: ../character.h
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o: ../enum.h
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o: ../item.h
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o: ../observer.h
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o: ../potion/potion.h
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o: ../potion/wound_defense.cc
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o: ../potion/wound_defense.h
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o: ../subject.h
 
 CMakeFiles/cc3k_clion.dir/subject.cc.o: ../observer.h
 CMakeFiles/cc3k_clion.dir/subject.cc.o: ../subject.cc

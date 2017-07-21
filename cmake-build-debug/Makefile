@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2017.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /Volumes/CLion/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2017.2/bin/cmake/bin/cmake -E remove -f
+RM = /Volumes/CLion/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tony/Projects/github/cc3k_v2
+CMAKE_SOURCE_DIR = /u7/t296zhang/Desktop/cc3k
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tony/Projects/github/cc3k_v2/cmake-build-debug
+CMAKE_BINARY_DIR = /u7/t296zhang/Desktop/cc3k/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/tony/Projects/github/cc3k_v2/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion-2017.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Volumes/CLion/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/opt/clion-2017.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Volumes/CLion/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles /home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles /u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -555,6 +555,141 @@ enum.cc.s:
 	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/enum.cc.s
 .PHONY : enum.cc.s
 
+gold/dragon_hoard.o: gold/dragon_hoard.cc.o
+
+.PHONY : gold/dragon_hoard.o
+
+# target to build an object file
+gold/dragon_hoard.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o
+.PHONY : gold/dragon_hoard.cc.o
+
+gold/dragon_hoard.i: gold/dragon_hoard.cc.i
+
+.PHONY : gold/dragon_hoard.i
+
+# target to preprocess a source file
+gold/dragon_hoard.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.i
+.PHONY : gold/dragon_hoard.cc.i
+
+gold/dragon_hoard.s: gold/dragon_hoard.cc.s
+
+.PHONY : gold/dragon_hoard.s
+
+# target to generate assembly for a file
+gold/dragon_hoard.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.s
+.PHONY : gold/dragon_hoard.cc.s
+
+gold/gold.o: gold/gold.cc.o
+
+.PHONY : gold/gold.o
+
+# target to build an object file
+gold/gold.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/gold.cc.o
+.PHONY : gold/gold.cc.o
+
+gold/gold.i: gold/gold.cc.i
+
+.PHONY : gold/gold.i
+
+# target to preprocess a source file
+gold/gold.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/gold.cc.i
+.PHONY : gold/gold.cc.i
+
+gold/gold.s: gold/gold.cc.s
+
+.PHONY : gold/gold.s
+
+# target to generate assembly for a file
+gold/gold.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/gold.cc.s
+.PHONY : gold/gold.cc.s
+
+gold/merchant_hoard.o: gold/merchant_hoard.cc.o
+
+.PHONY : gold/merchant_hoard.o
+
+# target to build an object file
+gold/merchant_hoard.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o
+.PHONY : gold/merchant_hoard.cc.o
+
+gold/merchant_hoard.i: gold/merchant_hoard.cc.i
+
+.PHONY : gold/merchant_hoard.i
+
+# target to preprocess a source file
+gold/merchant_hoard.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.i
+.PHONY : gold/merchant_hoard.cc.i
+
+gold/merchant_hoard.s: gold/merchant_hoard.cc.s
+
+.PHONY : gold/merchant_hoard.s
+
+# target to generate assembly for a file
+gold/merchant_hoard.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.s
+.PHONY : gold/merchant_hoard.cc.s
+
+gold/normal_hoard.o: gold/normal_hoard.cc.o
+
+.PHONY : gold/normal_hoard.o
+
+# target to build an object file
+gold/normal_hoard.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o
+.PHONY : gold/normal_hoard.cc.o
+
+gold/normal_hoard.i: gold/normal_hoard.cc.i
+
+.PHONY : gold/normal_hoard.i
+
+# target to preprocess a source file
+gold/normal_hoard.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.i
+.PHONY : gold/normal_hoard.cc.i
+
+gold/normal_hoard.s: gold/normal_hoard.cc.s
+
+.PHONY : gold/normal_hoard.s
+
+# target to generate assembly for a file
+gold/normal_hoard.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.s
+.PHONY : gold/normal_hoard.cc.s
+
+gold/small_hoard.o: gold/small_hoard.cc.o
+
+.PHONY : gold/small_hoard.o
+
+# target to build an object file
+gold/small_hoard.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o
+.PHONY : gold/small_hoard.cc.o
+
+gold/small_hoard.i: gold/small_hoard.cc.i
+
+.PHONY : gold/small_hoard.i
+
+# target to preprocess a source file
+gold/small_hoard.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.i
+.PHONY : gold/small_hoard.cc.i
+
+gold/small_hoard.s: gold/small_hoard.cc.s
+
+.PHONY : gold/small_hoard.s
+
+# target to generate assembly for a file
+gold/small_hoard.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.s
+.PHONY : gold/small_hoard.cc.s
+
 grid.o: grid.cc.o
 
 .PHONY : grid.o
@@ -663,6 +798,195 @@ observer.cc.s:
 	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/observer.cc.s
 .PHONY : observer.cc.s
 
+potion/boost_attack.o: potion/boost_attack.cc.o
+
+.PHONY : potion/boost_attack.o
+
+# target to build an object file
+potion/boost_attack.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o
+.PHONY : potion/boost_attack.cc.o
+
+potion/boost_attack.i: potion/boost_attack.cc.i
+
+.PHONY : potion/boost_attack.i
+
+# target to preprocess a source file
+potion/boost_attack.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.i
+.PHONY : potion/boost_attack.cc.i
+
+potion/boost_attack.s: potion/boost_attack.cc.s
+
+.PHONY : potion/boost_attack.s
+
+# target to generate assembly for a file
+potion/boost_attack.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.s
+.PHONY : potion/boost_attack.cc.s
+
+potion/boost_defense.o: potion/boost_defense.cc.o
+
+.PHONY : potion/boost_defense.o
+
+# target to build an object file
+potion/boost_defense.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o
+.PHONY : potion/boost_defense.cc.o
+
+potion/boost_defense.i: potion/boost_defense.cc.i
+
+.PHONY : potion/boost_defense.i
+
+# target to preprocess a source file
+potion/boost_defense.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.i
+.PHONY : potion/boost_defense.cc.i
+
+potion/boost_defense.s: potion/boost_defense.cc.s
+
+.PHONY : potion/boost_defense.s
+
+# target to generate assembly for a file
+potion/boost_defense.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.s
+.PHONY : potion/boost_defense.cc.s
+
+potion/poison_health.o: potion/poison_health.cc.o
+
+.PHONY : potion/poison_health.o
+
+# target to build an object file
+potion/poison_health.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o
+.PHONY : potion/poison_health.cc.o
+
+potion/poison_health.i: potion/poison_health.cc.i
+
+.PHONY : potion/poison_health.i
+
+# target to preprocess a source file
+potion/poison_health.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.i
+.PHONY : potion/poison_health.cc.i
+
+potion/poison_health.s: potion/poison_health.cc.s
+
+.PHONY : potion/poison_health.s
+
+# target to generate assembly for a file
+potion/poison_health.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.s
+.PHONY : potion/poison_health.cc.s
+
+potion/potion.o: potion/potion.cc.o
+
+.PHONY : potion/potion.o
+
+# target to build an object file
+potion/potion.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/potion.cc.o
+.PHONY : potion/potion.cc.o
+
+potion/potion.i: potion/potion.cc.i
+
+.PHONY : potion/potion.i
+
+# target to preprocess a source file
+potion/potion.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/potion.cc.i
+.PHONY : potion/potion.cc.i
+
+potion/potion.s: potion/potion.cc.s
+
+.PHONY : potion/potion.s
+
+# target to generate assembly for a file
+potion/potion.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/potion.cc.s
+.PHONY : potion/potion.cc.s
+
+potion/restore_health.o: potion/restore_health.cc.o
+
+.PHONY : potion/restore_health.o
+
+# target to build an object file
+potion/restore_health.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o
+.PHONY : potion/restore_health.cc.o
+
+potion/restore_health.i: potion/restore_health.cc.i
+
+.PHONY : potion/restore_health.i
+
+# target to preprocess a source file
+potion/restore_health.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.i
+.PHONY : potion/restore_health.cc.i
+
+potion/restore_health.s: potion/restore_health.cc.s
+
+.PHONY : potion/restore_health.s
+
+# target to generate assembly for a file
+potion/restore_health.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.s
+.PHONY : potion/restore_health.cc.s
+
+potion/wound_attack.o: potion/wound_attack.cc.o
+
+.PHONY : potion/wound_attack.o
+
+# target to build an object file
+potion/wound_attack.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o
+.PHONY : potion/wound_attack.cc.o
+
+potion/wound_attack.i: potion/wound_attack.cc.i
+
+.PHONY : potion/wound_attack.i
+
+# target to preprocess a source file
+potion/wound_attack.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.i
+.PHONY : potion/wound_attack.cc.i
+
+potion/wound_attack.s: potion/wound_attack.cc.s
+
+.PHONY : potion/wound_attack.s
+
+# target to generate assembly for a file
+potion/wound_attack.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.s
+.PHONY : potion/wound_attack.cc.s
+
+potion/wound_defense.o: potion/wound_defense.cc.o
+
+.PHONY : potion/wound_defense.o
+
+# target to build an object file
+potion/wound_defense.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o
+.PHONY : potion/wound_defense.cc.o
+
+potion/wound_defense.i: potion/wound_defense.cc.i
+
+.PHONY : potion/wound_defense.i
+
+# target to preprocess a source file
+potion/wound_defense.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.i
+.PHONY : potion/wound_defense.cc.i
+
+potion/wound_defense.s: potion/wound_defense.cc.s
+
+.PHONY : potion/wound_defense.s
+
+# target to generate assembly for a file
+potion/wound_defense.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.s
+.PHONY : potion/wound_defense.cc.s
+
 subject.o: subject.cc.o
 
 .PHONY : subject.o
@@ -747,6 +1071,21 @@ help:
 	@echo "... enum.o"
 	@echo "... enum.i"
 	@echo "... enum.s"
+	@echo "... gold/dragon_hoard.o"
+	@echo "... gold/dragon_hoard.i"
+	@echo "... gold/dragon_hoard.s"
+	@echo "... gold/gold.o"
+	@echo "... gold/gold.i"
+	@echo "... gold/gold.s"
+	@echo "... gold/merchant_hoard.o"
+	@echo "... gold/merchant_hoard.i"
+	@echo "... gold/merchant_hoard.s"
+	@echo "... gold/normal_hoard.o"
+	@echo "... gold/normal_hoard.i"
+	@echo "... gold/normal_hoard.s"
+	@echo "... gold/small_hoard.o"
+	@echo "... gold/small_hoard.i"
+	@echo "... gold/small_hoard.s"
 	@echo "... grid.o"
 	@echo "... grid.i"
 	@echo "... grid.s"
@@ -759,6 +1098,27 @@ help:
 	@echo "... observer.o"
 	@echo "... observer.i"
 	@echo "... observer.s"
+	@echo "... potion/boost_attack.o"
+	@echo "... potion/boost_attack.i"
+	@echo "... potion/boost_attack.s"
+	@echo "... potion/boost_defense.o"
+	@echo "... potion/boost_defense.i"
+	@echo "... potion/boost_defense.s"
+	@echo "... potion/poison_health.o"
+	@echo "... potion/poison_health.i"
+	@echo "... potion/poison_health.s"
+	@echo "... potion/potion.o"
+	@echo "... potion/potion.i"
+	@echo "... potion/potion.s"
+	@echo "... potion/restore_health.o"
+	@echo "... potion/restore_health.i"
+	@echo "... potion/restore_health.s"
+	@echo "... potion/wound_attack.o"
+	@echo "... potion/wound_attack.i"
+	@echo "... potion/wound_attack.s"
+	@echo "... potion/wound_defense.o"
+	@echo "... potion/wound_defense.i"
+	@echo "... potion/wound_defense.s"
 	@echo "... subject.o"
 	@echo "... subject.i"
 	@echo "... subject.s"

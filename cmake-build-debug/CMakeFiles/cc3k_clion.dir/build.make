@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2017.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /Volumes/CLion/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2017.2/bin/cmake/bin/cmake -E remove -f
+RM = /Volumes/CLion/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tony/Projects/github/cc3k_v2
+CMAKE_SOURCE_DIR = /u7/t296zhang/Desktop/cc3k
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tony/Projects/github/cc3k_v2/cmake-build-debug
+CMAKE_BINARY_DIR = /u7/t296zhang/Desktop/cc3k/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cc3k_clion.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/cc3k_clion.dir/flags.make
 
 CMakeFiles/cc3k_clion.dir/item.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/item.cc.o: ../item.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cc3k_clion.dir/item.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/item.cc.o -c /home/tony/Projects/github/cc3k_v2/item.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cc3k_clion.dir/item.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/item.cc.o -c /u7/t296zhang/Desktop/cc3k/item.cc
 
 CMakeFiles/cc3k_clion.dir/item.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/item.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/item.cc > CMakeFiles/cc3k_clion.dir/item.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/item.cc > CMakeFiles/cc3k_clion.dir/item.cc.i
 
 CMakeFiles/cc3k_clion.dir/item.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/item.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/item.cc -o CMakeFiles/cc3k_clion.dir/item.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/item.cc -o CMakeFiles/cc3k_clion.dir/item.cc.s
 
 CMakeFiles/cc3k_clion.dir/item.cc.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/cc3k_clion.dir/item.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/it
 
 CMakeFiles/cc3k_clion.dir/subject.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/subject.cc.o: ../subject.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cc3k_clion.dir/subject.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/subject.cc.o -c /home/tony/Projects/github/cc3k_v2/subject.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cc3k_clion.dir/subject.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/subject.cc.o -c /u7/t296zhang/Desktop/cc3k/subject.cc
 
 CMakeFiles/cc3k_clion.dir/subject.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/subject.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/subject.cc > CMakeFiles/cc3k_clion.dir/subject.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/subject.cc > CMakeFiles/cc3k_clion.dir/subject.cc.i
 
 CMakeFiles/cc3k_clion.dir/subject.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/subject.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/subject.cc -o CMakeFiles/cc3k_clion.dir/subject.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/subject.cc -o CMakeFiles/cc3k_clion.dir/subject.cc.s
 
 CMakeFiles/cc3k_clion.dir/subject.cc.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/cc3k_clion.dir/subject.cc.o.provides.build: CMakeFiles/cc3k_clion.dir
 
 CMakeFiles/cc3k_clion.dir/character.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/character.cc.o: ../character.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cc3k_clion.dir/character.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/character.cc.o -c /home/tony/Projects/github/cc3k_v2/character.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cc3k_clion.dir/character.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/character.cc.o -c /u7/t296zhang/Desktop/cc3k/character.cc
 
 CMakeFiles/cc3k_clion.dir/character.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/character.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/character.cc > CMakeFiles/cc3k_clion.dir/character.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/character.cc > CMakeFiles/cc3k_clion.dir/character.cc.i
 
 CMakeFiles/cc3k_clion.dir/character.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/character.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/character.cc -o CMakeFiles/cc3k_clion.dir/character.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/character.cc -o CMakeFiles/cc3k_clion.dir/character.cc.s
 
 CMakeFiles/cc3k_clion.dir/character.cc.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/cc3k_clion.dir/character.cc.o.provides.build: CMakeFiles/cc3k_clion.d
 
 CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../NPCs/dragon.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o -c /home/tony/Projects/github/cc3k_v2/NPCs/dragon.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o -c /u7/t296zhang/Desktop/cc3k/NPCs/dragon.cc
 
 CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/NPCs/dragon.cc > CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/NPCs/dragon.cc > CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.i
 
 CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/NPCs/dragon.cc -o CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/NPCs/dragon.cc -o CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.s
 
 CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o.provides.build: CMakeFiles/cc3k_clion
 
 CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o: ../PCs/drow.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o -c /home/tony/Projects/github/cc3k_v2/PCs/drow.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o -c /u7/t296zhang/Desktop/cc3k/PCs/drow.cc
 
 CMakeFiles/cc3k_clion.dir/PCs/drow.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/PCs/drow.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/PCs/drow.cc > CMakeFiles/cc3k_clion.dir/PCs/drow.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/PCs/drow.cc > CMakeFiles/cc3k_clion.dir/PCs/drow.cc.i
 
 CMakeFiles/cc3k_clion.dir/PCs/drow.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/PCs/drow.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/PCs/drow.cc -o CMakeFiles/cc3k_clion.dir/PCs/drow.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/PCs/drow.cc -o CMakeFiles/cc3k_clion.dir/PCs/drow.cc.s
 
 CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o.provides.build: CMakeFiles/cc3k_clion.di
 
 CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.o: ../NPCs/dwarf.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.o -c /home/tony/Projects/github/cc3k_v2/NPCs/dwarf.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.o -c /u7/t296zhang/Desktop/cc3k/NPCs/dwarf.cc
 
 CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/NPCs/dwarf.cc > CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/NPCs/dwarf.cc > CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.i
 
 CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/NPCs/dwarf.cc -o CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/NPCs/dwarf.cc -o CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.s
 
 CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/cc3k_clion.dir/NPCs/dwarf.cc.o.provides.build: CMakeFiles/cc3k_clion.
 
 CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.o: ../NPCs/elf.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.o -c /home/tony/Projects/github/cc3k_v2/NPCs/elf.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.o -c /u7/t296zhang/Desktop/cc3k/NPCs/elf.cc
 
 CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/NPCs/elf.cc > CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/NPCs/elf.cc > CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.i
 
 CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/NPCs/elf.cc -o CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/NPCs/elf.cc -o CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.s
 
 CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/cc3k_clion.dir/NPCs/elf.cc.o.provides.build: CMakeFiles/cc3k_clion.di
 
 CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.o: ../NPCs/enemy_character.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.o -c /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.o -c /u7/t296zhang/Desktop/cc3k/NPCs/enemy_character.cc
 
 CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.cc > CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/NPCs/enemy_character.cc > CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.i
 
 CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/NPCs/enemy_character.cc -o CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/NPCs/enemy_character.cc -o CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.s
 
 CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/cc3k_clion.dir/NPCs/enemy_character.cc.o.provides.build: CMakeFiles/c
 
 CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o: ../PCs/goblin.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o -c /home/tony/Projects/github/cc3k_v2/PCs/goblin.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o -c /u7/t296zhang/Desktop/cc3k/PCs/goblin.cc
 
 CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/PCs/goblin.cc > CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/PCs/goblin.cc > CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.i
 
 CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/PCs/goblin.cc -o CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/PCs/goblin.cc -o CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.s
 
 CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/cc3k_clion.dir/PCs/goblin.cc.o.provides.build: CMakeFiles/cc3k_clion.
 
 CMakeFiles/cc3k_clion.dir/grid.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/grid.cc.o: ../grid.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/cc3k_clion.dir/grid.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/grid.cc.o -c /home/tony/Projects/github/cc3k_v2/grid.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/cc3k_clion.dir/grid.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/grid.cc.o -c /u7/t296zhang/Desktop/cc3k/grid.cc
 
 CMakeFiles/cc3k_clion.dir/grid.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/grid.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/grid.cc > CMakeFiles/cc3k_clion.dir/grid.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/grid.cc > CMakeFiles/cc3k_clion.dir/grid.cc.i
 
 CMakeFiles/cc3k_clion.dir/grid.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/grid.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/grid.cc -o CMakeFiles/cc3k_clion.dir/grid.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/grid.cc -o CMakeFiles/cc3k_clion.dir/grid.cc.s
 
 CMakeFiles/cc3k_clion.dir/grid.cc.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/cc3k_clion.dir/grid.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/gr
 
 CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o: ../NPCs/halfling.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o -c /home/tony/Projects/github/cc3k_v2/NPCs/halfling.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o -c /u7/t296zhang/Desktop/cc3k/NPCs/halfling.cc
 
 CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/NPCs/halfling.cc > CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/NPCs/halfling.cc > CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.i
 
 CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/NPCs/halfling.cc -o CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/NPCs/halfling.cc -o CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.s
 
 CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o.provides.build: CMakeFiles/cc3k_cli
 
 CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o: ../NPCs/human.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o -c /home/tony/Projects/github/cc3k_v2/NPCs/human.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o -c /u7/t296zhang/Desktop/cc3k/NPCs/human.cc
 
 CMakeFiles/cc3k_clion.dir/NPCs/human.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/NPCs/human.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/NPCs/human.cc > CMakeFiles/cc3k_clion.dir/NPCs/human.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/NPCs/human.cc > CMakeFiles/cc3k_clion.dir/NPCs/human.cc.i
 
 CMakeFiles/cc3k_clion.dir/NPCs/human.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/NPCs/human.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/NPCs/human.cc -o CMakeFiles/cc3k_clion.dir/NPCs/human.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/NPCs/human.cc -o CMakeFiles/cc3k_clion.dir/NPCs/human.cc.s
 
 CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o.provides.build: CMakeFiles/cc3k_clion.
 
 CMakeFiles/cc3k_clion.dir/main.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/main.cc.o: ../main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/cc3k_clion.dir/main.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/main.cc.o -c /home/tony/Projects/github/cc3k_v2/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/cc3k_clion.dir/main.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/main.cc.o -c /u7/t296zhang/Desktop/cc3k/main.cc
 
 CMakeFiles/cc3k_clion.dir/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/main.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/main.cc > CMakeFiles/cc3k_clion.dir/main.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/main.cc > CMakeFiles/cc3k_clion.dir/main.cc.i
 
 CMakeFiles/cc3k_clion.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/main.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/main.cc -o CMakeFiles/cc3k_clion.dir/main.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/main.cc -o CMakeFiles/cc3k_clion.dir/main.cc.s
 
 CMakeFiles/cc3k_clion.dir/main.cc.o.requires:
 
@@ -369,18 +369,306 @@ CMakeFiles/cc3k_clion.dir/main.cc.o.provides: CMakeFiles/cc3k_clion.dir/main.cc.
 CMakeFiles/cc3k_clion.dir/main.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/main.cc.o
 
 
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o: ../gold/dragon_hoard.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o -c /u7/t296zhang/Desktop/cc3k/gold/dragon_hoard.cc
+
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/gold/dragon_hoard.cc > CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.i
+
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/gold/dragon_hoard.cc -o CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.s
+
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o.requires:
+
+.PHONY : CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o.requires
+
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o.provides: CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o.requires
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o.provides.build
+.PHONY : CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o.provides
+
+CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o
+
+
+CMakeFiles/cc3k_clion.dir/gold/gold.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
+CMakeFiles/cc3k_clion.dir/gold/gold.cc.o: ../gold/gold.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/cc3k_clion.dir/gold/gold.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/gold/gold.cc.o -c /u7/t296zhang/Desktop/cc3k/gold/gold.cc
+
+CMakeFiles/cc3k_clion.dir/gold/gold.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/gold/gold.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/gold/gold.cc > CMakeFiles/cc3k_clion.dir/gold/gold.cc.i
+
+CMakeFiles/cc3k_clion.dir/gold/gold.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/gold/gold.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/gold/gold.cc -o CMakeFiles/cc3k_clion.dir/gold/gold.cc.s
+
+CMakeFiles/cc3k_clion.dir/gold/gold.cc.o.requires:
+
+.PHONY : CMakeFiles/cc3k_clion.dir/gold/gold.cc.o.requires
+
+CMakeFiles/cc3k_clion.dir/gold/gold.cc.o.provides: CMakeFiles/cc3k_clion.dir/gold/gold.cc.o.requires
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/gold.cc.o.provides.build
+.PHONY : CMakeFiles/cc3k_clion.dir/gold/gold.cc.o.provides
+
+CMakeFiles/cc3k_clion.dir/gold/gold.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/gold/gold.cc.o
+
+
+CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
+CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o: ../gold/merchant_hoard.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o -c /u7/t296zhang/Desktop/cc3k/gold/merchant_hoard.cc
+
+CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/gold/merchant_hoard.cc > CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.i
+
+CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/gold/merchant_hoard.cc -o CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.s
+
+CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o.requires:
+
+.PHONY : CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o.requires
+
+CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o.provides: CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o.requires
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o.provides.build
+.PHONY : CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o.provides
+
+CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o
+
+
+CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
+CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o: ../gold/normal_hoard.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o -c /u7/t296zhang/Desktop/cc3k/gold/normal_hoard.cc
+
+CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/gold/normal_hoard.cc > CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.i
+
+CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/gold/normal_hoard.cc -o CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.s
+
+CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o.requires:
+
+.PHONY : CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o.requires
+
+CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o.provides: CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o.requires
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o.provides.build
+.PHONY : CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o.provides
+
+CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o
+
+
+CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
+CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o: ../gold/small_hoard.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o -c /u7/t296zhang/Desktop/cc3k/gold/small_hoard.cc
+
+CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/gold/small_hoard.cc > CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.i
+
+CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/gold/small_hoard.cc -o CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.s
+
+CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o.requires:
+
+.PHONY : CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o.requires
+
+CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o.provides: CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o.requires
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o.provides.build
+.PHONY : CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o.provides
+
+CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o
+
+
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o: ../potion/boost_attack.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o -c /u7/t296zhang/Desktop/cc3k/potion/boost_attack.cc
+
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/potion/boost_attack.cc > CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.i
+
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/potion/boost_attack.cc -o CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.s
+
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o.requires:
+
+.PHONY : CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o.requires
+
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o.provides: CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o.requires
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o.provides.build
+.PHONY : CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o.provides
+
+CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o
+
+
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o: ../potion/boost_defense.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o -c /u7/t296zhang/Desktop/cc3k/potion/boost_defense.cc
+
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/potion/boost_defense.cc > CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.i
+
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/potion/boost_defense.cc -o CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.s
+
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o.requires:
+
+.PHONY : CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o.requires
+
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o.provides: CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o.requires
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o.provides.build
+.PHONY : CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o.provides
+
+CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o
+
+
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o: ../potion/poison_health.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o -c /u7/t296zhang/Desktop/cc3k/potion/poison_health.cc
+
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/potion/poison_health.cc > CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.i
+
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/potion/poison_health.cc -o CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.s
+
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o.requires:
+
+.PHONY : CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o.requires
+
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o.provides: CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o.requires
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o.provides.build
+.PHONY : CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o.provides
+
+CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o
+
+
+CMakeFiles/cc3k_clion.dir/potion/potion.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
+CMakeFiles/cc3k_clion.dir/potion/potion.cc.o: ../potion/potion.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/cc3k_clion.dir/potion/potion.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/potion/potion.cc.o -c /u7/t296zhang/Desktop/cc3k/potion/potion.cc
+
+CMakeFiles/cc3k_clion.dir/potion/potion.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/potion/potion.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/potion/potion.cc > CMakeFiles/cc3k_clion.dir/potion/potion.cc.i
+
+CMakeFiles/cc3k_clion.dir/potion/potion.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/potion/potion.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/potion/potion.cc -o CMakeFiles/cc3k_clion.dir/potion/potion.cc.s
+
+CMakeFiles/cc3k_clion.dir/potion/potion.cc.o.requires:
+
+.PHONY : CMakeFiles/cc3k_clion.dir/potion/potion.cc.o.requires
+
+CMakeFiles/cc3k_clion.dir/potion/potion.cc.o.provides: CMakeFiles/cc3k_clion.dir/potion/potion.cc.o.requires
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/potion.cc.o.provides.build
+.PHONY : CMakeFiles/cc3k_clion.dir/potion/potion.cc.o.provides
+
+CMakeFiles/cc3k_clion.dir/potion/potion.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/potion/potion.cc.o
+
+
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o: ../potion/restore_health.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o -c /u7/t296zhang/Desktop/cc3k/potion/restore_health.cc
+
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/potion/restore_health.cc > CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.i
+
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/potion/restore_health.cc -o CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.s
+
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o.requires:
+
+.PHONY : CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o.requires
+
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o.provides: CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o.requires
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o.provides.build
+.PHONY : CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o.provides
+
+CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o
+
+
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o: ../potion/wound_attack.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o -c /u7/t296zhang/Desktop/cc3k/potion/wound_attack.cc
+
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/potion/wound_attack.cc > CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.i
+
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/potion/wound_attack.cc -o CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.s
+
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o.requires:
+
+.PHONY : CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o.requires
+
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o.provides: CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o.requires
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o.provides.build
+.PHONY : CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o.provides
+
+CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o
+
+
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o: ../potion/wound_defense.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o -c /u7/t296zhang/Desktop/cc3k/potion/wound_defense.cc
+
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/potion/wound_defense.cc > CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.i
+
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/potion/wound_defense.cc -o CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.s
+
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o.requires:
+
+.PHONY : CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o.requires
+
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o.provides: CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o.requires
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o.provides.build
+.PHONY : CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o.provides
+
+CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o
+
+
 CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o: ../NPCs/merchant.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o -c /home/tony/Projects/github/cc3k_v2/NPCs/merchant.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o -c /u7/t296zhang/Desktop/cc3k/NPCs/merchant.cc
 
 CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/NPCs/merchant.cc > CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/NPCs/merchant.cc > CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.i
 
 CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/NPCs/merchant.cc -o CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/NPCs/merchant.cc -o CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.s
 
 CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o.requires:
 
@@ -395,16 +683,16 @@ CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o.provides.build: CMakeFiles/cc3k_cli
 
 CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o: ../NPCs/orcs.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o -c /home/tony/Projects/github/cc3k_v2/NPCs/orcs.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o -c /u7/t296zhang/Desktop/cc3k/NPCs/orcs.cc
 
 CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/NPCs/orcs.cc > CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/NPCs/orcs.cc > CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.i
 
 CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/NPCs/orcs.cc -o CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/NPCs/orcs.cc -o CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.s
 
 CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o.requires:
 
@@ -419,16 +707,16 @@ CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o.provides.build: CMakeFiles/cc3k_clion.d
 
 CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o: ../PCs/player_character.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o -c /home/tony/Projects/github/cc3k_v2/PCs/player_character.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o -c /u7/t296zhang/Desktop/cc3k/PCs/player_character.cc
 
 CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/PCs/player_character.cc > CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/PCs/player_character.cc > CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.i
 
 CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/PCs/player_character.cc -o CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/PCs/player_character.cc -o CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.s
 
 CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o.requires:
 
@@ -443,16 +731,16 @@ CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o.provides.build: CMakeFiles/c
 
 CMakeFiles/cc3k_clion.dir/PCs/shade.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/PCs/shade.cc.o: ../PCs/shade.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/cc3k_clion.dir/PCs/shade.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/PCs/shade.cc.o -c /home/tony/Projects/github/cc3k_v2/PCs/shade.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/cc3k_clion.dir/PCs/shade.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/PCs/shade.cc.o -c /u7/t296zhang/Desktop/cc3k/PCs/shade.cc
 
 CMakeFiles/cc3k_clion.dir/PCs/shade.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/PCs/shade.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/PCs/shade.cc > CMakeFiles/cc3k_clion.dir/PCs/shade.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/PCs/shade.cc > CMakeFiles/cc3k_clion.dir/PCs/shade.cc.i
 
 CMakeFiles/cc3k_clion.dir/PCs/shade.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/PCs/shade.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/PCs/shade.cc -o CMakeFiles/cc3k_clion.dir/PCs/shade.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/PCs/shade.cc -o CMakeFiles/cc3k_clion.dir/PCs/shade.cc.s
 
 CMakeFiles/cc3k_clion.dir/PCs/shade.cc.o.requires:
 
@@ -467,16 +755,16 @@ CMakeFiles/cc3k_clion.dir/PCs/shade.cc.o.provides.build: CMakeFiles/cc3k_clion.d
 
 CMakeFiles/cc3k_clion.dir/PCs/troll.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/PCs/troll.cc.o: ../PCs/troll.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/cc3k_clion.dir/PCs/troll.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/PCs/troll.cc.o -c /home/tony/Projects/github/cc3k_v2/PCs/troll.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/cc3k_clion.dir/PCs/troll.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/PCs/troll.cc.o -c /u7/t296zhang/Desktop/cc3k/PCs/troll.cc
 
 CMakeFiles/cc3k_clion.dir/PCs/troll.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/PCs/troll.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/PCs/troll.cc > CMakeFiles/cc3k_clion.dir/PCs/troll.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/PCs/troll.cc > CMakeFiles/cc3k_clion.dir/PCs/troll.cc.i
 
 CMakeFiles/cc3k_clion.dir/PCs/troll.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/PCs/troll.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/PCs/troll.cc -o CMakeFiles/cc3k_clion.dir/PCs/troll.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/PCs/troll.cc -o CMakeFiles/cc3k_clion.dir/PCs/troll.cc.s
 
 CMakeFiles/cc3k_clion.dir/PCs/troll.cc.o.requires:
 
@@ -491,16 +779,16 @@ CMakeFiles/cc3k_clion.dir/PCs/troll.cc.o.provides.build: CMakeFiles/cc3k_clion.d
 
 CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o: ../PCs/vampire.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o -c /home/tony/Projects/github/cc3k_v2/PCs/vampire.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o -c /u7/t296zhang/Desktop/cc3k/PCs/vampire.cc
 
 CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/PCs/vampire.cc > CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/PCs/vampire.cc > CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.i
 
 CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/PCs/vampire.cc -o CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/PCs/vampire.cc -o CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.s
 
 CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o.requires:
 
@@ -515,16 +803,16 @@ CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o.provides.build: CMakeFiles/cc3k_clion
 
 CMakeFiles/cc3k_clion.dir/enum.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/enum.cc.o: ../enum.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/cc3k_clion.dir/enum.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/enum.cc.o -c /home/tony/Projects/github/cc3k_v2/enum.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/cc3k_clion.dir/enum.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/enum.cc.o -c /u7/t296zhang/Desktop/cc3k/enum.cc
 
 CMakeFiles/cc3k_clion.dir/enum.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/enum.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/enum.cc > CMakeFiles/cc3k_clion.dir/enum.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/enum.cc > CMakeFiles/cc3k_clion.dir/enum.cc.i
 
 CMakeFiles/cc3k_clion.dir/enum.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/enum.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/enum.cc -o CMakeFiles/cc3k_clion.dir/enum.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/enum.cc -o CMakeFiles/cc3k_clion.dir/enum.cc.s
 
 CMakeFiles/cc3k_clion.dir/enum.cc.o.requires:
 
@@ -539,16 +827,16 @@ CMakeFiles/cc3k_clion.dir/enum.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/en
 
 CMakeFiles/cc3k_clion.dir/observer.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
 CMakeFiles/cc3k_clion.dir/observer.cc.o: ../observer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/cc3k_clion.dir/observer.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/observer.cc.o -c /home/tony/Projects/github/cc3k_v2/observer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/cc3k_clion.dir/observer.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/observer.cc.o -c /u7/t296zhang/Desktop/cc3k/observer.cc
 
 CMakeFiles/cc3k_clion.dir/observer.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/observer.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/observer.cc > CMakeFiles/cc3k_clion.dir/observer.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /u7/t296zhang/Desktop/cc3k/observer.cc > CMakeFiles/cc3k_clion.dir/observer.cc.i
 
 CMakeFiles/cc3k_clion.dir/observer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/observer.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/observer.cc -o CMakeFiles/cc3k_clion.dir/observer.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /u7/t296zhang/Desktop/cc3k/observer.cc -o CMakeFiles/cc3k_clion.dir/observer.cc.s
 
 CMakeFiles/cc3k_clion.dir/observer.cc.o.requires:
 
@@ -576,6 +864,18 @@ cc3k_clion_OBJECTS = \
 "CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o" \
 "CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o" \
 "CMakeFiles/cc3k_clion.dir/main.cc.o" \
+"CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o" \
+"CMakeFiles/cc3k_clion.dir/gold/gold.cc.o" \
+"CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o" \
+"CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o" \
+"CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o" \
+"CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o" \
+"CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o" \
+"CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o" \
+"CMakeFiles/cc3k_clion.dir/potion/potion.cc.o" \
+"CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o" \
+"CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o" \
+"CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o" \
 "CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o" \
 "CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o" \
 "CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o" \
@@ -601,6 +901,18 @@ cc3k_clion: CMakeFiles/cc3k_clion.dir/grid.cc.o
 cc3k_clion: CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o
 cc3k_clion: CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o
 cc3k_clion: CMakeFiles/cc3k_clion.dir/main.cc.o
+cc3k_clion: CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o
+cc3k_clion: CMakeFiles/cc3k_clion.dir/gold/gold.cc.o
+cc3k_clion: CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o
+cc3k_clion: CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o
+cc3k_clion: CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o
+cc3k_clion: CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o
+cc3k_clion: CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o
+cc3k_clion: CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o
+cc3k_clion: CMakeFiles/cc3k_clion.dir/potion/potion.cc.o
+cc3k_clion: CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o
+cc3k_clion: CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o
+cc3k_clion: CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o
 cc3k_clion: CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o
 cc3k_clion: CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o
 cc3k_clion: CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o
@@ -611,7 +923,7 @@ cc3k_clion: CMakeFiles/cc3k_clion.dir/enum.cc.o
 cc3k_clion: CMakeFiles/cc3k_clion.dir/observer.cc.o
 cc3k_clion: CMakeFiles/cc3k_clion.dir/build.make
 cc3k_clion: CMakeFiles/cc3k_clion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable cc3k_clion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking CXX executable cc3k_clion"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cc3k_clion.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -632,6 +944,18 @@ CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/grid.cc.o.requires
 CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/NPCs/halfling.cc.o.requires
 CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/NPCs/human.cc.o.requires
 CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/main.cc.o.requires
+CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/gold/dragon_hoard.cc.o.requires
+CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/gold/gold.cc.o.requires
+CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/gold/merchant_hoard.cc.o.requires
+CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/gold/normal_hoard.cc.o.requires
+CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/gold/small_hoard.cc.o.requires
+CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/potion/boost_attack.cc.o.requires
+CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/potion/boost_defense.cc.o.requires
+CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/potion/poison_health.cc.o.requires
+CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/potion/potion.cc.o.requires
+CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/potion/restore_health.cc.o.requires
+CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/potion/wound_attack.cc.o.requires
+CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/potion/wound_defense.cc.o.requires
 CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/NPCs/merchant.cc.o.requires
 CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/NPCs/orcs.cc.o.requires
 CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o.requires
@@ -648,6 +972,6 @@ CMakeFiles/cc3k_clion.dir/clean:
 .PHONY : CMakeFiles/cc3k_clion.dir/clean
 
 CMakeFiles/cc3k_clion.dir/depend:
-	cd /home/tony/Projects/github/cc3k_v2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tony/Projects/github/cc3k_v2 /home/tony/Projects/github/cc3k_v2 /home/tony/Projects/github/cc3k_v2/cmake-build-debug /home/tony/Projects/github/cc3k_v2/cmake-build-debug /home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles/cc3k_clion.dir/DependInfo.cmake --color=$(COLOR)
+	cd /u7/t296zhang/Desktop/cc3k/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /u7/t296zhang/Desktop/cc3k /u7/t296zhang/Desktop/cc3k /u7/t296zhang/Desktop/cc3k/cmake-build-debug /u7/t296zhang/Desktop/cc3k/cmake-build-debug /u7/t296zhang/Desktop/cc3k/cmake-build-debug/CMakeFiles/cc3k_clion.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cc3k_clion.dir/depend
 

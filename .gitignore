@@ -1,6 +1,10 @@
 # Prerequisites
 *.d
 
+# Pretty useless folders
+cmake-build-debug/
+.idea/
+
 # Compiled Object files
 *.slo
 *.lo
