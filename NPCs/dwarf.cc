@@ -22,6 +22,6 @@ char Dwarf::getChar() {
   return 'W';
 }
 
-string Dwarf::getRace() override {
+string Dwarf::getRace() {
   return "dwarf";
 }

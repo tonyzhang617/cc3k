@@ -1,5 +1,7 @@
 #include "dragon_hoard.h"
 #include "../NPCs/dragon.h"
+#include "../PCs/player_character.h"
+#include "../PCs/drow.h"
 using namespace std;
 
 DragonHoard::DragonHoard(int x, int y, Grid *grid, Dragon *dragon):

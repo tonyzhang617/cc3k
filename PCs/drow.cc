@@ -1,5 +1,6 @@
 #include "drow.h"
 #include "../grid.h"
+#include "../item.h"
 using namespace std;
 
 Drow::Drow(int x, int y, Grid *grid): PlayerCharacter(x, y, grid, 150, 25, 15) {}

@@ -32,6 +32,6 @@ void Dragon::setHoard(DragonHoard *dh) {
   hoard = dh;
 }
 
-string Dragon::getRace() override {
+string Dragon::getRace() {
   return "dragon";
 }

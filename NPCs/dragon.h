@@ -10,7 +10,7 @@ public:
   Dragon(int x, int y, Grid *grid);
   char getChar() override;
   void notify(Subject *whoNotified) override;
-  void setHoard(DragonHoard *dh) override;
+  void setHoard(DragonHoard *dh);
   std::string getRace() override;
 };
 

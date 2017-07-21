@@ -17,6 +17,6 @@ char Human::getChar() {
   return 'H';
 }
 
-string Human::getRace() override {
+string Human::getRace() {
   return "human";
 }

@@ -22,7 +22,7 @@ Grid::Grid(string floorFile): floor{vector<string>(25)} {
   }
 
   // initializing all fields
-  player = new Shade(5, 5, this);
+  //player = new Shade(5, 5, this);
   enemies.push_back(new Human(5, 6, this));
   enemies.push_back(new Dwarf(6, 5, this));
 
@@ -80,7 +80,7 @@ void Grid::playerAttack(Direction dir) {
           deadEnemies.push_back(enemies[i]);
           enemies.erase(enemies.begin()+i);
         } else {
-          addAction("Enemy has HP " + to_string(enemies[i]->getHp()) + ". ");
+          addAction("The " + enemies[i]->getRace() + " has HP " + to_string(enemies[i]->getHp()) + " remaining. ");
         }
       } else {
         addAction("Your attack missed. ");
@@ -147,4 +147,24 @@ void Grid::findDestination(int &destx, int &desty, Direction dir) const {
 
 void Grid::enemyAttack(Character *enemy) {
   enemy->attack(player);
+}
+
+void Grid::setPlayerCharacter(PlayerCharacter *pc) {
+  player = pc;
+}
+
+void Grid::addNewEnemy(EnemyCharacter *ec) {
+  enemies.push_back(ec);
+}
+
+void Grid::addNewPotion(Potion *p) {
+  potions.push_back(p);
+}
+
+void Grid::addNewGold(Gold *g) {
+  golds.push_back(g);
+}
+
+void Grid::setStair(int x, int y) {
+  stair = make_pair(x, y);
 }

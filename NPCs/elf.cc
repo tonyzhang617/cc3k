@@ -15,6 +15,6 @@ char Elf::getChar() {
   return 'E';
 }
 
-string Elf::getRace() override {
+string Elf::getRace() {
   return "elf";
 }

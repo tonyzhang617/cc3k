@@ -41,6 +41,6 @@ char Halfling::getChar() {
   return 'L';
 }
 
-string Halfling::getRace() override {
+string Halfling::getRace() {
   return "halfling";
 }
