@@ -52,6 +52,6 @@ void Merchant::notify(Subject *whoNotified) {
   }
 }
 
-string Merchant::getRace() override {
+string Merchant::getRace() {
   return "merchant";
 }

@@ -9,6 +9,8 @@
 /home/tony/Projects/github/cc3k_v2/NPCs/dragon.cc
 dragon.h
 /home/tony/Projects/github/cc3k_v2/NPCs/dragon.h
+../gold/dragon_hoard.h
+/home/tony/Projects/github/cc3k_v2/gold/dragon_hoard.h
 
 /home/tony/Projects/github/cc3k_v2/NPCs/dragon.h
 enemy_character.h
@@ -105,6 +107,8 @@ drow.h
 /home/tony/Projects/github/cc3k_v2/PCs/drow.h
 ../grid.h
 /home/tony/Projects/github/cc3k_v2/grid.h
+../item.h
+/home/tony/Projects/github/cc3k_v2/item.h
 
 /home/tony/Projects/github/cc3k_v2/PCs/drow.h
 player_character.h
@@ -129,6 +133,8 @@ player_character.h
 /home/tony/Projects/github/cc3k_v2/PCs/player_character.h
 ../grid.h
 /home/tony/Projects/github/cc3k_v2/grid.h
+../item.h
+/home/tony/Projects/github/cc3k_v2/item.h
 
 /home/tony/Projects/github/cc3k_v2/PCs/player_character.h
 string
@@ -209,6 +215,14 @@ enum.h
 /home/tony/Projects/github/cc3k_v2/enum.h
 string
 -
+
+/home/tony/Projects/github/cc3k_v2/gold/dragon_hoard.h
+gold.h
+/home/tony/Projects/github/cc3k_v2/gold/gold.h
+
+/home/tony/Projects/github/cc3k_v2/gold/gold.h
+../item.h
+/home/tony/Projects/github/cc3k_v2/item.h
 
 /home/tony/Projects/github/cc3k_v2/grid.cc
 fstream

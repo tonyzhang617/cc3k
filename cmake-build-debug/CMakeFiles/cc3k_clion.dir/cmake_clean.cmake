@@ -20,6 +20,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o"
   "CMakeFiles/cc3k_clion.dir/enum.cc.o"
   "CMakeFiles/cc3k_clion.dir/observer.cc.o"
+  "CMakeFiles/cc3k_clion.dir/factory/factory.cc.o"
+  "CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.o"
+  "CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.o"
+  "CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.o"
+  "CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.o"
   "cc3k_clion.pdb"
   "cc3k_clion"
 )

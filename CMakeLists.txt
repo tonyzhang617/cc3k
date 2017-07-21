@@ -42,6 +42,6 @@ set(SOURCE_FILES
         PCs/troll.cc
         PCs/troll.h
         PCs/vampire.cc
-        PCs/vampire.h enum.cc observer.cc)
+        PCs/vampire.h enum.cc observer.cc factory/factory.cc factory/factory.h factory/pc_factory.cc factory/pc_factory.h factory/enemy_factory.cc factory/enemy_factory.h factory/stair_factory.cc factory/stair_factory.h factory/potion_factory.cc factory/potion_factory.h)
 
 add_executable(cc3k_clion ${SOURCE_FILES})

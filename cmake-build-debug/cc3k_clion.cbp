@@ -183,6 +183,36 @@
 		<Unit filename="/home/tony/Projects/github/cc3k_v2/enum.h">
 			<Option target="cc3k_clion"/>
 		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_v2/factory/enemy_factory.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_v2/factory/enemy_factory.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_v2/factory/factory.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_v2/factory/factory.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_v2/factory/pc_factory.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_v2/factory/pc_factory.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_v2/factory/potion_factory.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_v2/factory/potion_factory.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_v2/factory/stair_factory.cc">
+			<Option target="cc3k_clion"/>
+		</Unit>
+		<Unit filename="/home/tony/Projects/github/cc3k_v2/factory/stair_factory.h">
+			<Option target="cc3k_clion"/>
+		</Unit>
 		<Unit filename="/home/tony/Projects/github/cc3k_v2/grid.cc">
 			<Option target="cc3k_clion"/>
 		</Unit>

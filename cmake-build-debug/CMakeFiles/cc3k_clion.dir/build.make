@@ -561,6 +561,126 @@ CMakeFiles/cc3k_clion.dir/observer.cc.o.provides: CMakeFiles/cc3k_clion.dir/obse
 CMakeFiles/cc3k_clion.dir/observer.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/observer.cc.o
 
 
+CMakeFiles/cc3k_clion.dir/factory/factory.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
+CMakeFiles/cc3k_clion.dir/factory/factory.cc.o: ../factory/factory.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/cc3k_clion.dir/factory/factory.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/factory/factory.cc.o -c /home/tony/Projects/github/cc3k_v2/factory/factory.cc
+
+CMakeFiles/cc3k_clion.dir/factory/factory.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/factory/factory.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/factory/factory.cc > CMakeFiles/cc3k_clion.dir/factory/factory.cc.i
+
+CMakeFiles/cc3k_clion.dir/factory/factory.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/factory/factory.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/factory/factory.cc -o CMakeFiles/cc3k_clion.dir/factory/factory.cc.s
+
+CMakeFiles/cc3k_clion.dir/factory/factory.cc.o.requires:
+
+.PHONY : CMakeFiles/cc3k_clion.dir/factory/factory.cc.o.requires
+
+CMakeFiles/cc3k_clion.dir/factory/factory.cc.o.provides: CMakeFiles/cc3k_clion.dir/factory/factory.cc.o.requires
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/factory.cc.o.provides.build
+.PHONY : CMakeFiles/cc3k_clion.dir/factory/factory.cc.o.provides
+
+CMakeFiles/cc3k_clion.dir/factory/factory.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/factory/factory.cc.o
+
+
+CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
+CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.o: ../factory/pc_factory.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.o -c /home/tony/Projects/github/cc3k_v2/factory/pc_factory.cc
+
+CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/factory/pc_factory.cc > CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.i
+
+CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/factory/pc_factory.cc -o CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.s
+
+CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.o.requires:
+
+.PHONY : CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.o.requires
+
+CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.o.provides: CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.o.requires
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.o.provides.build
+.PHONY : CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.o.provides
+
+CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.o
+
+
+CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
+CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.o: ../factory/enemy_factory.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.o -c /home/tony/Projects/github/cc3k_v2/factory/enemy_factory.cc
+
+CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/factory/enemy_factory.cc > CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.i
+
+CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/factory/enemy_factory.cc -o CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.s
+
+CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.o.requires:
+
+.PHONY : CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.o.requires
+
+CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.o.provides: CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.o.requires
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.o.provides.build
+.PHONY : CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.o.provides
+
+CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.o
+
+
+CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
+CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.o: ../factory/stair_factory.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.o -c /home/tony/Projects/github/cc3k_v2/factory/stair_factory.cc
+
+CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/factory/stair_factory.cc > CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.i
+
+CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/factory/stair_factory.cc -o CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.s
+
+CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.o.requires:
+
+.PHONY : CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.o.requires
+
+CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.o.provides: CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.o.requires
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.o.provides.build
+.PHONY : CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.o.provides
+
+CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.o
+
+
+CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.o: CMakeFiles/cc3k_clion.dir/flags.make
+CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.o: ../factory/potion_factory.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.o -c /home/tony/Projects/github/cc3k_v2/factory/potion_factory.cc
+
+CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tony/Projects/github/cc3k_v2/factory/potion_factory.cc > CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.i
+
+CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tony/Projects/github/cc3k_v2/factory/potion_factory.cc -o CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.s
+
+CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.o.requires:
+
+.PHONY : CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.o.requires
+
+CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.o.provides: CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.o.requires
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.o.provides.build
+.PHONY : CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.o.provides
+
+CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.o.provides.build: CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.o
+
+
 # Object files for target cc3k_clion
 cc3k_clion_OBJECTS = \
 "CMakeFiles/cc3k_clion.dir/item.cc.o" \
@@ -583,7 +703,12 @@ cc3k_clion_OBJECTS = \
 "CMakeFiles/cc3k_clion.dir/PCs/troll.cc.o" \
 "CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o" \
 "CMakeFiles/cc3k_clion.dir/enum.cc.o" \
-"CMakeFiles/cc3k_clion.dir/observer.cc.o"
+"CMakeFiles/cc3k_clion.dir/observer.cc.o" \
+"CMakeFiles/cc3k_clion.dir/factory/factory.cc.o" \
+"CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.o" \
+"CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.o" \
+"CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.o" \
+"CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.o"
 
 # External object files for target cc3k_clion
 cc3k_clion_EXTERNAL_OBJECTS =
@@ -609,9 +734,14 @@ cc3k_clion: CMakeFiles/cc3k_clion.dir/PCs/troll.cc.o
 cc3k_clion: CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o
 cc3k_clion: CMakeFiles/cc3k_clion.dir/enum.cc.o
 cc3k_clion: CMakeFiles/cc3k_clion.dir/observer.cc.o
+cc3k_clion: CMakeFiles/cc3k_clion.dir/factory/factory.cc.o
+cc3k_clion: CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.o
+cc3k_clion: CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.o
+cc3k_clion: CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.o
+cc3k_clion: CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.o
 cc3k_clion: CMakeFiles/cc3k_clion.dir/build.make
 cc3k_clion: CMakeFiles/cc3k_clion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable cc3k_clion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tony/Projects/github/cc3k_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable cc3k_clion"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cc3k_clion.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -640,6 +770,11 @@ CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/PCs/troll.cc.o.req
 CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/PCs/vampire.cc.o.requires
 CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/enum.cc.o.requires
 CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/observer.cc.o.requires
+CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/factory/factory.cc.o.requires
+CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.o.requires
+CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.o.requires
+CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.o.requires
+CMakeFiles/cc3k_clion.dir/requires: CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.o.requires
 
 .PHONY : CMakeFiles/cc3k_clion.dir/requires
 

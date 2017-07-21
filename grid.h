@@ -7,14 +7,20 @@
 #include "character.h"
 #include "PCs/player_character.h"
 #include "enum.h"
+#include <utility>
 
+class Potion;
+class Gold;
 class Grid {
   std::vector<EnemyCharacter*> enemies, deadEnemies;
-  // TODO: add the item vector!!
+  std::vector<Potion *> potions;
+  std::vector<Gold *> golds;
   PlayerCharacter *player;
   std::vector<std::string> floor;
   std::string caption;
+  std::pair<int, int> stair;
 public:
+  const int WIDTH = 79, HEIGHT = 25;
   Grid(std::string floorFile);
   CellType getCellTypeAt(const int x, const int y) const;
   void print();
@@ -27,7 +33,11 @@ public:
   void addAction(std::string action);
   // void playerConsumeGold();
   void findDestination(int &destx, int &desty, Direction dir) const;
-  void removeEnemy(EnemyCharacter *enemy);
+  void setPlayerCharacter(PlayerCharacter *pc);
+  void addNewEnemy(EnemyCharacter *ec);
+  void addNewPotion(Potion *p);
+  void addNewGold(Gold *g);
+  void setStair(int x, int y);
 };
 
 #endif

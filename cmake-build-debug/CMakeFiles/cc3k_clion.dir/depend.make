@@ -7,7 +7,10 @@ CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../NPCs/enemy_character.h
 CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../PCs/player_character.h
 CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../character.h
 CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../enum.h
+CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../gold/dragon_hoard.h
+CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../gold/gold.h
 CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../grid.h
+CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../item.h
 CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../observer.h
 CMakeFiles/cc3k_clion.dir/NPCs/dragon.cc.o: ../subject.h
 
@@ -89,6 +92,7 @@ CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o: ../PCs/player_character.h
 CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o: ../character.h
 CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o: ../enum.h
 CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o: ../grid.h
+CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o: ../item.h
 CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o: ../observer.h
 CMakeFiles/cc3k_clion.dir/PCs/drow.cc.o: ../subject.h
 
@@ -109,6 +113,7 @@ CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o: ../PCs/player_character.h
 CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o: ../character.h
 CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o: ../enum.h
 CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o: ../grid.h
+CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o: ../item.h
 CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o: ../observer.h
 CMakeFiles/cc3k_clion.dir/PCs/player_character.cc.o: ../subject.h
 

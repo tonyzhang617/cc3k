@@ -1,6 +1,7 @@
 #ifndef ITEM_H
 #define ITEM_H
 #include <utility>
+#include "enum.h"
 
 class Grid;
 class PlayerCharacter;

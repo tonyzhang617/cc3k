@@ -555,6 +555,141 @@ enum.cc.s:
 	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/enum.cc.s
 .PHONY : enum.cc.s
 
+factory/enemy_factory.o: factory/enemy_factory.cc.o
+
+.PHONY : factory/enemy_factory.o
+
+# target to build an object file
+factory/enemy_factory.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.o
+.PHONY : factory/enemy_factory.cc.o
+
+factory/enemy_factory.i: factory/enemy_factory.cc.i
+
+.PHONY : factory/enemy_factory.i
+
+# target to preprocess a source file
+factory/enemy_factory.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.i
+.PHONY : factory/enemy_factory.cc.i
+
+factory/enemy_factory.s: factory/enemy_factory.cc.s
+
+.PHONY : factory/enemy_factory.s
+
+# target to generate assembly for a file
+factory/enemy_factory.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/enemy_factory.cc.s
+.PHONY : factory/enemy_factory.cc.s
+
+factory/factory.o: factory/factory.cc.o
+
+.PHONY : factory/factory.o
+
+# target to build an object file
+factory/factory.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/factory.cc.o
+.PHONY : factory/factory.cc.o
+
+factory/factory.i: factory/factory.cc.i
+
+.PHONY : factory/factory.i
+
+# target to preprocess a source file
+factory/factory.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/factory.cc.i
+.PHONY : factory/factory.cc.i
+
+factory/factory.s: factory/factory.cc.s
+
+.PHONY : factory/factory.s
+
+# target to generate assembly for a file
+factory/factory.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/factory.cc.s
+.PHONY : factory/factory.cc.s
+
+factory/pc_factory.o: factory/pc_factory.cc.o
+
+.PHONY : factory/pc_factory.o
+
+# target to build an object file
+factory/pc_factory.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.o
+.PHONY : factory/pc_factory.cc.o
+
+factory/pc_factory.i: factory/pc_factory.cc.i
+
+.PHONY : factory/pc_factory.i
+
+# target to preprocess a source file
+factory/pc_factory.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.i
+.PHONY : factory/pc_factory.cc.i
+
+factory/pc_factory.s: factory/pc_factory.cc.s
+
+.PHONY : factory/pc_factory.s
+
+# target to generate assembly for a file
+factory/pc_factory.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/pc_factory.cc.s
+.PHONY : factory/pc_factory.cc.s
+
+factory/potion_factory.o: factory/potion_factory.cc.o
+
+.PHONY : factory/potion_factory.o
+
+# target to build an object file
+factory/potion_factory.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.o
+.PHONY : factory/potion_factory.cc.o
+
+factory/potion_factory.i: factory/potion_factory.cc.i
+
+.PHONY : factory/potion_factory.i
+
+# target to preprocess a source file
+factory/potion_factory.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.i
+.PHONY : factory/potion_factory.cc.i
+
+factory/potion_factory.s: factory/potion_factory.cc.s
+
+.PHONY : factory/potion_factory.s
+
+# target to generate assembly for a file
+factory/potion_factory.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/potion_factory.cc.s
+.PHONY : factory/potion_factory.cc.s
+
+factory/stair_factory.o: factory/stair_factory.cc.o
+
+.PHONY : factory/stair_factory.o
+
+# target to build an object file
+factory/stair_factory.cc.o:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.o
+.PHONY : factory/stair_factory.cc.o
+
+factory/stair_factory.i: factory/stair_factory.cc.i
+
+.PHONY : factory/stair_factory.i
+
+# target to preprocess a source file
+factory/stair_factory.cc.i:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.i
+.PHONY : factory/stair_factory.cc.i
+
+factory/stair_factory.s: factory/stair_factory.cc.s
+
+.PHONY : factory/stair_factory.s
+
+# target to generate assembly for a file
+factory/stair_factory.cc.s:
+	$(MAKE) -f CMakeFiles/cc3k_clion.dir/build.make CMakeFiles/cc3k_clion.dir/factory/stair_factory.cc.s
+.PHONY : factory/stair_factory.cc.s
+
 grid.o: grid.cc.o
 
 .PHONY : grid.o
@@ -747,6 +882,21 @@ help:
 	@echo "... enum.o"
 	@echo "... enum.i"
 	@echo "... enum.s"
+	@echo "... factory/enemy_factory.o"
+	@echo "... factory/enemy_factory.i"
+	@echo "... factory/enemy_factory.s"
+	@echo "... factory/factory.o"
+	@echo "... factory/factory.i"
+	@echo "... factory/factory.s"
+	@echo "... factory/pc_factory.o"
+	@echo "... factory/pc_factory.i"
+	@echo "... factory/pc_factory.s"
+	@echo "... factory/potion_factory.o"
+	@echo "... factory/potion_factory.i"
+	@echo "... factory/potion_factory.s"
+	@echo "... factory/stair_factory.o"
+	@echo "... factory/stair_factory.i"
+	@echo "... factory/stair_factory.s"
 	@echo "... grid.o"
 	@echo "... grid.i"
 	@echo "... grid.s"

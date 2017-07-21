@@ -1,5 +1,5 @@
 #ifndef GOLD_H
-#define GOLD_h
+#define GOLD_H
 #include "../item.h"
 
 class Gold: public Item {
@@ -8,7 +8,7 @@ protected:
 public:
   Gold(int x, int y, Grid *grid, int value);
   char getChar() override;
-  void consumedBy(PlayCharacter * pc) override;
+  void consumedBy(PlayerCharacter * pc) override;
   void consumedBy(Drow * drow) override;
 };
 

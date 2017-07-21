@@ -22,6 +22,6 @@ char Orcs::getChar() {
   return 'O';
 }
 
-string Orcs::getRace() override {
+string Orcs::getRace() {
   return "orcs";
 }

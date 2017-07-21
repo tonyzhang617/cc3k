@@ -1,5 +1,6 @@
 #include "player_character.h"
 #include "../grid.h"
+#include "../item.h"
 using namespace std;
 
 PlayerCharacter::PlayerCharacter(int x, int y, Grid *g, int dHP, int dAtk, int dDef):

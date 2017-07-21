@@ -2,8 +2,8 @@
 #define NORMAL_HOARD_H
 #include "gold.h"
 
-class NormalHoard : public Gold{
+class NormalHoard : public Gold {
 public:
-  NormalHoard(int x, int y, Grid *grid);
+  NormalHoard(int x, int y, Grid *grid): Gold{x, y, grid, 2} {};
 };
 #endif
