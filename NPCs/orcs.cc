@@ -22,3 +22,7 @@ bool Orcs::attack(Character *c) {
 char Orcs::getChar() {
   return 'O';
 }
+
+string Orcs::getRace() override {
+  return "orcs";
+}

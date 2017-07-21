@@ -44,3 +44,7 @@ bool Halfling::attackedBy(Vampire *c) {
 char Halfling::getChar() {
   return 'L';
 }
+
+string Halfling::getRace() override {
+  return "halfling";
+}

@@ -7,6 +7,7 @@ public:
   Elf(int x, int y, Grid *grid);
   bool attack(Character *c) override;
   char getChar() override;
+  std::string getRace() override;
 };
 
 #endif

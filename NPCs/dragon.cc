@@ -31,3 +31,7 @@ void Dragon::notify(Subject *whoNotified) {
 void Dragon::setHoard(DragonHoard *dh) {
   hoard = dh;
 }
+
+string Dragon::getRace() override {
+  return "dragon";
+}

@@ -10,6 +10,7 @@ public:
   bool attackedBy(Character *c) override;
   bool attackedBy(Vampire *c) override;
   char getChar() override;
+  std::string getRace() override;
 };
 
 #endif

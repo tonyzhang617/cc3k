@@ -12,7 +12,6 @@ bool Dwarf::attackedBy(Vampire *c) {
   int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
   modifyHP(-damage);
   c->modifyHP(-5);
-  // grid->addAction("You attacked Dwarf. ");
   if(isDead()) {
     c->slay(this);
   }
@@ -21,4 +20,8 @@ bool Dwarf::attackedBy(Vampire *c) {
 
 char Dwarf::getChar() {
   return 'W';
+}
+
+string Dwarf::getRace() override {
+  return "dwarf";
 }

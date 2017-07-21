@@ -16,3 +16,7 @@ void Human::slainBy(Character *c) {
 char Human::getChar() {
   return 'H';
 }
+
+string Human::getRace() override {
+  return "human";
+}

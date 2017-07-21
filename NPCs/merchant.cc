@@ -54,3 +54,7 @@ void Merchant::notify(Subject *whoNotified) {
     }
   }
 }
+
+string Merchant::getRace() override {
+  return "merchant";
+}

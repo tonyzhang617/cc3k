@@ -13,7 +13,6 @@ public:
   void modifyHP(int n) override;
   char getChar() override;
   std::string getRace() override;
-  // void notify(Subject *whoNotified) override;
   // ~EnenmyCharacter() = 0 {}
 };
 

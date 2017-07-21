@@ -14,3 +14,7 @@ bool Elf::attack(Character *c) {
 char Elf::getChar() {
   return 'E';
 }
+
+string Elf::getRace() override {
+  return "elf";
+}

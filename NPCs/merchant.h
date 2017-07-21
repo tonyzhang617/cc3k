@@ -15,6 +15,7 @@ public:
   bool attackedBy(Vampire *c) override;
   char getChar() override;
   void notify(Subject *whoNotified) override;
+  std::string getRace() override;
 };
 
 #endif

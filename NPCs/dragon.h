@@ -11,6 +11,7 @@ public:
   char getChar() override;
   void notify(Subject *whoNotified) override;
   void setHoard(DragonHoard *dh) override;
+  std::string getRace() override;
 };
 
 #endif
