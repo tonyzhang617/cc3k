@@ -10,10 +10,15 @@
 
 using namespace std;
 
-EnemyFactory::EnemyFactory(Grid *grid): Factory{grid} {}
+EnemyFactory::EnemyFactory(Grid *grid): Factory{grid}, ets{EnemyType::HUMAN, EnemyType::HUMAN, EnemyType::HUMAN, EnemyType::HUMAN,
+                                                            EnemyType::DWARF, EnemyType::DWARF, EnemyType::DWARF,
+                                                            EnemyType::HALFLING, EnemyType::HALFLING, EnemyType::HALFLING,
+                                                            EnemyType::HALFLING, EnemyType::HALFLING,
+                                                            EnemyType::ELF, EnemyType::ELF, EnemyType::ORCS, EnemyType::ORCS,
+                                                            EnemyType::MERCHANT, EnemyType::MERCHANT} {}
 
-void EnemyFactory::createAt(EntityType type, int x, int y) {
-  if (type == EntityType::RANDOM) {
+void EnemyFactory::createAt(int x, int y, EntityType type) {
+  if (type == EntityType::RANDOM_ENTITY) {
     EnemyType et = ets[rand() % 18];
     if (et == EnemyType::DRAGON) {
       Dragon *dragon = new Dragon{x, y, grid};

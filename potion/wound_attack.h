@@ -4,8 +4,9 @@
 
 class WoundAttack: public Potion {
 public:
-  WoundAttack::WoundAttack(int x, int y, Grid *grid);
-  void consumedBy(PlayerCharacter * pc) override;
-  void consumedBy(Drow * drow) override;
+  WoundAttack(int x, int y, Grid *grid);
+  bool consumedBy(PlayerCharacter * pc) override;
+  bool consumedBy(Drow * drow) override;
+  std::string getType() override;
 };
 #endif

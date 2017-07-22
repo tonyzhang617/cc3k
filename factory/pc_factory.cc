@@ -7,7 +7,7 @@
 
 PCFactory::PCFactory(Grid *grid): Factory{grid} {}
 
-void PCFactory::createAt(EntityType type, int x, int y) {
+void PCFactory::createAt(int x, int y, EntityType type) {
   if (type == EntityType::DROW) {
     grid->setPlayerCharacter(new Drow(x, y, grid));
   } else if (type == EntityType::GOBLIN) {

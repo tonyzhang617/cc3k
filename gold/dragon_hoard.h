@@ -6,8 +6,9 @@ class Dragon;
 class DragonHoard : public Gold{
   Dragon *dragon;
 public:
+  bool isGuarded = true;
   DragonHoard(int x, int y, Grid *grid, Dragon *dragon);
-  void consumedBy(PlayerCharacter * pc) override;
-  void consumedBy(Drow * drow) override;
+  bool consumedBy(PlayerCharacter * pc) override;
+  bool consumedBy(Drow * drow) override;
 };
 #endif

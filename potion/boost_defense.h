@@ -4,9 +4,10 @@
 
 class BoostDefense: public Potion {
 public:
-  BoostDefense::BoostDefense(int x, int y, Grid *grid);
-  void consumedBy(PlayerCharacter * pc) override;
-  void consumedBy(Drow * drow) override;
+  BoostDefense(int x, int y, Grid *grid);
+  bool consumedBy(PlayerCharacter * pc) override;
+  bool consumedBy(Drow * drow) override;
+  std::string getType() override;
 };
 
 #endif

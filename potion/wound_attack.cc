@@ -5,10 +5,18 @@ using namespace std;
 
 WoundAttack::WoundAttack(int x, int y, Grid *grid): Potion{x, y, grid} {}
 
-void WoundAttack::consumedBy(PlayerCharacter * pc) {
+bool WoundAttack::consumedBy(PlayerCharacter * pc) {
   pc->modifyAtk(-5);
+  isUsed = true;
+  return true;
 }
 
-void WoundAttack::consumedBy(Drow *drow) {
+bool WoundAttack::consumedBy(Drow *drow) {
   drow->modifyAtk(-5*1.5);
+  isUsed = true;
+  return true;
+}
+
+string WoundAttack::getType() {
+  return "Wound Attack";
 }

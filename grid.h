@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <string>
+#include <iomanip>
 #include "NPCs/enemy_character.h"
 #include "character.h"
 #include "PCs/player_character.h"
@@ -15,12 +16,13 @@ class Grid {
   std::vector<EnemyCharacter*> enemies, deadEnemies;
   std::vector<Potion *> potions;
   std::vector<Gold *> golds;
-  PlayerCharacter *player;
+  PlayerCharacter *player = nullptr;
   std::vector<std::string> floor;
   std::string caption;
   std::pair<int, int> stair;
+  int level = 0;
 public:
-  const int WIDTH = 79, HEIGHT = 25;
+  const int WIDTH, HEIGHT;
   Grid(std::string floorFile);
   CellType getCellTypeAt(const int x, const int y) const;
   void print();
@@ -38,6 +40,8 @@ public:
   void addNewPotion(Potion *p);
   void addNewGold(Gold *g);
   void setStair(int x, int y);
+  void initializePlayerCharacter(std::string race = "");
+  void initializeFloor();
 };
 
 #endif

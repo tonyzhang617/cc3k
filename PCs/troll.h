@@ -6,6 +6,7 @@ class Troll : public PlayerCharacter {
   void trollMove() override;
 public:
   Troll(int x, int y, Grid *grid);
+  std::string getRace() override;
 };
 
 #endif

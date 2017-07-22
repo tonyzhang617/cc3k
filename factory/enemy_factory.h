@@ -4,14 +4,11 @@
 #include "factory.h"
 
 class EnemyFactory : public Factory {
-  EnemyType ets[] = {EnemyType::HUMAN, EnemyType::HUMAN, EnemyType::HUMAN, EnemyType::HUMAN,
-                     EnemyType::DWARF, EnemyType::DWARF, EnemyType::DWARF,
-                     EnemyType::HALFLING, EnemyType::HALFLING, EnemyType::HALFLING,
-                     EnemyType::HALFLING, EnemyType::HALFLING,
-                     EnemyType::ELF, EnemyType::ELF, EnemyType::ORCS, EnemyType::ORCS,
-                     EnemyType::MERCHANT, EnemyType::MERCHANT};
-  void createAt(EntityType type = EntityType::RANDOM, int x, int y) override;
+  EnemyType ets[18];
+  void createAt(int x, int y, EntityType type = EntityType::RANDOM_ENTITY) override;
 public:
   EnemyFactory(Grid *grid);
 
 };
+
+#endif

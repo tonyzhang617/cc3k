@@ -1,5 +1,7 @@
 #include "factory.h"
 
+using namespace std;
+
 Factory::Factory(Grid *grid): grid{grid} {}
 
 void Factory::createEntity(EntityType type) {
@@ -10,5 +12,5 @@ void Factory::createEntity(EntityType type) {
     CellType ct = grid->getCellTypeAt(x, y);
     if (ct == CellType::FLOOR) break;
   }
-  createAt(type, x, y);
+  createAt(x, y, type);
 }

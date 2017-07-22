@@ -3,8 +3,8 @@ using namespace std;
 
 StairFactory::StairFactory(Grid *grid): Factory{grid} {}
 
-void StairFactory::createAt(EntityType type, int x, int y) {
-  if (type == EntityType::RANDOM) {
+void StairFactory::createAt(int x, int y, EntityType type) {
+  if (type == EntityType::RANDOM_ENTITY) {
     grid->setStair(x, y);
   }
 }

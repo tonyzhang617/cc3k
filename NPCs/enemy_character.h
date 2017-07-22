@@ -2,7 +2,6 @@
 #define ENEMY_CHARACTER_H
 #include "../character.h"
 #include <string>
-// #include "observer.h"
 
 class EnemyCharacter: public Character {
 public:

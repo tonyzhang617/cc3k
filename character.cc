@@ -73,6 +73,10 @@ int Character::getDef() const {
   return def;
 }
 
+int Character::getGold() const {
+  return gold;
+}
+
 void Character::modifyHP(int n) {
   hp += n;
   hp = max(0, hp);

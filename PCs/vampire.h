@@ -7,6 +7,7 @@ public:
   Vampire(int x, int y, Grid *grid);
   void modifyHP(int n) override;
   bool attack(Character *c) override;
+  std::string getRace() override;
 };
 
 #endif

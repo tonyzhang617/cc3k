@@ -9,10 +9,14 @@ char Gold::getChar() {
   return 'G';
 }
 
-void Gold::consumedBy(PlayerCharacter * pc) {
+bool Gold::consumedBy(PlayerCharacter *pc) {
   pc->addGold(value);
+  isUsed = true;
+  return true;
 }
 
-void Gold::consumedBy(Drow * drow) {
+bool Gold::consumedBy(Drow * drow) {
   drow->addGold(value);
+  isUsed = true;
+  return true;
 }

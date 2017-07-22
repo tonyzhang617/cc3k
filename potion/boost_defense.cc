@@ -5,10 +5,18 @@ using namespace std;
 
 BoostDefense::BoostDefense(int x, int y, Grid *grid): Potion{x, y, grid} {}
 
-void BoostDefense::consumedBy(PlayerCharacter * pc) {
+bool BoostDefense::consumedBy(PlayerCharacter * pc) {
   pc->modifyDef(5);
+  isUsed = true;
+  return true;
 }
 
-void BoostDefense::consumedBy(Drow * drow) {
+bool BoostDefense::consumedBy(Drow * drow) {
   drow->modifyDef(5*1.5);
+  isUsed = true;
+  return true;
+}
+
+string BoostDefense::getType() {
+  return "Boost Defense";
 }

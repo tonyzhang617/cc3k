@@ -5,10 +5,18 @@ using namespace std;
 
 RestoreHealth::RestoreHealth(int x, int y, Grid *grid): Potion{x, y, grid} {}
 
-void RestoreHealth::consumedBy(PlayerCharacter * pc) {
+bool RestoreHealth::consumedBy(PlayerCharacter * pc) {
   pc->modifyHP(10);
+  isUsed = true;
+  return true;
 }
 
-void RestoreHealth::consumedBy(Drow *drow) {
+bool RestoreHealth::consumedBy(Drow *drow) {
   drow->modifyHP(10*1.5);
+  isUsed = true;
+  return true;
+}
+
+string RestoreHealth::getType() {
+  return "Restore Health";
 }

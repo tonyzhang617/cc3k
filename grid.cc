@@ -1,66 +1,117 @@
 #include <fstream>
 #include <iostream>
-#include <string>
 #include "grid.h"
 #include "NPCs/human.h"
 #include "NPCs/dwarf.h"
 #include "PCs/shade.h"
-#include "subject.h"
-#include "observer.h"
+#include "factory/pc_factory.h"
+#include "factory/enemy_factory.h"
+#include "factory/gold_factory.h"
+#include "factory/potion_factory.h"
+#include "factory/stair_factory.h"
+#include "gold/gold.h"
+#include "potion/potion.h"
 using namespace std;
 
-Grid::Grid(string floorFile): floor{vector<string>(25)} {
-  // read in floor file
+Grid::Grid(string floorFile): HEIGHT{25}, WIDTH{79} {
   ifstream ifs{floorFile};
   string line;
 
   if (ifs.good()) {
-    char c;
-    for (int i = 0; i < 25 && getline(ifs, line); ++i) {
-      floor[i] = string(line);
+    for (int i = 0; i < HEIGHT && getline(ifs, line); ++i) {
+      floor.push_back(line);
+    }
+  }
+}
+
+
+CellType Grid::getCellTypeAt(const int x, const int y) const {
+  if (x < 0 || y < 0 || x >= WIDTH || y >= HEIGHT) return CellType::ABYSS;
+
+  pair<int, int> cur = make_pair(x, y);
+
+  if (player != nullptr) {
+    if (player->getPosition() == cur)
+      return CellType::PC;
+
+    if (stair == cur) return CellType::STAIR;
+
+    for (auto e : enemies) {
+      if (!e->isDead()) {
+        if (e->getPosition() == cur)
+          return CellType::ENEMY;
+      }
+    }
+
+    for (auto p : potions) {
+      if (!p->isConsumed()) {
+        if (p->getPosition() == cur)
+          return CellType::POTION;
+      }
+    }
+
+    for (auto g : golds) {
+      if (!g->isConsumed()) {
+        if (g->getPosition() == cur)
+          return CellType::GOLD;
+      }
     }
   }
 
-  // initializing all fields
-  //player = new Shade(5, 5, this);
-  enemies.push_back(new Human(5, 6, this));
-  enemies.push_back(new Dwarf(6, 5, this));
+  char cell = floor[y][x];
+  if (cell == '|' || cell == '-') return CellType::WALL;
+  if (cell == '+') return CellType::DOORWAY;
+  if (cell == '#') return CellType::PASSAGE;
+  if (cell == '.') return CellType::FLOOR;
 
-  for (auto e : enemies) {
-    player->attach(e);
-  }
-}
-
-CellType Grid::getCellTypeAt(const int x, const int y) const {
-  // TODO
-  return CellType::FLOOR;
+  return CellType::ABYSS;
 }
 
 void Grid::print() {
-  char flr[25][79];
-  for (int i = 0; i < floor.size(); ++i) {
-    fill(flr[i], flr[i] + 79, ' ');
-    for (int j = 0; j < floor[i].size(); ++j) {
+  char flr[HEIGHT][WIDTH];
+  for (int i = 0; i < HEIGHT; ++i) {
+    fill(flr[i], flr[i] + WIDTH, ' ');
+    for (int j = 0; j < WIDTH; ++j) {
       flr[i][j] = floor[i][j];
     }
   }
   auto pos = player->getPosition();
   flr[pos.second][pos.first] = player->getChar();
+
+  pos = stair;
+  flr[pos.second][pos.first] = '\\';
+
   for (int i = 0; i < enemies.size(); ++i) {
     if (!enemies[i]->isDead()) {
       pos = enemies[i]->getPosition();
       flr[pos.second][pos.first] = enemies[i]->getChar();
     }
   }
-  // TODO: add in items and stair
 
-  for (int i = 0; i < 25; ++i) {
-    for (int j = 0; j < 79; ++j) {
+  for (auto p : potions) {
+    if (!p->isConsumed()) {
+      pos = p->getPosition();
+      flr[pos.second][pos.first] = p->getChar();
+    }
+  }
+
+  for (auto g : golds) {
+    if (!g->isConsumed()) {
+      pos = g->getPosition();
+      flr[pos.second][pos.first] = g->getChar();
+    }
+  }
+
+  for (int i = 0; i < HEIGHT; ++i) {
+    for (int j = 0; j < WIDTH; ++j) {
       cout << flr[i][j];
     }
     cout << endl;
   }
 
+  cout <<  "Race: " << player->getRace() << " Gold: " << player->getGold();
+  cout << internal << setw(55) << "Floor " << level << endl;
+  cout << "HP: " << player->getHp() << "\nAtk: " << player->getAtk() << "\nDef: " << player->getDef() << endl;
   cout << caption << endl << endl;
   caption = "";
 }
@@ -73,11 +124,13 @@ void Grid::playerAttack(Direction dir) {
     if (enemies[i]->getPosition() == pos) {
       isSuccessful = true;
       if (player->attack(enemies[i])) {
-        addAction("You attacked a " + enemies[i]->getRace() + ". ");
+        addAction("You attacked a(n) " + enemies[i]->getRace() + ". ");
         if (enemies[i]->isDead()) {
-          addAction("You slayed a " + enemies[i]->getRace() + ". ");
-          // Remove dead body
-          deadEnemies.push_back(enemies[i]);
+          addAction("You slayed a(n) " + enemies[i]->getRace() + ". ");
+
+          // free the dead enemy
+          delete enemies[i];
+          enemies[i] = nullptr;
           enemies.erase(enemies.begin()+i);
         } else {
           addAction("The " + enemies[i]->getRace() + " has HP " + to_string(enemies[i]->getHp()) + " remaining. ");
@@ -97,22 +150,52 @@ void Grid::playerAttack(Direction dir) {
 void Grid::playerConsumePotion(Direction dir) {
   pair<int, int> pos = player->getPosition();
   findDestination(pos.first, pos.second, dir);
+  bool hasConsumed = false;
+  for (int i = 0; i < potions.size(); ++i) {
+    if (potions[i]->getPosition() == pos) {
+      player->consumePotion(potions[i]);
+      addAction("You consumed " + potions[i]->getType() + ". ");
+      hasConsumed = true;
+
+      // free the consumed potion
+      delete potions[i];
+      potions[i] = nullptr;
+      potions.erase(potions.begin()+i);
+
+      break;
+    }
+  }
+
+  if (!hasConsumed) {
+    addAction("There is no potion in that direction. ");
+  }
   player->notifyObservers();
-  // TODO
 }
 
 void Grid::playerMove(Direction dir) {
   player->makeMove(dir);
   player->notifyObservers();
-  // TODO: check if the player stepped on gold
-}
 
-/*
-void playerConsumeGold(int x, int y) {
-  pair<int, int> pos = player->getPosition();
-  findDestination(pos.first, pos.second, dir);
+  for (int i = 0; i < golds.size(); ++i) {
+    if (golds[i]->getPosition() == player->getPosition()) {
+      if (golds[i]->consumedBy(player)) {
+        addAction("You picked up a gold. ");
+
+        // free the picked up gold
+        delete golds[i];
+        golds[i] = nullptr;
+        golds.erase(golds.begin()+i);
+      } else {
+        addAction("You cannot pick up this gold. ");
+      }
+    }
+  }
+
+  if (stair == player->getPosition()) {
+    initializeFloor();
+    addAction("You reached the next floor. ");
+  }
 }
-*/
 
 void Grid::addAction(string action) {
   caption += action;
@@ -146,7 +229,11 @@ void Grid::findDestination(int &destx, int &desty, Direction dir) const {
 }
 
 void Grid::enemyAttack(Character *enemy) {
-  enemy->attack(player);
+  if (enemy->attack(player)) {
+    addAction("You were attacked by a(n) " + enemy->getRace() + ". ");
+  } else {
+    addAction("The " + enemy->getRace() + " missed an attack. ");
+  }
 }
 
 void Grid::setPlayerCharacter(PlayerCharacter *pc) {
@@ -167,4 +254,52 @@ void Grid::addNewGold(Gold *g) {
 
 void Grid::setStair(int x, int y) {
   stair = make_pair(x, y);
+}
+
+void Grid::initializePlayerCharacter(string race) {
+  PCFactory makePC{this};
+  makePC.createEntity(getEntityFromString(race));
+  addAction("The player character has spawned.");
+}
+
+void Grid::initializeFloor() {
+  if (level != 1) {
+    //TODO
+    //delete old info
+  }
+
+  player->resetAtkDef();
+  int x, y;
+  while (1) {
+    x = rand() % WIDTH;
+    y = rand() % HEIGHT;
+    CellType ct = getCellTypeAt(x, y);
+    if (ct == CellType::FLOOR) break;
+  }
+  player->setPosition(x, y);
+
+  StairFactory makeStair{this};
+  makeStair.createEntity();
+
+  PotionFactory makePotion{this};
+  for (int i = 0; i < 10; i++) {
+    makePotion.createEntity();
+  }
+
+  GoldFactory makeGold{this};
+  for (int i = 0; i < 10; i++) {
+    makeGold.createEntity();
+  }
+
+
+  EnemyFactory makeEnemy{this};
+  for (int i = 0; i < 20; i++) {
+    makeEnemy.createEntity();
+  }
+
+  for (auto e : enemies) {
+    player->attach(e);
+  }
+
+  level++;
 }

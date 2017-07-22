@@ -39,7 +39,6 @@ set(SOURCE_FILES
         gold/merchant_hoard.h
         gold/normal_hoard.cc
         gold/normal_hoard.h
-        gold/normal_hoardl.h
         gold/small_hoard.cc
         gold/small_hoard.h
         potion/boost_attack.cc
@@ -67,6 +66,6 @@ set(SOURCE_FILES
         PCs/troll.cc
         PCs/troll.h
         PCs/vampire.cc
-        PCs/vampire.h enum.cc observer.cc factory/factory.cc factory/factory.h factory/pc_factory.cc factory/pc_factory.h factory/enemy_factory.cc factory/enemy_factory.h factory/stair_factory.cc factory/stair_factory.h factory/potion_factory.cc factory/potion_factory.h)
+        PCs/vampire.h enum.cc observer.cc factory/factory.cc factory/factory.h factory/pc_factory.cc factory/pc_factory.h factory/enemy_factory.cc factory/enemy_factory.h factory/stair_factory.cc factory/stair_factory.h factory/potion_factory.cc factory/potion_factory.h factory/gold_factory.cc factory/gold_factory.h)
 
 add_executable(cc3k_clion ${SOURCE_FILES})

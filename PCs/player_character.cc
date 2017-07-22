@@ -14,10 +14,6 @@ char PlayerCharacter::getChar() {
   return '@';
 }
 
-string PlayerCharacter::getRace() {
-  return "player";
-}
-
 bool PlayerCharacter::attack(Character *c) {
   if (c->attackedBy(this)) {
     trollMove();
@@ -43,11 +39,11 @@ void PlayerCharacter::modifyHP(int n) {
 }
 
 void PlayerCharacter::modifyAtk(int n) {
-  atk += max(0, atk+n);
+  atk = max(0, atk+n);
 }
 
 void PlayerCharacter::modifyDef(int n) {
-  def += max(0, atk+n);
+  def = max(0, def+n);
 }
 
 void PlayerCharacter::makeMove(Direction dir) {
@@ -63,12 +59,17 @@ void PlayerCharacter::makeMove(Direction dir) {
     case CellType::FLOOR:
       x = destx;
       y = desty;
-      cout << "Character moved. " << endl;
       trollMove();
       break;
     default:
-      cout << "Invalid move. " << endl;
+      grid->addAction("Invalid move. ");
+      break;
   }
 }
 
 void PlayerCharacter::trollMove() {}
+
+void PlayerCharacter::setPosition(int newX, int newY) {
+  x = newX;
+  y = newY;
+}

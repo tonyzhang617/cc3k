@@ -32,6 +32,10 @@ void Dragon::setHoard(DragonHoard *dh) {
   hoard = dh;
 }
 
+void Dragon::slainBy(Character *c) {
+  hoard->isGuarded = false;
+}
+
 string Dragon::getRace() {
   return "dragon";
 }

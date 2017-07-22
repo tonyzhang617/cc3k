@@ -1,5 +1,5 @@
 #include "merchant.h"
-#include "../grid.h"
+#include "../gold/merchant_hoard.h"
 using namespace std;
 
 bool Merchant::isHostile = false;
@@ -11,8 +11,8 @@ Merchant::Merchant(int x, int y, Grid *grid): EnemyCharacter(x, y, grid) {
 }
 
 void Merchant::slainBy(Character *c) {
-  c->addGold(legacy);
   isHostile = true;
+  grid->addNewGold(new MerchantHoard(x, y, grid));
 }
 
 bool Merchant::attackedBy(Character *c) {

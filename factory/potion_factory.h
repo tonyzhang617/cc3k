@@ -2,8 +2,11 @@
 #define POTION_FACTORY_H
 
 #include "factory.h"
+
 class PotionFactory : public Factory {
+  void createAt(int x, int y, EntityType type = EntityType::RANDOM_ENTITY) override;
+public:
   PotionFactory(Grid *grid);
 };
 
-#endif //CC3K_CLION_POTION_FACTORY_H
+#endif
