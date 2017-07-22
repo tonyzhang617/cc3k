@@ -9,6 +9,7 @@
 #include "factory/gold_factory.h"
 #include "factory/potion_factory.h"
 #include "factory/stair_factory.h"
+#include "gold/gold.h"
 using namespace std;
 
 Grid::Grid(string floorFile): floor{vector<string>(HEIGHT)} {
@@ -27,9 +28,7 @@ Grid::Grid(string floorFile): floor{vector<string>(HEIGHT)} {
 //  enemies.push_back(new Human(5, 6, this));
 //  enemies.push_back(new Dwarf(6, 5, this));
 
-  for (auto e : enemies) {
-    player->attach(e);
-  }
+
 }
 
 CellType Grid::getCellTypeAt(const int x, const int y) const {
@@ -105,15 +104,14 @@ void Grid::playerConsumePotion(Direction dir) {
 void Grid::playerMove(Direction dir) {
   player->makeMove(dir);
   player->notifyObservers();
-  // TODO: check if the player stepped on gold
+  for (auto g : golds) {
+    if (g->getPosition() == player->getPosition()) {
+      g->consumedBy(player);
+      //TODO: display message
+      addAction("");
+    }
+  }
 }
-
-/*
-void playerConsumeGold(int x, int y) {
-  pair<int, int> pos = player->getPosition();
-  findDestination(pos.first, pos.second, dir);
-}
-*/
 
 void Grid::addAction(string action) {
   caption += action;
@@ -202,5 +200,7 @@ void Grid::initializeFloor() {
     makeEnemy.createEntity();
   }
 
-  //TODO
+  for (auto e : enemies) {
+    player->attach(e);
+  }
 }
