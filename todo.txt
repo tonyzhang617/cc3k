@@ -1,5 +1,4 @@
 TODO:
--Subject subscription list syncs grid enemy vector after factory is done creating
--item display message?
 -drow magnifies potion effect. 5*1.5 is not a int.
--collect gold upon slay display message?
+-no need for isConsumed
+-pop consumed items and slayed enemies

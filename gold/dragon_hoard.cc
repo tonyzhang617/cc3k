@@ -10,7 +10,7 @@ DragonHoard::DragonHoard(int x, int y, Grid *grid, Dragon *dragon):
 }
 
 bool DragonHoard::consumedBy(PlayerCharacter * pc) {
-  if (dragon->isDead()) {
+  if (!isGuarded) {
     pc->addGold(value);
     isUsed = true;
     return true;
@@ -19,7 +19,7 @@ bool DragonHoard::consumedBy(PlayerCharacter * pc) {
 }
 
 bool DragonHoard::consumedBy(Drow * drow) {
-  if (dragon->isDead()) {
+  if (!isGuarded) {
     drow->addGold(value);
     isUsed = true;
     return true;

@@ -20,7 +20,7 @@ class Grid {
   std::vector<std::string> floor;
   std::string caption;
   std::pair<int, int> stair;
-  int level = 1;
+  int level = 0;
 public:
   const int WIDTH, HEIGHT;
   Grid(std::string floorFile);

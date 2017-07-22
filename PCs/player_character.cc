@@ -39,11 +39,11 @@ void PlayerCharacter::modifyHP(int n) {
 }
 
 void PlayerCharacter::modifyAtk(int n) {
-  atk += max(0, atk+n);
+  atk = max(0, atk+n);
 }
 
 void PlayerCharacter::modifyDef(int n) {
-  def += max(0, atk+n);
+  def = max(0, def+n);
 }
 
 void PlayerCharacter::makeMove(Direction dir) {
@@ -62,6 +62,7 @@ void PlayerCharacter::makeMove(Direction dir) {
       trollMove();
       break;
     default:
+      grid->addAction("Invalid move. ");
       break;
   }
 }

@@ -22,13 +22,6 @@ Grid::Grid(string floorFile): HEIGHT{25}, WIDTH{79} {
       floor.push_back(line);
     }
   }
-
-  for (int i = 0; i < floor.size(); ++i) {
-    for (int j = 0; j < floor[i].size(); ++j) {
-      cout << floor[i][j];
-    }
-    cout << endl;
-  }
 }
 
 
@@ -94,7 +87,7 @@ void Grid::print() {
       flr[pos.second][pos.first] = enemies[i]->getChar();
     }
   }
-  // TODO: deadpotion and deadgold vectors
+
   for (auto p : potions) {
     if (!p->isConsumed()) {
       pos = p->getPosition();
@@ -131,11 +124,13 @@ void Grid::playerAttack(Direction dir) {
     if (enemies[i]->getPosition() == pos) {
       isSuccessful = true;
       if (player->attack(enemies[i])) {
-        addAction("You attacked a " + enemies[i]->getRace() + ". ");
+        addAction("You attacked a(n) " + enemies[i]->getRace() + ". ");
         if (enemies[i]->isDead()) {
-          addAction("You slayed a " + enemies[i]->getRace() + ". ");
-          // Remove dead body
-          deadEnemies.push_back(enemies[i]);
+          addAction("You slayed a(n) " + enemies[i]->getRace() + ". ");
+
+          // free the dead enemy
+          delete enemies[i];
+          enemies[i] = nullptr;
           enemies.erase(enemies.begin()+i);
         } else {
           addAction("The " + enemies[i]->getRace() + " has HP " + to_string(enemies[i]->getHp()) + " remaining. ");
@@ -156,15 +151,23 @@ void Grid::playerConsumePotion(Direction dir) {
   pair<int, int> pos = player->getPosition();
   findDestination(pos.first, pos.second, dir);
   bool hasConsumed = false;
-  for (auto p : potions) {
-    if (p->getPosition() == pos) {
-      player->consumePotion(p);
-      addAction("You consumed " + p->getType() + ". ");
+  for (int i = 0; i < potions.size(); ++i) {
+    if (potions[i]->getPosition() == pos) {
+      player->consumePotion(potions[i]);
+      addAction("You consumed " + potions[i]->getType() + ". ");
       hasConsumed = true;
+
+      // free the consumed potion
+      delete potions[i];
+      potions[i] = nullptr;
+      potions.erase(potions.begin()+i);
+
+      break;
     }
   }
+
   if (!hasConsumed) {
-    addAction("There is no potion to consume. ");
+    addAction("There is no potion in that direction. ");
   }
   player->notifyObservers();
 }
@@ -172,12 +175,18 @@ void Grid::playerConsumePotion(Direction dir) {
 void Grid::playerMove(Direction dir) {
   player->makeMove(dir);
   player->notifyObservers();
-  for (auto g : golds) {
-    if (g->getPosition() == player->getPosition()) {
-      if (g->consumedBy(player)) {
-        addAction("You consumed gold. ");
+
+  for (int i = 0; i < golds.size(); ++i) {
+    if (golds[i]->getPosition() == player->getPosition()) {
+      if (golds[i]->consumedBy(player)) {
+        addAction("You picked up a gold. ");
+
+        // free the picked up gold
+        delete golds[i];
+        golds[i] = nullptr;
+        golds.erase(golds.begin()+i);
       } else {
-        addAction("You need to slay the dragon first before consuming this gold. ");
+        addAction("You cannot pick up this gold. ");
       }
     }
   }
@@ -222,6 +231,8 @@ void Grid::findDestination(int &destx, int &desty, Direction dir) const {
 void Grid::enemyAttack(Character *enemy) {
   if (enemy->attack(player)) {
     addAction("You were attacked by a(n) " + enemy->getRace() + ". ");
+  } else {
+    addAction("The " + enemy->getRace() + " missed an attack. ");
   }
 }
 
@@ -248,7 +259,7 @@ void Grid::setStair(int x, int y) {
 void Grid::initializePlayerCharacter(string race) {
   PCFactory makePC{this};
   makePC.createEntity(getEntityFromString(race));
-  addAction("PlayerCharacter has spawned.");
+  addAction("The player character has spawned.");
 }
 
 void Grid::initializeFloor() {
