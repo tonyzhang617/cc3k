@@ -4,7 +4,7 @@
 #include "factory.h"
 
 class PCFactory : public Factory {
-  void createAt(EntityType type = EntityType::SHADE, int x, int y) override;
+  void createAt(int x, int y, EntityType type = EntityType::SHADE) override;
 public:
   PCFactory(Grid *grid);
 };

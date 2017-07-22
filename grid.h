@@ -15,13 +15,13 @@ class Grid {
   std::vector<EnemyCharacter*> enemies, deadEnemies;
   std::vector<Potion *> potions;
   std::vector<Gold *> golds;
-  PlayerCharacter *player;
+  PlayerCharacter *player = nullptr;
   std::vector<std::string> floor;
   std::string caption;
   std::pair<int, int> stair;
   int level = 1;
 public:
-  const int WIDTH = 79, HEIGHT = 25;
+  const int WIDTH, HEIGHT;
   Grid(std::string floorFile);
   CellType getCellTypeAt(const int x, const int y) const;
   void print();

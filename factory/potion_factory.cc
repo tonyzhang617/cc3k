@@ -10,8 +10,8 @@ using namespace std;
 
 PotionFactory::PotionFactory(Grid *grid): Factory{grid} {}
 
-void PotionFactory::createAt(EntityType type, int x, int y) {
-  if (type == EntityType::RANDOM) {
+void PotionFactory::createAt(int x, int y, EntityType type) {
+  if (type == EntityType::RANDOM_ENTITY) {
     PotionType pt = static_cast<PotionType>(rand()%6);
     if (pt==PotionType::BOOST_ATTACK) {
       grid->addNewPotion(new BoostAttack(x, y, grid));

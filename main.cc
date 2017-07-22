@@ -6,8 +6,14 @@
 using namespace std;
 
 int main() {
-  Grid g("default_floor.map");
+  Grid g("defaultLevel.txt");
   string cmd;
+
+  cout << "Which player would you like to be? " << endl;
+  cin >> cmd;
+
+  g.initializePlayerCharacter(cmd);
+  g.initializeFloor();
 
   while (cin >> cmd) {
     if (cmd == "no" || cmd == "so" || cmd == "ea" || cmd == "we" ||

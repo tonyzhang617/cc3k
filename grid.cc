@@ -10,49 +10,104 @@
 #include "factory/potion_factory.h"
 #include "factory/stair_factory.h"
 #include "gold/gold.h"
+#include "potion/potion.h"
 using namespace std;
 
-Grid::Grid(string floorFile): floor{vector<string>(HEIGHT)} {
-  // read in floor file
+Grid::Grid(string floorFile): HEIGHT{25}, WIDTH{79} {
   ifstream ifs{floorFile};
   string line;
 
   if (ifs.good()) {
-    char c;
     for (int i = 0; i < HEIGHT && getline(ifs, line); ++i) {
-      floor[i] = string(line);
+      floor.push_back(line);
     }
   }
 
-  // initializing all fields
-//  enemies.push_back(new Human(5, 6, this));
-//  enemies.push_back(new Dwarf(6, 5, this));
-
-
+  for (int i = 0; i < floor.size(); ++i) {
+    for (int j = 0; j < floor[i].size(); ++j) {
+      cout << floor[i][j];
+    }
+    cout << endl;
+  }
 }
 
+
 CellType Grid::getCellTypeAt(const int x, const int y) const {
-  // TODO
-  return CellType::FLOOR;
+  if (x < 0 || y < 0 || x >= WIDTH || y >= HEIGHT) return CellType::ABYSS;
+
+  pair<int, int> cur = make_pair(x, y);
+
+  if (player != nullptr) {
+    if (player->getPosition() == cur)
+      return CellType::PC;
+
+    if (stair == cur) return CellType::STAIR;
+
+    for (auto e : enemies) {
+      if (!e->isDead()) {
+        if (e->getPosition() == cur)
+          return CellType::ENEMY;
+      }
+    }
+
+    for (auto p : potions) {
+      if (!p->isConsumed()) {
+        if (p->getPosition() == cur)
+          return CellType::POTION;
+      }
+    }
+
+    for (auto g : golds) {
+      if (!g->isConsumed()) {
+        if (g->getPosition() == cur)
+          return CellType::GOLD;
+      }
+    }
+  }
+
+  char cell = floor[y][x];
+  if (cell == '|' || cell == '-') return CellType::WALL;
+  if (cell == '+') return CellType::DOORWAY;
+  if (cell == '#') return CellType::PASSAGE;
+  if (cell == '.') return CellType::FLOOR;
+
+  return CellType::ABYSS;
 }
 
 void Grid::print() {
   char flr[HEIGHT][WIDTH];
-  for (int i = 0; i < floor.size(); ++i) {
+  for (int i = 0; i < HEIGHT; ++i) {
     fill(flr[i], flr[i] + WIDTH, ' ');
-    for (int j = 0; j < floor[i].size(); ++j) {
+    for (int j = 0; j < WIDTH; ++j) {
       flr[i][j] = floor[i][j];
     }
   }
   auto pos = player->getPosition();
   flr[pos.second][pos.first] = player->getChar();
+
+  pos = stair;
+  flr[pos.second][pos.first] = '\\';
+
   for (int i = 0; i < enemies.size(); ++i) {
     if (!enemies[i]->isDead()) {
       pos = enemies[i]->getPosition();
       flr[pos.second][pos.first] = enemies[i]->getChar();
     }
   }
-  // TODO: add in items and stair
+  // TODO: deadpotion and deadgold vectors
+  for (auto p : potions) {
+    if (!p->isConsumed()) {
+      pos = p->getPosition();
+      flr[pos.second][pos.first] = p->getChar();
+    }
+  }
+
+  for (auto g : golds) {
+    if (!g->isConsumed()) {
+      pos = g->getPosition();
+      flr[pos.second][pos.first] = g->getChar();
+    }
+  }
 
   for (int i = 0; i < HEIGHT; ++i) {
     for (int j = 0; j < WIDTH; ++j) {
@@ -194,6 +249,7 @@ void Grid::initializeFloor() {
   for (int i = 0; i < 10; i++) {
     makeGold.createEntity();
   }
+
 
   EnemyFactory makeEnemy{this};
   for (int i = 0; i < 20; i++) {

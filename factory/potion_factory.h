@@ -4,7 +4,7 @@
 #include "factory.h"
 
 class PotionFactory : public Factory {
-  void createAt(EntityType type = EntityType::RANDOM, int x, int y) override;
+  void createAt(int x, int y, EntityType type = EntityType::RANDOM_ENTITY) override;
 public:
   PotionFactory(Grid *grid);
 };

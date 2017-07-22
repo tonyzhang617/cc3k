@@ -7,8 +7,10 @@ BoostAttack::BoostAttack(int x, int y, Grid *grid): Potion{x, y, grid} {}
 
 void BoostAttack::consumedBy(PlayerCharacter * pc) {
   pc->modifyAtk(5);
+  isUsed = true;
 }
 
 void BoostAttack::consumedBy(Drow *drow) {
   drow->modifyAtk(5*1.5);
+  isUsed = true;
 }

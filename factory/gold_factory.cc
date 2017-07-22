@@ -5,18 +5,20 @@
 #include "enemy_factory.h"
 using namespace std;
 
-GoldFactory::GoldFactory(Grid *grid): Factory{grid} {}
+GoldFactory::GoldFactory(Grid *grid): Factory{grid}, gts{GoldType::SMALL_HOARD, GoldType::SMALL_HOARD,
+      GoldType::NORMAL_HOARD, GoldType::NORMAL_HOARD, GoldType::NORMAL_HOARD,
+      GoldType::NORMAL_HOARD, GoldType::NORMAL_HOARD, GoldType::DRAGON_HOARD} {}
 
-void GoldFactory::createAt(EntityType type, int x, int y) {
-  if (type == EntityType::RANDOM) {
+void GoldFactory::createAt(int x, int y, EntityType type) {
+  if (type == EntityType::RANDOM_ENTITY) {
     GoldType gt = gts[rand() % 8];
     if (gt == GoldType::SMALL_HOARD) {
       grid->addNewGold(new SmallHoard(x, y, grid));
-    } else (gt == GoldType::NORMAL_HOARD) {
+    } else if (gt == GoldType::NORMAL_HOARD) {
       grid->addNewGold(new NormalHoard(x, y, grid));
-    } else (gt == GoldType::DRAGON_HOARD) {
+    } else if (gt == GoldType::DRAGON_HOARD) {
       EnemyFactory dragonFactory{grid};
-      dragonFactory.createEntity(EntityType::RANDOM);
+      dragonFactory.createEntity(EntityType::RANDOM_ENTITY);
     }
   }
 }

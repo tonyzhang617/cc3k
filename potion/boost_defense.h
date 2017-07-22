@@ -4,7 +4,7 @@
 
 class BoostDefense: public Potion {
 public:
-  BoostDefense::BoostDefense(int x, int y, Grid *grid);
+  BoostDefense(int x, int y, Grid *grid);
   void consumedBy(PlayerCharacter * pc) override;
   void consumedBy(Drow * drow) override;
 };

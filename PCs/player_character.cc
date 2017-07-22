@@ -63,11 +63,10 @@ void PlayerCharacter::makeMove(Direction dir) {
     case CellType::FLOOR:
       x = destx;
       y = desty;
-      cout << "Character moved. " << endl;
       trollMove();
       break;
     default:
-      cout << "Invalid move. " << endl;
+      break;
   }
 }
 

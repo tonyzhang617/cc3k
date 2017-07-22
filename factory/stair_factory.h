@@ -3,7 +3,7 @@
 #include "factory.h"
 
 class StairFactory : public Factory {
-  void createAt(EntityType type = EntityType::RANDOM, int x, int y) override;
+  void createAt(int x, int y, EntityType type = EntityType::RANDOM_ENTITY) override;
 public:
   StairFactory(Grid *grid);
 };

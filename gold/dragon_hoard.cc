@@ -12,11 +12,13 @@ DragonHoard::DragonHoard(int x, int y, Grid *grid, Dragon *dragon):
 void DragonHoard::consumedBy(PlayerCharacter * pc) {
   if (dragon->isDead()) {
     pc->addGold(value);
+    isUsed = true;
   }
 }
 
 void DragonHoard::consumedBy(Drow * drow) {
   if (dragon->isDead()) {
     drow->addGold(value);
+    isUsed = true;
   }
 }

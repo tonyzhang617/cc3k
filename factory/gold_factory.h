@@ -3,10 +3,8 @@
 #include "factory.h"
 
 class GoldFactory : public Factory {
-  GoldType gts[] = {GoldType::SMALL_HOARD, GoldType::SMALL_HOARD,
-                    GoldType::NORMAL_HOARD, GoldType::NORMAL_HOARD, GoldType::NORMAL_HOARD,
-                    GoldType::NORMAL_HOARD, GoldType::NORMAL_HOARD, GoldType::DRAGON_HOARD};
-  void createAt(EntityType type = EntityType::RANDOM, int x, int y) override;
+  GoldType gts[8];
+  void createAt(int x, int y, EntityType type = EntityType::RANDOM_ENTITY) override;
 public:
   GoldFactory(Grid *grid);
 };
