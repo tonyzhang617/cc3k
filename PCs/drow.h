@@ -9,6 +9,7 @@ public:
   Drow(int x, int y, Grid *grid);
   void consumePotion(Item *p) override;
   bool attackedBy(Elf *c) override;
+  std::string getRace() override;
 };
 
 #endif

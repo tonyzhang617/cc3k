@@ -44,6 +44,7 @@ public:
   int getHp() const;
   int getAtk() const;
   int getDef() const;
+  int getGold() const;
   // virtual ~Character() = 0;
 };
 

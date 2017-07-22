@@ -12,3 +12,7 @@ void Vampire::modifyHP(int n) {
 bool Vampire::attack(Character *c) {
   return (c->attackedBy(this));
 }
+
+string Vampire::getRace() {
+  return "Vampire";
+}

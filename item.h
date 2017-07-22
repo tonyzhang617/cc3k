@@ -16,8 +16,8 @@ public:
   Item(int x, int y, Grid *grid);
   std::pair<int, int> getPosition();
   virtual char getChar() = 0;
-  virtual void consumedBy(PlayerCharacter * pc) = 0;
-  virtual void consumedBy(Drow * drow) = 0;
+  virtual bool consumedBy(PlayerCharacter *pc) = 0;
+  virtual bool consumedBy(Drow *drow) = 0;
   bool isConsumed();
 };
 

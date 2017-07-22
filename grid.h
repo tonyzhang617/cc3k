@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <string>
+#include <iomanip>
 #include "NPCs/enemy_character.h"
 #include "character.h"
 #include "PCs/player_character.h"

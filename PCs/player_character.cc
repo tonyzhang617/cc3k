@@ -14,10 +14,6 @@ char PlayerCharacter::getChar() {
   return '@';
 }
 
-string PlayerCharacter::getRace() {
-  return "player";
-}
-
 bool PlayerCharacter::attack(Character *c) {
   if (c->attackedBy(this)) {
     trollMove();
@@ -71,3 +67,8 @@ void PlayerCharacter::makeMove(Direction dir) {
 }
 
 void PlayerCharacter::trollMove() {}
+
+void PlayerCharacter::setPosition(int newX, int newY) {
+  x = newX;
+  y = newY;
+}

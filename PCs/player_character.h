@@ -13,7 +13,6 @@ protected:
 public:
   PlayerCharacter(int x, int y, Grid *g, int dHP, int dAtk, int dDef);
   char getChar() final;
-  std::string getRace() final;
   void makeMove(Direction dir) final;
   virtual void consumePotion(Item *p);
   void resetAtkDef();
@@ -21,6 +20,7 @@ public:
   void modifyAtk(int n);
   void modifyDef(int n);
   bool attack(Character *c) override;
+  void setPosition(int newX, int newY);
   // virtual ~PlayerCharacter() = 0 {}
 };
 

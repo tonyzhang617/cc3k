@@ -19,3 +19,7 @@ bool Drow::attackedBy(Elf *c) {
     return false;
   }
 }
+
+string Drow::getRace() {
+  return "Drow";
+}

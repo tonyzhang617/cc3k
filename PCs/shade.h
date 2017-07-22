@@ -5,6 +5,7 @@
 class Shade : public PlayerCharacter {
 public:
   Shade(int x, int y, Grid *grid);
+  std::string getRace() override;
 };
 
 #endif

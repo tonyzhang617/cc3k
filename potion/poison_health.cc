@@ -5,12 +5,18 @@ using namespace std;
 
 PoisonHealth::PoisonHealth(int x, int y, Grid *grid): Potion{x, y, grid} {}
 
-void PoisonHealth::consumedBy(PlayerCharacter * pc) {
+bool PoisonHealth::consumedBy(PlayerCharacter *pc) {
   pc->modifyHP(-10);
   isUsed = true;
+  return true;
 }
 
-void PoisonHealth::consumedBy(Drow * drow) {
+bool PoisonHealth::consumedBy(Drow *drow) {
   drow->modifyHP(-10*1.5);
   isUsed = true;
+  return true;
+}
+
+string PoisonHealth::getType() {
+  return "Poison Health";
 }

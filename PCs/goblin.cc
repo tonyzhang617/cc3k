@@ -15,3 +15,7 @@ bool Goblin::attackedBy(Orcs *c) {
   modifyHP(-damage);
   return true;
 }
+
+string Goblin::getRace() {
+  return "Goblin";
+}

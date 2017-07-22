@@ -8,6 +8,7 @@ public:
   Goblin(int x, int y, Grid *grid);
   void slay(Character *c) override;
   bool attackedBy(Orcs *c) override;
+  std::string getRace() override;
 };
 
 #endif

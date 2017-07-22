@@ -9,16 +9,20 @@ DragonHoard::DragonHoard(int x, int y, Grid *grid, Dragon *dragon):
   dragon->setHoard(this);
 }
 
-void DragonHoard::consumedBy(PlayerCharacter * pc) {
+bool DragonHoard::consumedBy(PlayerCharacter * pc) {
   if (dragon->isDead()) {
     pc->addGold(value);
     isUsed = true;
+    return true;
   }
+  return false;
 }
 
-void DragonHoard::consumedBy(Drow * drow) {
+bool DragonHoard::consumedBy(Drow * drow) {
   if (dragon->isDead()) {
     drow->addGold(value);
     isUsed = true;
+    return true;
   }
+  return false;
 }

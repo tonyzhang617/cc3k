@@ -5,7 +5,8 @@
 class WoundDefense: public Potion {
 public:
   WoundDefense(int x, int y, Grid *grid);
-  void consumedBy(PlayerCharacter * pc) override;
-  void consumedBy(Drow * drow) override;
+  bool consumedBy(PlayerCharacter * pc) override;
+  bool consumedBy(Drow * drow) override;
+  std::string getType() override;
 };
 #endif

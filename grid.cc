@@ -116,6 +116,9 @@ void Grid::print() {
     cout << endl;
   }
 
+  cout <<  "Race: " << player->getRace() << " Gold: " << player->getGold();
+  cout << internal << setw(55) << "Floor " << level << endl;
+  cout << "HP: " << player->getHp() << "\nAtk: " << player->getAtk() << "\nDef: " << player->getDef() << endl;
   cout << caption << endl << endl;
   caption = "";
 }
@@ -152,8 +155,18 @@ void Grid::playerAttack(Direction dir) {
 void Grid::playerConsumePotion(Direction dir) {
   pair<int, int> pos = player->getPosition();
   findDestination(pos.first, pos.second, dir);
+  bool hasConsumed = false;
+  for (auto p : potions) {
+    if (p->getPosition() == pos) {
+      player->consumePotion(p);
+      addAction("You consumed " + p->getType() + ". ");
+      hasConsumed = true;
+    }
+  }
+  if (!hasConsumed) {
+    addAction("There is no potion to consume. ");
+  }
   player->notifyObservers();
-  // TODO
 }
 
 void Grid::playerMove(Direction dir) {
@@ -161,10 +174,17 @@ void Grid::playerMove(Direction dir) {
   player->notifyObservers();
   for (auto g : golds) {
     if (g->getPosition() == player->getPosition()) {
-      g->consumedBy(player);
-      //TODO: display message
-      addAction("");
+      if (g->consumedBy(player)) {
+        addAction("You consumed gold. ");
+      } else {
+        addAction("You need to slay the dragon first before consuming this gold. ");
+      }
     }
+  }
+
+  if (stair == player->getPosition()) {
+    initializeFloor();
+    addAction("You reached the next floor. ");
   }
 }
 
@@ -200,7 +220,9 @@ void Grid::findDestination(int &destx, int &desty, Direction dir) const {
 }
 
 void Grid::enemyAttack(Character *enemy) {
-  enemy->attack(player);
+  if (enemy->attack(player)) {
+    addAction("You were attacked by a(n) " + enemy->getRace() + ". ");
+  }
 }
 
 void Grid::setPlayerCharacter(PlayerCharacter *pc) {
@@ -226,6 +248,7 @@ void Grid::setStair(int x, int y) {
 void Grid::initializePlayerCharacter(string race) {
   PCFactory makePC{this};
   makePC.createEntity(getEntityFromString(race));
+  addAction("PlayerCharacter has spawned.");
 }
 
 void Grid::initializeFloor() {
@@ -234,8 +257,15 @@ void Grid::initializeFloor() {
     //delete old info
   }
 
-  //TODO
-  //reset player and spawn
+  player->resetAtkDef();
+  int x, y;
+  while (1) {
+    x = rand() % WIDTH;
+    y = rand() % HEIGHT;
+    CellType ct = getCellTypeAt(x, y);
+    if (ct == CellType::FLOOR) break;
+  }
+  player->setPosition(x, y);
 
   StairFactory makeStair{this};
   makeStair.createEntity();
@@ -259,4 +289,6 @@ void Grid::initializeFloor() {
   for (auto e : enemies) {
     player->attach(e);
   }
+
+  level++;
 }
