@@ -21,6 +21,7 @@ public:
   void modifyDef(int n);
   bool attack(Character *c) override;
   void setPosition(int newX, int newY);
+  virtual int getScore();
   // virtual ~PlayerCharacter() = 0 {}
 };
 

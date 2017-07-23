@@ -21,6 +21,9 @@ class Grid {
   std::string caption;
   std::pair<int, int> stair;
   int level = 0;
+  bool hasWon = false;
+
+  void freeFloor();
 public:
   const int WIDTH, HEIGHT;
   Grid(std::string floorFile);
@@ -33,7 +36,6 @@ public:
   void enemyAttack(Character *enemy);
 
   void addAction(std::string action);
-  // void playerConsumeGold();
   void findDestination(int &destx, int &desty, Direction dir) const;
   void setPlayerCharacter(PlayerCharacter *pc);
   void addNewEnemy(EnemyCharacter *ec);
@@ -42,6 +44,9 @@ public:
   void setStair(int x, int y);
   void initializePlayerCharacter(std::string race = "");
   void initializeFloor();
+  bool playerHasWon() const;
+  bool playerHasLost() const;
+  int playerScore() const;
 };
 
 #endif

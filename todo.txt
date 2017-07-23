@@ -2,3 +2,4 @@ TODO:
 -drow magnifies potion effect. 5*1.5 is not a int.
 -no need for isConsumed
 -pop consumed items and slayed enemies
+-cannot use uniq ptr because of observer lst

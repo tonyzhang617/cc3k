@@ -11,3 +11,7 @@ void Subject::notifyObservers() {
 void Subject::attach(Observer *o) {
   observers.push_back(o);
 }
+
+void Subject::clearAll() {
+  observers.clear();
+}

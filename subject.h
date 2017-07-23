@@ -9,6 +9,7 @@ class Subject {
 public:
   void notifyObservers();
   void attach(Observer *o);
+  void clearAll();
   virtual std::pair<int, int> getPosition() = 0;
 };
 
