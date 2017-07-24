@@ -42,7 +42,7 @@ public:
   void addNewPotion(Potion *p);
   void addNewGold(Gold *g);
   void setStair(int x, int y);
-  void initializePlayerCharacter(std::string race = "");
+  void initializePlayerCharacter();
   void initializeFloor();
   bool playerHasWon() const;
   bool playerHasLost() const;

@@ -7,7 +7,7 @@ class DragonHoard;
 class Dragon : public EnemyCharacter {
   DragonHoard *hoard = nullptr;
 public:
-  Dragon(int x, int y, Grid *grid);
+  Dragon(int x, int y, Grid *grid, DragonHoard *hoard);
   char getChar() override;
   void notify(Subject *whoNotified) override;
   void slainBy(Character *c) override;

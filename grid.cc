@@ -144,7 +144,7 @@ void Grid::print() {
   cout <<  "Race: " << player->getRace() << " Gold: " << player->getGold();
   cout << internal << setw(55) << "Floor " << level << endl;
   cout << "HP: " << player->getHp() << "\nAtk: " << player->getAtk() << "\nDef: " << player->getDef() << endl;
-  cout << caption << endl << endl;
+  cout << caption << endl;
   caption = "";
 
   if (player->isDead()) {
@@ -298,12 +298,12 @@ void Grid::setStair(int x, int y) {
   stair = make_pair(x, y);
 }
 
-void Grid::initializePlayerCharacter(string race) {
-  string cmd;
+void Grid::initializePlayerCharacter() {
+  string race;
   cout << "Which player would you like to be? Please choose one:\n" <<
       "drow, goblin, troll, vampire\n" <<
       "(The default character is a shade.)" << endl;
-  cin >> cmd;
+  cin >> race;
   PCFactory makePC{this};
   makePC.createEntity(getEntityFromString(race));
   addAction("The player character has spawned.");
@@ -390,10 +390,15 @@ void Grid::startNewGame() {
     player = nullptr;
   }
 
-  g.initializePlayerCharacter(cmd);
-  g.initializeFloor();
+  initializePlayerCharacter();
+  initializeFloor();
 }
 
 void Grid::toggleFreezeEnemies() {
   player->toggleFreezeAll();
+  if (enemies[0]->isFrozen()) {
+    addAction("All enemies are frozen. ");
+  } else {
+    addAction("All enemies are unfrozen. ");
+  }
 }

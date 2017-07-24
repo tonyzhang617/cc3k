@@ -17,5 +17,7 @@ void Subject::clearAll() {
 }
 
 void Subject::toggleFreezeAll() {
-  observers.toggleFreeze();
+  for (auto o : observers) {
+    o->toggleFreeze();
+  }
 }

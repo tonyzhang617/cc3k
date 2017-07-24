@@ -29,6 +29,6 @@ void DragonHoard::setDragon(Dragon *d) {
   dragon = d;
 }
 
-void freeHoard() {
+void DragonHoard::freeHoard() {
   isGuarded = false;
 }
