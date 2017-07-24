@@ -15,3 +15,7 @@ void Subject::attach(Observer *o) {
 void Subject::clearAll() {
   observers.clear();
 }
+
+void Subject::toggleFreezeAll() {
+  observers.toggleFreeze();
+}

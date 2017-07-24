@@ -362,3 +362,7 @@ void Grid::startNewGame() {
   g.initializePlayerCharacter(cmd);
   g.initializeFloor();
 }
+
+void Grid::toggleFreezeEnemies() {
+  player->toggleFreezeAll();
+}

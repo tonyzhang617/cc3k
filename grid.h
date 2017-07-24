@@ -48,6 +48,7 @@ public:
   bool playerHasLost() const;
   int playerScore() const;
   void startNewGame();
+  void toggleFreezeEnemies();
 };
 
 #endif

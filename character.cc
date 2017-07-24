@@ -88,7 +88,7 @@ void Character::notify(Subject *whoNotified) {
     int suby = whoNotified->getPosition().second;
     if (abs(subx - x) <= 1 && abs(suby - y) <= 1 && !(subx == x && suby == y)) {
       grid->enemyAttack(this);
-    } else {
+    } else if (!isFrozen()){
       makeMove(RANDOM);
     }
   }

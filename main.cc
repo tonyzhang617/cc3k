@@ -29,6 +29,8 @@ int main() {
       break;
     } else if (cmd == "r") {
       g.startNewGame();
+    } else if (cmd == "f") {
+      g.toggleFreezeEnemies();
     }
     g.print();
 
