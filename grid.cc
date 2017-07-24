@@ -345,3 +345,20 @@ void Grid::freeFloor() {
 
   player->clearAll();
 }
+
+void Grid::startNewGame() {
+  if (player != nullptr) {
+    freeFloor();
+    delete player;
+    player = nullptr;
+  }
+
+  string cmd;
+  cout << "Which player would you like to be? Please choose one:\n" <<
+      "drow, goblin, troll, vampire\n" <<
+      "(The default character is a shade.)" << endl;
+  cin >> cmd;
+
+  g.initializePlayerCharacter(cmd);
+  g.initializeFloor();
+}

@@ -9,12 +9,7 @@ int main() {
   Grid g("defaultLevel.txt");
   string cmd;
 
-  cout << "Which player would you like to be? Please choose one:\ndrow, goblin, troll, vampire\n" <<
-      "(The default character is a shade.)" << endl;
-  cin >> cmd;
-
-  g.initializePlayerCharacter(cmd);
-  g.initializeFloor();
+  g.startNewGame();
   g.print();
 
   while (cin >> cmd) {
@@ -32,15 +27,23 @@ int main() {
       g.playerAttack(dir);
     } else if (cmd == "q") {
       break;
+    } else if (cmd == "r") {
+      g.startNewGame();
     }
     g.print();
 
+    bool end = false;
     if (g.playerHasWon()) {
-      cout << "You win! Your total score is " << g.playerScore() << ". " << endl;
-      break;
+      cout << "You win! ";
+      end = true;
     } else if (g.playerHasLost()) {
-      cout << "You lost! Your total score is " << g.playerScore() << ". " << endl;
-      break;
+      cout << "You lost! ";
+      end = true;
+    }
+
+    if (end) {
+      cout <<  "Your total score is " << g.playerScore() << "." << endl;
+      cout << "Press \'r\' to start a new game, \'q\' to quit." << endl;
     }
   }
 

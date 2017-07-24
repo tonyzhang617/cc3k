@@ -47,6 +47,7 @@ public:
   bool playerHasWon() const;
   bool playerHasLost() const;
   int playerScore() const;
+  void startNewGame();
 };
 
 #endif
