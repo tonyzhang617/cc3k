@@ -12,5 +12,7 @@ enum GoldType {DRAGON_HOARD, MERCHANT_HOARD, NORMAL_HOARD, SMALL_HOARD};
 
 Direction getDirFromString(std::string s);
 EntityType getEntityFromString(std::string s);
+PotionType getPotionFromInt(int n);
+GoldType getGoldFromInt(int n);
 
 #endif

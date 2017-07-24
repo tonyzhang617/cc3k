@@ -5,13 +5,16 @@
 
 using namespace std;
 
-int main() {
-  Grid g("defaultLevel.txt");
-  string cmd;
+int main(int argc, char* argv[]) {
+  if (argc == 1) {
+    Grid g("defaultLevel.txt");
+  } else {
+    Grid g(argv[1], false);
+  }  
 
-  g.startNewGame();
   g.print();
 
+  string cmd;
   while (cin >> cmd) {
     if (cmd == "no" || cmd == "so" || cmd == "ea" || cmd == "we" ||
         cmd == "ne" || cmd == "nw" || cmd == "se" || cmd == "sw") {

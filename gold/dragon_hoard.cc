@@ -4,9 +4,7 @@
 #include "../PCs/drow.h"
 using namespace std;
 
-DragonHoard::DragonHoard(int x, int y, Grid *grid, Dragon *dragon):
-    Gold{x, y, grid, 6}, dragon{dragon} {
-  dragon->setHoard(this);
+DragonHoard::DragonHoard(int x, int y, Grid *grid): Gold{x, y, grid, 6} {
 }
 
 bool DragonHoard::consumedBy(PlayerCharacter * pc) {
@@ -25,4 +23,12 @@ bool DragonHoard::consumedBy(Drow * drow) {
     return true;
   }
   return false;
+}
+
+void DragonHoard::setDragon(Dragon *d) {
+  dragon = d;
+}
+
+void freeHoard() {
+  isGuarded = false;
 }

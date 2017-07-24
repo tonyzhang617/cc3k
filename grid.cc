@@ -13,17 +13,49 @@
 #include "potion/potion.h"
 using namespace std;
 
-Grid::Grid(string floorFile): HEIGHT{25}, WIDTH{79} {
+Grid::Grid(string floorFile, bool isDefault): HEIGHT{25}, WIDTH{79} {
   ifstream ifs{floorFile};
   string line;
 
   if (ifs.good()) {
     for (int i = 0; i < HEIGHT && getline(ifs, line); ++i) {
+      if (!isDefault) {
+        for (int j = 0; j < WIDTH; j++) {
+          char c = line[j];
+          if ((c >= '0' && c <= '9') || c == '\\') {
+            if (c >= '0' && c <= '5') {
+              PotionFactory pf{this};
+              pf.createPotion(j, i, getPotionFromInt(c-'0'));
+            } else if (c >= '6' && c <= '9') {
+              GoldFactory gf{this};
+              gf.createGold(j, i, getGoldFromInt(c-'0'));
+            } else if (c == '\\') {
+              StairFactory sf{this};
+              sf.createStair(j, i);
+            }
+            line[j] = '.';
+          }
+        }
+      }
       floor.push_back(line);
     }
   }
-}
 
+  if (isDefault) {
+    startNewGame();
+  } else {
+    EnemyFactory makeEnemy{this};
+    for (int i = 0; i < 20; i++) {
+      makeEnemy.createEntity();
+    }
+
+    for (auto e : enemies) {
+      player->attach(e);
+    }
+
+    initializePlayerCharacter();
+  }
+}
 
 CellType Grid::getCellTypeAt(const int x, const int y) const {
   if (x < 0 || y < 0 || x >= WIDTH || y >= HEIGHT) return CellType::ABYSS;
@@ -267,6 +299,11 @@ void Grid::setStair(int x, int y) {
 }
 
 void Grid::initializePlayerCharacter(string race) {
+  string cmd;
+  cout << "Which player would you like to be? Please choose one:\n" <<
+      "drow, goblin, troll, vampire\n" <<
+      "(The default character is a shade.)" << endl;
+  cin >> cmd;
   PCFactory makePC{this};
   makePC.createEntity(getEntityFromString(race));
   addAction("The player character has spawned.");
@@ -352,12 +389,6 @@ void Grid::startNewGame() {
     delete player;
     player = nullptr;
   }
-
-  string cmd;
-  cout << "Which player would you like to be? Please choose one:\n" <<
-      "drow, goblin, troll, vampire\n" <<
-      "(The default character is a shade.)" << endl;
-  cin >> cmd;
 
   g.initializePlayerCharacter(cmd);
   g.initializeFloor();

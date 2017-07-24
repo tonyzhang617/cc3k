@@ -26,7 +26,7 @@ class Grid {
   void freeFloor();
 public:
   const int WIDTH, HEIGHT;
-  Grid(std::string floorFile);
+  Grid(std::string floorFile, bool isDefault = true);
   CellType getCellTypeAt(const int x, const int y) const;
   void print();
   void playerAttack(Direction dir);

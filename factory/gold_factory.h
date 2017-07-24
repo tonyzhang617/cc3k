@@ -7,6 +7,7 @@ class GoldFactory : public Factory {
   void createAt(int x, int y, EntityType type = EntityType::RANDOM_ENTITY) override;
 public:
   GoldFactory(Grid *grid);
+  void createGold(int x, int y, GoldType gt);
 };
 
 #endif

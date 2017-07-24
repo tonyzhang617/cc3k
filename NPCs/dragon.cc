@@ -2,10 +2,12 @@
 #include "../gold/dragon_hoard.h"
 using namespace std;
 
-Dragon::Dragon(int x, int y, Grid *grid): EnemyCharacter(x, y, grid) {
+Dragon::Dragon(int x, int y, Grid *grid, DragonHoard *hoard):
+    EnemyCharacter(x, y, grid), hoard(hoard) {
   hp = 150;
   atk = 20;
   def = 20;
+  hoard->setDragon(this);
 }
 
 char Dragon::getChar() {
@@ -28,12 +30,8 @@ void Dragon::notify(Subject *whoNotified) {
   }
 }
 
-void Dragon::setHoard(DragonHoard *dh) {
-  hoard = dh;
-}
-
 void Dragon::slainBy(Character *c) {
-  hoard->isGuarded = false;
+  hoard->freeHoard();
 }
 
 string Dragon::getRace() {
