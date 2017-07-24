@@ -3,7 +3,6 @@
 #include <string>
 #include "../character.h"
 #include "../NPCs/enemy_character.h"
-// #include "subject.h"
 
 class Item;
 class PlayerCharacter : public Character {
