@@ -1,7 +1,4 @@
 TODO:
 -drow magnifies potion effect. 5*1.5 is not a int.
 -no need for isConsumed
--deal with conmmand line arguments
 -smartptr, cannot use uniq ptr because of observer lst
--watcard add fund
--dragon spawned not attached to player
