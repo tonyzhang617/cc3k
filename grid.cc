@@ -114,6 +114,10 @@ void Grid::print() {
   cout << "HP: " << player->getHp() << "\nAtk: " << player->getAtk() << "\nDef: " << player->getDef() << endl;
   cout << caption << endl << endl;
   caption = "";
+
+  if (player->isDead()) {
+    freeFloor();
+  }
 }
 
 void Grid::playerAttack(Direction dir) {
@@ -174,7 +178,6 @@ void Grid::playerConsumePotion(Direction dir) {
 
 void Grid::playerMove(Direction dir) {
   player->makeMove(dir);
-  player->notifyObservers();
 
   for (int i = 0; i < golds.size(); ++i) {
     if (golds[i]->getPosition() == player->getPosition()) {
@@ -192,8 +195,15 @@ void Grid::playerMove(Direction dir) {
   }
 
   if (stair == player->getPosition()) {
-    initializeFloor();
-    addAction("You reached the next floor. ");
+    if (level < 5) {
+      initializeFloor();
+      addAction("You reached the next floor. ");
+    } else {
+      freeFloor();
+      hasWon = true;
+    }
+  } else {
+    player->notifyObservers();
   }
 }
 
@@ -263,9 +273,8 @@ void Grid::initializePlayerCharacter(string race) {
 }
 
 void Grid::initializeFloor() {
-  if (level != 1) {
-    //TODO
-    //delete old info
+  if (level >= 1) {
+    freeFloor();
   }
 
   player->resetAtkDef();
@@ -291,7 +300,6 @@ void Grid::initializeFloor() {
     makeGold.createEntity();
   }
 
-
   EnemyFactory makeEnemy{this};
   for (int i = 0; i < 20; i++) {
     makeEnemy.createEntity();
@@ -302,4 +310,38 @@ void Grid::initializeFloor() {
   }
 
   level++;
+}
+
+bool Grid::playerHasWon() const {
+  return hasWon;
+}
+
+bool Grid::playerHasLost() const {
+  return player->isDead();
+}
+
+int Grid::playerScore() const {
+  return player->getScore();
+}
+
+void Grid::freeFloor() {
+  for (auto &e : enemies) {
+    delete e;
+    e = nullptr;
+  }
+  enemies.clear();
+
+  for (auto &p : potions) {
+    delete p;
+    p = nullptr;
+  }
+  potions.clear();
+
+  for (auto &g : golds) {
+    delete g;
+    g = nullptr;
+  }
+  golds.clear();
+
+  player->clearAll();
 }

@@ -57,6 +57,7 @@ void PlayerCharacter::makeMove(Direction dir) {
     case CellType::DOORWAY:
     case CellType::PASSAGE:
     case CellType::FLOOR:
+    case CellType::STAIR:
       x = destx;
       y = desty;
       trollMove();
@@ -72,4 +73,8 @@ void PlayerCharacter::trollMove() {}
 void PlayerCharacter::setPosition(int newX, int newY) {
   x = newX;
   y = newY;
+}
+
+int PlayerCharacter::getScore() {
+  return gold;
 }

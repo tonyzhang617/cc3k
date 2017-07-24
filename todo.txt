@@ -4,3 +4,5 @@ TODO:
 -dragonhoard public field isGuarded->method
 -deal with conmmand line arguments
 -smartptr
+-pop consumed items and slayed enemies
+-cannot use uniq ptr because of observer lst

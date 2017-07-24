@@ -34,6 +34,14 @@ int main() {
       break;
     }
     g.print();
+
+    if (g.playerHasWon()) {
+      cout << "You win! Your total score is " << g.playerScore() << ". " << endl;
+      break;
+    } else if (g.playerHasLost()) {
+      cout << "You lost! Your total score is " << g.playerScore() << ". " << endl;
+      break;
+    }
   }
 
   return 0;
