@@ -9,6 +9,7 @@
 #include "enum.h"
 #include "subject.h"
 #include "observer.h"
+#include <memory>
 
 class Grid;
 class Elf;

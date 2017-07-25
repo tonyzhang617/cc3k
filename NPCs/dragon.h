@@ -5,9 +5,9 @@
 
 class DragonHoard;
 class Dragon : public EnemyCharacter {
-  DragonHoard *hoard = nullptr;
+  std::shared_ptr<DragonHoard> hoard = nullptr;
 public:
-  Dragon(int x, int y, Grid *grid, DragonHoard *hoard);
+  Dragon(int x, int y, Grid *grid, std::shared_ptr<DragonHoard> hoard);
   char getChar() override;
   void notify(Subject *whoNotified) override;
   void slainBy(Character *c) override;

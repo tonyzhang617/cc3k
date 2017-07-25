@@ -12,7 +12,7 @@ Merchant::Merchant(int x, int y, Grid *grid): EnemyCharacter(x, y, grid) {
 
 void Merchant::slainBy(Character *c) {
   isHostile = true;
-  grid->addNewGold(new MerchantHoard(x, y, grid));
+  grid->addNewGold(shared_ptr<Gold>(new MerchantHoard(x, y, grid)));
 }
 
 bool Merchant::attackedBy(Character *c) {

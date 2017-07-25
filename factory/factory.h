@@ -4,6 +4,7 @@
 #include "../grid.h"
 #include "../enum.h"
 #include <cstdlib>
+#include <memory>
 
 class Factory {
   virtual void createAt(int x, int y, EntityType type = EntityType::RANDOM_ENTITY) = 0;

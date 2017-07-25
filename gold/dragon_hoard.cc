@@ -25,10 +25,6 @@ bool DragonHoard::consumedBy(Drow * drow) {
   return false;
 }
 
-void DragonHoard::setDragon(Dragon *d) {
-  dragon = d;
-}
-
 void DragonHoard::freeHoard() {
   isGuarded = false;
 }

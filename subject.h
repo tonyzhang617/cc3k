@@ -12,6 +12,7 @@ public:
   void clearAll();
   virtual std::pair<int, int> getPosition() = 0;
   void toggleFreezeAll();
+  void detach(Observer *o);
 };
 
 #endif

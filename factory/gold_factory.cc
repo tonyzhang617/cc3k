@@ -19,12 +19,12 @@ void GoldFactory::createAt(int x, int y, EntityType type) {
 
 void GoldFactory::createGold(int x, int y, GoldType gt) {
   if (gt == GoldType::SMALL_HOARD) {
-    grid->addNewGold(new SmallHoard(x, y, grid));
+    grid->addNewGold(shared_ptr<Gold> (new SmallHoard(x, y, grid)));
   } else if (gt == GoldType::NORMAL_HOARD) {
-    grid->addNewGold(new NormalHoard(x, y, grid));
+    grid->addNewGold(shared_ptr<Gold>(new NormalHoard(x, y, grid)));
   } else if (gt == GoldType::DRAGON_HOARD) {
-    DragonHoard *dh = new DragonHoard(x, y, grid);
-    grid->addNewGold(dh);
+    shared_ptr<DragonHoard> dh(new DragonHoard(x, y, grid));
+    grid->addNewGold(shared_ptr<Gold>(dh));
     int dx = x;
     int dy = y;
     while (1) {
@@ -33,6 +33,6 @@ void GoldFactory::createGold(int x, int y, GoldType gt) {
       CellType ct = grid->getCellTypeAt(dx, dy);
       if (ct==CellType::FLOOR) break;
     }
-    grid->addNewEnemy(new Dragon{dx, dy, grid, dh});
+    grid->addNewEnemy(shared_ptr<EnemyCharacter> (new Dragon{dx, dy, grid, dh}));
   }
 }

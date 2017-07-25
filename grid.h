@@ -9,14 +9,15 @@
 #include "PCs/player_character.h"
 #include "enum.h"
 #include <utility>
+#include <memory>
 
 class Potion;
 class Gold;
 class Grid {
-  std::vector<EnemyCharacter*> enemies, deadEnemies;
-  std::vector<Potion *> potions;
-  std::vector<Gold *> golds;
-  PlayerCharacter *player = nullptr;
+  std::vector<std::shared_ptr<EnemyCharacter>> enemies;
+  std::vector<std::shared_ptr<Potion>> potions;
+  std::vector<std::shared_ptr<Gold>> golds;
+  std::shared_ptr<PlayerCharacter> player = nullptr;
   std::vector<std::string> floor;
   std::string caption;
   std::pair<int, int> stair;
@@ -26,7 +27,8 @@ class Grid {
   void freeFloor();
 public:
   const int WIDTH, HEIGHT;
-  Grid(std::string floorFile, bool isDefault = true);
+  Grid();
+  void setGrid(std::string floorFile, bool isDefault = true);
   CellType getCellTypeAt(const int x, const int y) const;
   void print();
   void playerAttack(Direction dir);
@@ -37,10 +39,10 @@ public:
 
   void addAction(std::string action);
   void findDestination(int &destx, int &desty, Direction dir) const;
-  void setPlayerCharacter(PlayerCharacter *pc);
-  void addNewEnemy(EnemyCharacter *ec);
-  void addNewPotion(Potion *p);
-  void addNewGold(Gold *g);
+  void setPlayerCharacter(std::shared_ptr<PlayerCharacter> pc);
+  void addNewEnemy(std::shared_ptr<EnemyCharacter> ec);
+  void addNewPotion(std::shared_ptr<Potion> p);
+  void addNewGold(std::shared_ptr<Gold> g);
   void setStair(int x, int y);
   void initializePlayerCharacter();
   void initializeFloor();

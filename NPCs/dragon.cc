@@ -2,12 +2,11 @@
 #include "../gold/dragon_hoard.h"
 using namespace std;
 
-Dragon::Dragon(int x, int y, Grid *grid, DragonHoard *hoard):
+Dragon::Dragon(int x, int y, Grid *grid, shared_ptr<DragonHoard> hoard):
     EnemyCharacter(x, y, grid), hoard(hoard) {
   hp = 150;
   atk = 20;
   def = 20;
-  hoard->setDragon(this);
 }
 
 char Dragon::getChar() {

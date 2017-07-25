@@ -27,16 +27,17 @@ void EnemyFactory::createAt(int x, int y, EntityType type) {
 
 void EnemyFactory::createEnemy(int x, int y, EnemyType et) {
   if (et == EnemyType::DWARF) {
-    grid->addNewEnemy(new Dwarf(x, y, grid));
+    shared_ptr<EnemyCharacter> p(new Dwarf{x, y, grid});
+    grid->addNewEnemy(shared_ptr<EnemyCharacter>(new Dwarf(x, y, grid)));
   } else if (et == EnemyType::ELF) {
-    grid->addNewEnemy(new Elf(x, y, grid));
+    grid->addNewEnemy(shared_ptr<EnemyCharacter> (new Elf(x, y, grid)));
   } else if (et == EnemyType::HALFLING) {
-    grid->addNewEnemy(new Halfling(x, y, grid));
+    grid->addNewEnemy(shared_ptr<EnemyCharacter> (new Halfling(x, y, grid)));
   } else if (et == EnemyType::HUMAN) {
-    grid->addNewEnemy(new Human(x, y, grid));
+    grid->addNewEnemy(shared_ptr<EnemyCharacter> (new Human(x, y, grid)));
   } else if (et == EnemyType::MERCHANT) {
-    grid->addNewEnemy(new Merchant(x, y, grid));
+    grid->addNewEnemy(shared_ptr<EnemyCharacter> (new Merchant(x, y, grid)));
   } else if (et == EnemyType::ORCS) {
-    grid->addNewEnemy(new Orcs(x, y, grid));
+    grid->addNewEnemy(shared_ptr<EnemyCharacter> (new Orcs(x, y, grid)));
   }
 }
