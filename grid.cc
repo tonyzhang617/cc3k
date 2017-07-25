@@ -46,6 +46,8 @@ void Grid::setGrid(string floorFile, bool isDefault) {
   if (isDefault) {
     startNewGame();
   } else {
+    initializePlayerCharacter();
+
     EnemyFactory makeEnemy{this};
     for (int i = 0; i < 20; i++) {
       makeEnemy.createEntity();
@@ -54,8 +56,6 @@ void Grid::setGrid(string floorFile, bool isDefault) {
     for (auto e : enemies) {
       player->attach(e.get());
     }
-
-    initializePlayerCharacter();
   }
 }
 
@@ -65,32 +65,31 @@ CellType Grid::getCellTypeAt(const int x, const int y) const {
   pair<int, int> cur = make_pair(x, y);
 
   if (player != nullptr) {
-    if (player->getPosition() == cur)
+    if (player->getPosition()==cur)
       return CellType::PC;
 
-    if (stair == cur) return CellType::STAIR;
+    if (stair==cur)
+      return CellType::STAIR;
 
     for (auto e : enemies) {
-      if (!e->isDead()) {
-        if (e->getPosition() == cur)
-          return CellType::ENEMY;
+      if (e->getPosition()==cur) {
+        return CellType::ENEMY;
       }
     }
 
     for (auto p : potions) {
-      if (!p->isConsumed()) {
-        if (p->getPosition() == cur)
-          return CellType::POTION;
+      if (p->getPosition()==cur) {
+        return CellType::POTION;
       }
     }
 
     for (auto g : golds) {
-      if (!g->isConsumed()) {
-        if (g->getPosition() == cur)
-          return CellType::GOLD;
+      if (g->getPosition()==cur) {
+        return CellType::GOLD;
       }
     }
   }
+
 
   char cell = floor[y][x];
   if (cell == '|' || cell == '-') return CellType::WALL;
@@ -116,24 +115,18 @@ void Grid::print() {
   flr[pos.second][pos.first] = '\\';
 
   for (int i = 0; i < enemies.size(); ++i) {
-    if (!enemies[i]->isDead()) {
-      pos = enemies[i]->getPosition();
-      flr[pos.second][pos.first] = enemies[i]->getChar();
-    }
+    pos = enemies[i]->getPosition();
+    flr[pos.second][pos.first] = enemies[i]->getChar();
   }
 
   for (auto p : potions) {
-    if (!p->isConsumed()) {
-      pos = p->getPosition();
-      flr[pos.second][pos.first] = p->getChar();
-    }
+    pos = p->getPosition();
+    flr[pos.second][pos.first] = p->getChar();
   }
 
   for (auto g : golds) {
-    if (!g->isConsumed()) {
-      pos = g->getPosition();
-      flr[pos.second][pos.first] = g->getChar();
-    }
+    pos = g->getPosition();
+    flr[pos.second][pos.first] = g->getChar();
   }
 
   for (int i = 0; i < HEIGHT; ++i) {
@@ -148,10 +141,6 @@ void Grid::print() {
   cout << "HP: " << player->getHp() << "\nAtk: " << player->getAtk() << "\nDef: " << player->getDef() << endl;
   cout << caption << endl;
   caption = "";
-
-  if (player->isDead()) {
-    freeFloor();
-  }
 }
 
 void Grid::playerAttack(Direction dir) {
@@ -165,10 +154,6 @@ void Grid::playerAttack(Direction dir) {
         addAction("You attacked a(n) " + enemies[i]->getRace() + ". ");
         if (enemies[i]->isDead()) {
           addAction("You slayed a(n) " + enemies[i]->getRace() + ". ");
-
-          // free the dead enemy
-          //delete enemies[i];
-          //enemies[i] = nullptr;
           player->detach(enemies[i].get());
           enemies.erase(enemies.begin()+i);
         } else {
@@ -194,13 +179,8 @@ void Grid::playerConsumePotion(Direction dir) {
     if (potions[i]->getPosition() == pos) {
       player->consumePotion(potions[i].get());
       addAction("You consumed " + potions[i]->getType() + ". ");
-      hasConsumed = true;
-
-      // free the consumed potion
-      //delete potions[i];
-     // potions[i] = nullptr;
       potions.erase(potions.begin()+i);
-
+      hasConsumed = true;
       break;
     }
   }
@@ -218,10 +198,6 @@ void Grid::playerMove(Direction dir) {
     if (golds[i]->getPosition() == player->getPosition()) {
       if (golds[i]->consumedBy(player.get())) {
         addAction("You picked up a gold. ");
-
-        // free the picked up gold
-        //delete golds[i];
-        //golds[i] = nullptr;
         golds.erase(golds.begin()+i);
       } else {
         addAction("You cannot pick up this gold. ");
@@ -365,22 +341,8 @@ int Grid::playerScore() const {
 }
 
 void Grid::freeFloor() {
-//  for (auto &e : enemies) {
-//    delete e;
-//    e = nullptr;
-//  }
   enemies.clear();
-
-//  for (auto &p : potions) {
-//    delete p;
-//    p = nullptr;
-//  }
   potions.clear();
-
-//  for (auto &g : golds) {
-//    delete g;
-//    g = nullptr;
-//  }
   golds.clear();
 
   player->clearAll();
@@ -389,7 +351,6 @@ void Grid::freeFloor() {
 void Grid::startNewGame() {
   if (player != nullptr) {
     freeFloor();
-//    delete player;
     player = nullptr;
   }
 

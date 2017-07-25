@@ -10,8 +10,6 @@ class Item{
   int x;
   int y;
   Grid *grid;
-protected:
-  bool isUsed = false;
 public:
   Item(int x, int y, Grid *grid);
   std::pair<int, int> getPosition();

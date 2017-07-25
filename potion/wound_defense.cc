@@ -7,13 +7,11 @@ WoundDefense::WoundDefense(int x, int y, Grid *grid): Potion{x, y, grid} {}
 
 bool WoundDefense::consumedBy(PlayerCharacter * pc) {
   pc->modifyDef(-5);
-  isUsed = true;
   return true;
 }
 
 bool WoundDefense::consumedBy(Drow *drow) {
   drow->modifyDef(-5*1.5);
-  isUsed = true;
   return true;
 }
 

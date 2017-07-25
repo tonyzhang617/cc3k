@@ -11,12 +11,10 @@ char Gold::getChar() {
 
 bool Gold::consumedBy(PlayerCharacter *pc) {
   pc->addGold(value);
-  isUsed = true;
   return true;
 }
 
 bool Gold::consumedBy(Drow * drow) {
   drow->addGold(value);
-  isUsed = true;
   return true;
 }
