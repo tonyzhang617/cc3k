@@ -7,6 +7,7 @@ public:
   Potion(int x, int y, Grid *grid);
   char getChar() override;
   virtual std::string getType() = 0;
+  virtual bool consumedBy(Drow *drow) = 0;
 };
 
 #endif

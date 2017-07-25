@@ -13,8 +13,3 @@ bool Gold::consumedBy(PlayerCharacter *pc) {
   pc->addGold(value);
   return true;
 }
-
-bool Gold::consumedBy(Drow * drow) {
-  drow->addGold(value);
-  return true;
-}

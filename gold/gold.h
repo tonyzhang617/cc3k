@@ -9,7 +9,6 @@ public:
   Gold(int x, int y, Grid *grid, int value);
   char getChar() override;
   bool consumedBy(PlayerCharacter *pc) override;
-  bool consumedBy(Drow * drow) override;
 };
 
 #endif

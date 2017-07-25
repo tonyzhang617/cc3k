@@ -8,7 +8,6 @@ class DragonHoard : public Gold{
 public:
   DragonHoard(int x, int y, Grid *grid);
   bool consumedBy(PlayerCharacter * pc) override;
-  bool consumedBy(Drow * drow) override;
   void freeHoard();
 };
 #endif

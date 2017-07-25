@@ -15,8 +15,6 @@ public:
   std::pair<int, int> getPosition();
   virtual char getChar() = 0;
   virtual bool consumedBy(PlayerCharacter *pc) = 0;
-  virtual bool consumedBy(Drow *drow) = 0;
-  bool isConsumed();
 };
 
 

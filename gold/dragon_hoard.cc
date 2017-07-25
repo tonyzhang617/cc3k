@@ -15,14 +15,6 @@ bool DragonHoard::consumedBy(PlayerCharacter * pc) {
   return false;
 }
 
-bool DragonHoard::consumedBy(Drow * drow) {
-  if (!isGuarded) {
-    drow->addGold(value);
-    return true;
-  }
-  return false;
-}
-
 void DragonHoard::freeHoard() {
   isGuarded = false;
 }
