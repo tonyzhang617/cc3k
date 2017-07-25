@@ -45,6 +45,9 @@ bool Character::attackedBy(Vampire *c) {
   int damage = ceil((100.0 / (100 + def))*(c->getAtk()));
   modifyHP(-damage);
   c->modifyHP(5);
+  if (isDead()) {
+    c->slay(this);
+  }
   return true;
 }
 
