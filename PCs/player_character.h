@@ -4,7 +4,7 @@
 #include "../character.h"
 #include "../NPCs/enemy_character.h"
 
-class Item;
+class Potion;
 class PlayerCharacter : public Character {
   virtual void trollMove(); // for trolls' superpower, called in makeMove
 protected:
@@ -13,7 +13,7 @@ public:
   PlayerCharacter(int x, int y, Grid *g, int dHP, int dAtk, int dDef);
   char getChar() final;
   void makeMove(Direction dir) final;
-  virtual void consumePotion(Item *p);
+  virtual void consumePotion(Potion *p);
   void resetAtkDef();
   void modifyHP(int n) override;
   void modifyAtk(int n);

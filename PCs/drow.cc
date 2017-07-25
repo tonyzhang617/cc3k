@@ -6,8 +6,8 @@ using namespace std;
 
 Drow::Drow(int x, int y, Grid *grid): PlayerCharacter(x, y, grid, 150, 25, 15) {}
 
-void Drow::consumePotion(Item *p) {
-  dynamic_cast<Potion*>(p)->consumedBy(this);
+void Drow::consumePotion(Potion *p) {
+  p->consumedBy(this);
 }
 
 bool Drow::attackedBy(Elf *c) {

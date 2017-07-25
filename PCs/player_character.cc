@@ -1,6 +1,6 @@
 #include "player_character.h"
 #include "../grid.h"
-#include "../item.h"
+#include "../potion/potion.h"
 using namespace std;
 
 PlayerCharacter::PlayerCharacter(int x, int y, Grid *g, int dHP, int dAtk, int dDef):
@@ -22,7 +22,7 @@ bool PlayerCharacter::attack(Character *c) {
   return false;
 }
 
-void PlayerCharacter::consumePotion(Item *p) {
+void PlayerCharacter::consumePotion(Potion *p) {
   p->consumedBy(this);
   trollMove();
 }
