@@ -1,5 +1,2 @@
 TODO:
--drow magnifies potion effect. 5*1.5 is not a int.
--no need for isConsumed
 -change uml:dragon has a ptr to dragonhoard, but not the other way round
--slay human no gold (double dispatch problem)
