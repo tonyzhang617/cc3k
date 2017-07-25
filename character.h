@@ -17,7 +17,6 @@ class Vampire;
 class Orcs;
 class Character: public Subject, public Observer {
 protected:
-  // const int HP, ATK, DEF;
   int x, y;
   int hp, atk, def;
   int gold = 0;

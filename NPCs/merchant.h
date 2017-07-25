@@ -7,7 +7,6 @@
 
 class Merchant : public EnemyCharacter {
   static bool isHostile;
-  const int legacy = 4;
 public:
   Merchant(int x, int y, Grid *grid);
   void slainBy(Character *c) override;
