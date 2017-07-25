@@ -56,6 +56,8 @@ void Grid::setGrid(string floorFile, bool isDefault) {
     for (auto e : enemies) {
       player->attach(e.get());
     }
+
+    level = 1;
   }
 }
 
@@ -108,10 +110,8 @@ void Grid::print() {
       flr[i][j] = floor[i][j];
     }
   }
-  auto pos = player->getPosition();
-  flr[pos.second][pos.first] = player->getChar();
 
-  pos = stair;
+  auto pos = stair;
   flr[pos.second][pos.first] = '\\';
 
   for (int i = 0; i < enemies.size(); ++i) {
@@ -128,6 +128,9 @@ void Grid::print() {
     pos = g->getPosition();
     flr[pos.second][pos.first] = g->getChar();
   }
+
+  pos = player->getPosition();
+  flr[pos.second][pos.first] = player->getChar();
 
   for (int i = 0; i < HEIGHT; ++i) {
     for (int j = 0; j < WIDTH; ++j) {
@@ -352,6 +355,7 @@ void Grid::startNewGame() {
   if (player != nullptr) {
     freeFloor();
     player = nullptr;
+    level = 0;
   }
 
   initializePlayerCharacter();

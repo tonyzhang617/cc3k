@@ -23,8 +23,6 @@ void Dragon::notify(Subject *whoNotified) {
         (abs(subx - hx) <= 1 && abs(suby - hy) <= 1)) &&
         !(subx == x && suby == y)) {
       grid->enemyAttack(this);
-    } else {
-      makeMove();
     }
   }
 }

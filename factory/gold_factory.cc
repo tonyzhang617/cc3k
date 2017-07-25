@@ -3,6 +3,7 @@
 #include "../NPCs/dragon.h"
 #include "../gold/normal_hoard.h"
 #include "../gold/small_hoard.h"
+#include "../gold/merchant_hoard.h"
 #include "enemy_factory.h"
 using namespace std;
 
@@ -34,5 +35,7 @@ void GoldFactory::createGold(int x, int y, GoldType gt) {
       if (ct==CellType::FLOOR) break;
     }
     grid->addNewEnemy(shared_ptr<EnemyCharacter> (new Dragon{dx, dy, grid, dh}));
+  } else if (gt == GoldType::MERCHANT_HOARD) {
+    grid->addNewGold(shared_ptr<Gold> (new MerchantHoard(x, y, grid)));
   }
 }
