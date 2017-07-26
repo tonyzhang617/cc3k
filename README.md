@@ -20,7 +20,7 @@ The project uses the Factory, Template Method, Observer, and Visitor Pattern, an
 - q: quits the game
 
 # Screenshots
-![CC3k Screenshot 1](../blob/master/assets/cc3k_demo_1.png?raw=true)
-![CC3k Screenshot 2](../blob/master/assets/cc3k_demo_2.png?raw=true)
+![CC3k Screenshot 1](https://raw.githubusercontent.com/tonyzhang617/cc3k/master/assets/cc3k_demo_1.png)
+![CC3k Screenshot 2](https://raw.githubusercontent.com/tonyzhang617/cc3k/master/assets/cc3k_demo_2.png)
 
 *Note that we take no credit in the design of the game.*
