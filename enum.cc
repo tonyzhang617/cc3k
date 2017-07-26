@@ -55,7 +55,7 @@ PotionType getPotionFromInt(int n) {
       return PotionType::POISON_HEALTH;
     case 4:
       return PotionType::WOUND_ATTACK;
-    case 5:
+    default:
       return PotionType::WOUND_DEFENSE;
   }
 }
@@ -68,7 +68,7 @@ GoldType getGoldFromInt(int n) {
       return GoldType::SMALL_HOARD;
     case 8:
       return GoldType::MERCHANT_HOARD;
-    case 9:
+    default:
       return GoldType::DRAGON_HOARD;
   }
 }

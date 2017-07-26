@@ -6,4 +6,6 @@ char Potion::getChar() {
   return 'P';
 }
 
-bool Potion::consumedBy(PlayerCharacter *pc) {}
+bool Potion::consumedBy(PlayerCharacter *pc) {
+  return true;
+}

@@ -23,7 +23,7 @@ void Subject::toggleFreezeAll() {
 }
 
 void Subject::detach(Observer *o) {
-  for (int i = 0; i < observers.size(); i++) {
+  for (unsigned int i = 0; i < observers.size(); i++) {
     if (observers[i] == o) {
       observers.erase(observers.begin()+i);
     }

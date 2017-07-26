@@ -1,4 +1,4 @@
-CXX = g++-5
+CXX = g++
 CXXFLAGS = -std=c++14 -Wall -Werror -MMD
 EXEC = cc3k
 MAIN_OBJ = main.o grid.o enum.o character.o item.o observer.o subject.o

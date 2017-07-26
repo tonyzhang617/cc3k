@@ -13,7 +13,7 @@
 #include "potion/potion.h"
 using namespace std;
 
-Grid::Grid(): HEIGHT{25}, WIDTH{79} {}
+Grid::Grid(): WIDTH{79}, HEIGHT{25} {}
 
 void Grid::setGrid(string floorFile, bool isDefault) {
   ifstream ifs{floorFile};
@@ -114,7 +114,7 @@ void Grid::print() {
   auto pos = stair;
   flr[pos.second][pos.first] = '\\';
 
-  for (int i = 0; i < enemies.size(); ++i) {
+  for (unsigned int i = 0; i < enemies.size(); ++i) {
     pos = enemies[i]->getPosition();
     flr[pos.second][pos.first] = enemies[i]->getChar();
   }
@@ -150,7 +150,7 @@ void Grid::playerAttack(Direction dir) {
   bool isSuccessful = false;
   pair<int, int> pos = player->getPosition();
   findDestination(pos.first, pos.second, dir);
-  for (int i = 0; i < enemies.size(); ++i) {
+  for (unsigned int i = 0; i < enemies.size(); ++i) {
     if (enemies[i]->getPosition() == pos) {
       isSuccessful = true;
       if (player->attack(enemies[i].get())) {
@@ -178,7 +178,7 @@ void Grid::playerConsumePotion(Direction dir) {
   pair<int, int> pos = player->getPosition();
   findDestination(pos.first, pos.second, dir);
   bool hasConsumed = false;
-  for (int i = 0; i < potions.size(); ++i) {
+  for (unsigned int i = 0; i < potions.size(); ++i) {
     if (potions[i]->getPosition() == pos) {
       player->consumePotion(potions[i].get());
       addAction("You consumed " + potions[i]->getType() + ". ");
@@ -197,7 +197,7 @@ void Grid::playerConsumePotion(Direction dir) {
 void Grid::playerMove(Direction dir) {
   player->makeMove(dir);
 
-  for (int i = 0; i < golds.size(); ++i) {
+  for (unsigned int i = 0; i < golds.size(); ++i) {
     if (golds[i]->getPosition() == player->getPosition()) {
       if (golds[i]->consumedBy(player.get())) {
         addAction("You picked up a gold. ");
@@ -237,6 +237,8 @@ void Grid::findDestination(int &destx, int &desty, Direction dir) const {
     case Direction::SW:
       desty++;
       break;
+    default:
+      break;
   }
   switch (dir) {
     case Direction::EA:
@@ -248,6 +250,8 @@ void Grid::findDestination(int &destx, int &desty, Direction dir) const {
     case Direction::SW:
     case Direction::NW:
       destx--;
+      break;
+    default:
       break;
   }
 }
