@@ -286,9 +286,7 @@ void Grid::setStair(int x, int y) {
 
 void Grid::initializePlayerCharacter() {
   string race;
-  cout << "Which player would you like to be? Please choose one:\n" <<
-      "drow, goblin, troll, vampire\n" <<
-      "(The default character is a shade.)" << endl;
+  cout << "Which player character would you like to be?\nEnter (s)hade, (d)row, (v)ampire, (g)oblin, or (t)roll: ";
   cin >> race;
   PCFactory makePC{this};
   makePC.createEntity(getEntityFromString(race));

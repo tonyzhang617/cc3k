@@ -28,15 +28,15 @@ Direction getDirFromString(std::string s) {
 
 
 EntityType getEntityFromString(std::string s) {
-  if (s == "drow") {
+  if (s == "d") {
     return EntityType::DROW;
-  } else if (s == "goblin") {
+  } else if (s == "g") {
     return EntityType::GOBLIN;
-  } else if (s == "shade") {
+  } else if (s == "s") {
     return EntityType::SHADE;
-  } else if (s == "troll") {
+  } else if (s == "t") {
     return EntityType::TROLL;
-  } else if (s == "vampire") {
+  } else if (s == "v") {
     return EntityType::VAMPIRE;
   }
 
